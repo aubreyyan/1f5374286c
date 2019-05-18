@@ -386,12 +386,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var react_instantsearch_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-instantsearch-dom */ "react-instantsearch-dom");
+/* harmony import */ var react_instantsearch_dom__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_instantsearch_dom__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _static_index_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../static/index.css */ "./static/index.css");
+/* harmony import */ var _static_index_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_static_index_css__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var algoliasearch__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! algoliasearch */ "algoliasearch");
+/* harmony import */ var algoliasearch__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(algoliasearch__WEBPACK_IMPORTED_MODULE_9__);
 
 
 
 
 
 
+
+
+
+
+var searchClient = algoliasearch__WEBPACK_IMPORTED_MODULE_9___default()('CNVK9PPZLI', '1e7524644d5732b65372e85998c98132');
 
 var Index =
 /*#__PURE__*/
@@ -407,14 +420,60 @@ function (_React$Component) {
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Index, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", null);
+      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "ais-InstantSearch"
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("h1", null, "React InstantSearch e-commerce demo"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_instantsearch_dom__WEBPACK_IMPORTED_MODULE_6__["InstantSearch"], {
+        indexName: "Parks",
+        searchClient: searchClient
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "right-panel"
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_instantsearch_dom__WEBPACK_IMPORTED_MODULE_6__["SearchBox"], null), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_instantsearch_dom__WEBPACK_IMPORTED_MODULE_6__["Hits"], {
+        hitComponent: Hit
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_instantsearch_dom__WEBPACK_IMPORTED_MODULE_6__["Pagination"], null))));
     }
   }]);
 
   return Index;
 }(react__WEBPACK_IMPORTED_MODULE_5___default.a.Component);
 
+function Hit(props) {
+  return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
+    src: props.hit.image,
+    align: "left",
+    alt: props.hit.name
+  }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+    className: "hit-name"
+  }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_instantsearch_dom__WEBPACK_IMPORTED_MODULE_6__["Highlight"], {
+    attribute: "fullName",
+    hit: props.hit
+  })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+    className: "hit-state"
+  }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_instantsearch_dom__WEBPACK_IMPORTED_MODULE_6__["Highlight"], {
+    attribute: "states",
+    hit: props.hit
+  })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+    className: "hit-description"
+  }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_instantsearch_dom__WEBPACK_IMPORTED_MODULE_6__["Highlight"], {
+    attribute: "description",
+    hit: props.hit
+  })));
+}
+
+Hit.propTypes = {
+  hit: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.object.isRequired
+};
 /* harmony default export */ __webpack_exports__["default"] = (Index);
+
+/***/ }),
+
+/***/ "./static/index.css":
+/*!**************************!*\
+  !*** ./static/index.css ***!
+  \**************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
 
 /***/ }),
 
@@ -427,6 +486,17 @@ function (_React$Component) {
 
 module.exports = __webpack_require__(/*! C:\Users\fusi0\IdeaProjects\nps\pages\index.js */"./pages/index.js");
 
+
+/***/ }),
+
+/***/ "algoliasearch":
+/*!********************************!*\
+  !*** external "algoliasearch" ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("algoliasearch");
 
 /***/ }),
 
@@ -496,6 +566,17 @@ module.exports = require("core-js/library/fn/symbol/iterator");
 
 /***/ }),
 
+/***/ "prop-types":
+/*!*****************************!*\
+  !*** external "prop-types" ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("prop-types");
+
+/***/ }),
+
 /***/ "react":
 /*!************************!*\
   !*** external "react" ***!
@@ -504,6 +585,17 @@ module.exports = require("core-js/library/fn/symbol/iterator");
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "react-instantsearch-dom":
+/*!******************************************!*\
+  !*** external "react-instantsearch-dom" ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-instantsearch-dom");
 
 /***/ })
 
