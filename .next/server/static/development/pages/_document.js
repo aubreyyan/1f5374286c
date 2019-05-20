@@ -2282,7 +2282,8 @@ function (_Document) {
         name: "viewport",
         content: "width=device-width, initial-scale=1.0"
       })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("body", {
-        className: "custom_class"
+        className: "custom_class",
+        background: "../static/wood1080-blur.png"
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_9__["Main"], null), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_9__["NextScript"], null)));
     }
   }], [{

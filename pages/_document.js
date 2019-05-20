@@ -9,15 +9,15 @@ class MyDocument extends Document {
     render() {
         return (
             <Html>
-            <Head>
-            <link rel="shortcut icon" type="image/png" href="../static/favicon.ico"/>
-            <style>{`body { margin: 0 } /* custom! */`}</style>
-        <meta name="viewport"content="width=device-width, initial-scale=1.0" />
-            </Head>
-            <body className="custom_class">
-            <Main />
-            <NextScript />
-            </body>
+                <Head>
+                    <link rel="shortcut icon" type="image/png" href="../static/favicon.ico"/>
+                    <style>{`body { margin: 0 } /* custom! */`}</style>
+                    <meta name="viewport"content="width=device-width, initial-scale=1.0" />
+                </Head>
+                <body className="custom_class" background="../static/wood1080-blur.png">
+                    <Main />
+                    <NextScript />
+                </body>
             </Html>
     )
     }
