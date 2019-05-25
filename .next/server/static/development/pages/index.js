@@ -93,6 +93,153 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
+/***/ "./components/AppBar.js":
+/*!******************************!*\
+  !*** ./components/AppBar.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _material_ui_core_Appbar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Appbar */ "@material-ui/core/Appbar");
+/* harmony import */ var _material_ui_core_Appbar__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Appbar__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/Toolbar */ "@material-ui/core/Toolbar");
+/* harmony import */ var _material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/Typography */ "@material-ui/core/Typography");
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _material_ui_core_InputBase__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/InputBase */ "@material-ui/core/InputBase");
+/* harmony import */ var _material_ui_core_InputBase__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_InputBase__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _material_ui_core_styles_colorManipulator__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/styles/colorManipulator */ "@material-ui/core/styles/colorManipulator");
+/* harmony import */ var _material_ui_core_styles_colorManipulator__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles_colorManipulator__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/core/styles */ "@material-ui/core/styles");
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _material_ui_icons_Search__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/icons/Search */ "@material-ui/icons/Search");
+/* harmony import */ var _material_ui_icons_Search__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Search__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var react_instantsearch_dom__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-instantsearch-dom */ "react-instantsearch-dom");
+/* harmony import */ var react_instantsearch_dom__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react_instantsearch_dom__WEBPACK_IMPORTED_MODULE_10__);
+
+
+
+
+
+
+
+
+
+
+ // import {makeStyles} from "@material-ui/styles";
+
+var styles = function styles(theme) {
+  return {
+    root: {
+      flexGrow: 1
+    },
+    grow: {
+      flexGrow: 1
+    },
+    menuButton: {// marginLeft: -12,
+      // marginRight: 20,
+    },
+    title: Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])({
+      display: 'none'
+    }, theme.breakpoints.up('sm'), {
+      display: 'block'
+    }),
+    search: Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])({
+      position: 'relative',
+      borderRadius: theme.shape.borderRadius,
+      backgroundColor: Object(_material_ui_core_styles_colorManipulator__WEBPACK_IMPORTED_MODULE_7__["fade"])(theme.palette.common.white, 0.15),
+      '&:hover': {
+        backgroundColor: Object(_material_ui_core_styles_colorManipulator__WEBPACK_IMPORTED_MODULE_7__["fade"])(theme.palette.common.white, 0.25)
+      },
+      marginLeft: 0,
+      width: '100%'
+    }, theme.breakpoints.up('sm'), {
+      marginLeft: theme.spacing.unit,
+      width: 'auto'
+    }),
+    searchIcon: {
+      width: theme.spacing.unit * 6,
+      height: '100%',
+      position: 'absolute',
+      pointerEvents: 'none',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center'
+    },
+    inputRoot: {
+      color: 'inherit',
+      width: '100%'
+    },
+    inputInput: Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])({
+      paddingTop: theme.spacing.unit,
+      paddingRight: theme.spacing.unit,
+      paddingBottom: theme.spacing.unit,
+      paddingLeft: theme.spacing.unit * 10,
+      transition: theme.transitions.create('width'),
+      width: '100%'
+    }, theme.breakpoints.up('sm'), {
+      width: 120,
+      '&:focus': {
+        width: 200
+      }
+    })
+  };
+};
+
+function SearchBox(_ref, props) {
+  var currentRefinement = _ref.currentRefinement,
+      refine = _ref.refine;
+  var classes = props;
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_InputBase__WEBPACK_IMPORTED_MODULE_6___default.a, {
+    type: "search",
+    value: currentRefinement,
+    onChange: function onChange(event) {
+      return refine(event.currentTarget.value);
+    },
+    placeholder: "Search for Destination by Name, State, and keywords...",
+    classes: {
+      root: classes.inputRoot,
+      input: classes.inputInput
+    }
+  });
+}
+
+var CustomSearchBox = Object(react_instantsearch_dom__WEBPACK_IMPORTED_MODULE_10__["connectSearchBox"])(SearchBox);
+
+function SearchAppBar(props) {
+  var classes = props.classes;
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: classes.root
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_Appbar__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    position: "static"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_4___default.a, null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_5___default.a, {
+    className: classes.title,
+    variant: "h6",
+    color: "inherit",
+    noWrap: true
+  }, "National Park Service Kiosk"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: classes.grow
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: classes.search
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: classes.searchIcon
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_icons_Search__WEBPACK_IMPORTED_MODULE_9___default.a, null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(CustomSearchBox, null)))));
+}
+
+SearchAppBar.propTypes = {
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.object.isRequired
+};
+/* harmony default export */ __webpack_exports__["default"] = (Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_8__["withStyles"])(styles)(SearchAppBar));
+
+/***/ }),
+
 /***/ "./components/Hit.js":
 /*!***************************!*\
   !*** ./components/Hit.js ***!
@@ -158,15 +305,11 @@ function (_React$Component) {
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Hit, [{
     key: "render",
     value: function render() {
-      var _this2 = this;
-
       var props = this.props;
       return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
         id: "hitbox",
         href: "/details",
-        onClick: function onClick() {
-          return _this2.handleSubmit(props.hit.latLong, props.hit.parkCode);
-        }
+        onClick: console.log()
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
         src: props.hit.image,
         align: "left",
@@ -542,6 +685,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var algoliasearch__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! algoliasearch */ "algoliasearch");
 /* harmony import */ var algoliasearch__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(algoliasearch__WEBPACK_IMPORTED_MODULE_10__);
 /* harmony import */ var _components_Hit__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/Hit */ "./components/Hit.js");
+/* harmony import */ var _components_AppBar__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/AppBar */ "./components/AppBar.js");
+
 
 
 
@@ -598,18 +743,7 @@ function (_React$Component) {
         searchClient: proxyClient
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         className: "right-panel"
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react_instantsearch_dom__WEBPACK_IMPORTED_MODULE_7__["SearchBox"], {
-        reset: react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("svg", {
-          viewBox: "200 198 108 122"
-        }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("path", {
-          d: "M200.8 220l45 46.7-20 47.4 31.7-34 50.4 39.3-34.3-52.6 30.2-68.3-49.7 51.7"
-        })),
-        translations: {
-          submitTitle: 'Submit',
-          resetTitle: 'Clear',
-          placeholder: 'Search for Destination by Name, State, and keywords...'
-        }
-      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react_instantsearch_dom__WEBPACK_IMPORTED_MODULE_7__["InfiniteHits"], {
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_AppBar__WEBPACK_IMPORTED_MODULE_12__["default"], null), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react_instantsearch_dom__WEBPACK_IMPORTED_MODULE_7__["InfiniteHits"], {
         hitComponent: _components_Hit__WEBPACK_IMPORTED_MODULE_11__["default"]
       }))));
     }
@@ -645,6 +779,83 @@ _components_Hit__WEBPACK_IMPORTED_MODULE_11__["default"].propTypes = {
 
 module.exports = __webpack_require__(/*! C:\Users\fusi0\IdeaProjects\nps\pages\index.js */"./pages/index.js");
 
+
+/***/ }),
+
+/***/ "@material-ui/core/Appbar":
+/*!*******************************************!*\
+  !*** external "@material-ui/core/Appbar" ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/Appbar");
+
+/***/ }),
+
+/***/ "@material-ui/core/InputBase":
+/*!**********************************************!*\
+  !*** external "@material-ui/core/InputBase" ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/InputBase");
+
+/***/ }),
+
+/***/ "@material-ui/core/Toolbar":
+/*!********************************************!*\
+  !*** external "@material-ui/core/Toolbar" ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/Toolbar");
+
+/***/ }),
+
+/***/ "@material-ui/core/Typography":
+/*!***********************************************!*\
+  !*** external "@material-ui/core/Typography" ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/Typography");
+
+/***/ }),
+
+/***/ "@material-ui/core/styles":
+/*!*******************************************!*\
+  !*** external "@material-ui/core/styles" ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/styles");
+
+/***/ }),
+
+/***/ "@material-ui/core/styles/colorManipulator":
+/*!************************************************************!*\
+  !*** external "@material-ui/core/styles/colorManipulator" ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/styles/colorManipulator");
+
+/***/ }),
+
+/***/ "@material-ui/icons/Search":
+/*!********************************************!*\
+  !*** external "@material-ui/icons/Search" ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/icons/Search");
 
 /***/ }),
 

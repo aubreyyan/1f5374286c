@@ -14,7 +14,7 @@ class Hit extends React.Component{
     render() {
         const props = this.props;
         return(
-            <a id="hitbox" href="/details" onClick={() => this.handleSubmit(props.hit.latLong, props.hit.parkCode)}>
+            <a id="hitbox" href="/details" onClick={console.log()}>
                 <img src={props.hit.image} align="left" alt={props.hit.name} />
                 <div className="hit-name">
                     <Highlight className="ais-Highlight-header" attribute="fullName" hit={props.hit} />
