@@ -1,12 +1,9 @@
-import React from 'react';
+import {withRouter} from 'next/router';
 
-class Details extends React.Component{
-    constructor(props){
-        super(props)
-    }
-    render(){
-        return(<h1>{this.props.latLong}</h1>)
-    }
-}
+const Details = withRouter(props => (
+    <h1>
+        {props.router.query.objectId}
+    </h1>
+));
 
 export default Details;

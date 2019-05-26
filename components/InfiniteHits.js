@@ -1,6 +1,8 @@
 import React from 'react';
 import {connectInfiniteHits} from 'react-instantsearch-dom';
 import Hit from '../components/Hit';
+import Cookies from 'js-cookie';
+import '../static/default.css';
 
 class InfiniteHits extends React.Component {
     onSentinelIntersection = entries => {
@@ -24,7 +26,7 @@ class InfiniteHits extends React.Component {
     }
 
     render() {
-        const { hits, hitComponent } = this.props;
+        const { hits} = this.props;
 
         return (
             <div className="ais-InfiniteHits">

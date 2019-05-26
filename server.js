@@ -15,9 +15,9 @@ app.prepare().then(() => {
 
     server.use(async (ctx) => {
         await handle(ctx.req, ctx.res);
-        ctx.respond = false;
-        ctx.res.statusCode = 200;
-        return
+    ctx.respond = false;
+    ctx.res.statusCode = 200;
+    return
     });
 
     server.listen(port, () => {
