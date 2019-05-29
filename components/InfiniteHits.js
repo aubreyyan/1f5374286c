@@ -1,7 +1,6 @@
 import React from 'react';
 import {connectInfiniteHits} from 'react-instantsearch-dom';
 import Hit from '../components/Hit';
-import Cookies from 'js-cookie';
 import '../static/default.css';
 
 class InfiniteHits extends React.Component {
@@ -17,8 +16,6 @@ class InfiniteHits extends React.Component {
 
     componentDidMount() {
         this.observer = new IntersectionObserver(this.onSentinelIntersection);
-
-        this.observer.observe(this.sentinel);
     }
 
     componentWillUnmount(){
@@ -36,10 +33,6 @@ class InfiniteHits extends React.Component {
                             <Hit hit={hit} />
                         </li>
                     ))}
-                    <li
-                        className="ais-InfiniteHits-sentinel"
-                        ref={c => (this.sentinel = c)}
-                    />
                 </ul>
             </div>
         );

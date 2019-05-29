@@ -38,6 +38,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_8__["makeStyles"])(function (theme) {
+  var _title, _inputInput;
+
   return {
     root: {
       flexGrow: 1
@@ -45,12 +47,15 @@ var useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_8__["ma
     menuButton: {
       marginRight: theme.spacing(2)
     },
-    title: Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    title: (_title = {
       flexGrow: 1,
       display: 'none'
-    }, theme.breakpoints.up('sm'), {
-      display: 'block'
-    }),
+    }, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_title, theme.breakpoints.up('sm'), {
+      display: 'block',
+      fontSize: 20
+    }), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_title, theme.breakpoints.up('lg'), {
+      fontSize: 40
+    }), _title),
     search: Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])({
       position: 'relative',
       borderRadius: theme.shape.borderRadius,
@@ -76,16 +81,23 @@ var useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_8__["ma
     inputRoot: {
       color: 'inherit'
     },
-    inputInput: Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    inputInput: (_inputInput = {
       padding: theme.spacing(1, 1, 1, 7),
       transition: theme.transitions.create('width'),
       width: '100%'
-    }, theme.breakpoints.up('sm'), {
-      width: 300,
+    }, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_inputInput, theme.breakpoints.up('sm'), {
+      width: 400,
       '&:focus': {
-        width: 400
-      }
-    })
+        width: 470
+      },
+      fontSize: 20
+    }), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_inputInput, theme.breakpoints.up('lg'), {
+      width: 600,
+      '&:focus': {
+        width: 800
+      },
+      fontSize: 30
+    }), _inputInput)
   };
 });
 
@@ -115,13 +127,10 @@ function SearchAppBar() {
     className: classes.root
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_2__["default"], {
     position: "static",
-    color: "primary"
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_3__["default"], null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    edge: "start",
-    className: classes.menuButton,
-    color: "inherit",
-    "aria-label": "Open drawer"
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_icons_Menu__WEBPACK_IMPORTED_MODULE_9___default.a, null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    style: {
+      backgroundColor: "#0096db"
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_3__["default"], null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_5__["default"], {
     className: classes.title,
     variant: "h6",
     noWrap: true
@@ -137,4 +146,4 @@ function SearchAppBar() {
 /***/ })
 
 })
-//# sourceMappingURL=index.js.13359eace625f6bc3882.hot-update.js.map
+//# sourceMappingURL=index.js.aaec0fe7a3dbe6046120.hot-update.js.map

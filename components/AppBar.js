@@ -22,6 +22,10 @@ const useStyles = makeStyles(theme => ({
         display: 'none',
         [theme.breakpoints.up('sm')]: {
             display: 'block',
+            fontSize: 20,
+        },
+        [theme.breakpoints.up('lg')]: {
+            fontSize: 40,
         },
     },
     search: {
@@ -55,10 +59,18 @@ const useStyles = makeStyles(theme => ({
         transition: theme.transitions.create('width'),
         width: '100%',
         [theme.breakpoints.up('sm')]: {
-            width: 300,
-            '&:focus': {
-                width: 400,
+            width: 400,
+            '&:focus':{
+                width: 470,
             },
+            fontSize: 20,
+        },
+        [theme.breakpoints.up('lg')]: {
+            width: 600,
+            '&:focus': {
+                width: 800,
+            },
+            fontSize: 30,
         },
     }
 }));
@@ -85,16 +97,8 @@ function SearchAppBar() {
     const classes = useStyles();
     return (
         <div className={classes.root}>
-            <AppBar position="static" color="primary">
+            <AppBar position="static" style={{backgroundColor: "#0096db"}}>
                 <Toolbar>
-                    <IconButton
-                        edge="start"
-                        className={classes.menuButton}
-                        color="inherit"
-                        aria-label="Open drawer"
-                    >
-                        <MenuIcon />
-                    </IconButton>
                     <Typography className={classes.title} variant="h6" noWrap>
                         National Park Search
                     </Typography>

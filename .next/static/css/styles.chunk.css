@@ -1,11 +1,20 @@
+@font-face {
+    font-family: Avenir;
+    src: url("/static/AvenirNextLTPro-Demi.woff");
+}
+
 body {
-    font-family: Roboto, -apple-system, BlinkMacSystemFont,
+    font-family: Avenir, -apple-system, BlinkMacSystemFont,
     "Arial Nova Light", sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
     padding: 1em;
+    --drawer-width: 240px;
+}
+
+.div-root {
+    display: flex;
 }
 
 #hitbox {
-    display: block;
     text-decoration: none;
 }
 
@@ -13,32 +22,59 @@ body {
     min-width: 275px;
 }
 
-#title{
-    flex-grow: 1;
-    font-family: "Arial Nova Light";
-}
-
 #paper{
     padding-top: 10px;
-    padding-left: 5px;
+    padding-left: 15px;
     padding-bottom: 10px;
-    padding-right: 5px;
+    padding-right: 15px;
 }
 
 
 .ais-Highlight-highlighted,
 .ais-Snippet-highlighted {
-    background-color: #dbff46; }
-
-.ais-Highlight-header {
-    padding-right: 15px;
-    font-size: xx-large;
+    background-color: #dbff46;
+    font-style: normal;
 }
 
-.ais-Highlight-state{
-    font-weight: bold;
+@media (max-width: 960px) {
+    .ais-Highlight-header {
+        padding-right: 10px;
+        font-size: 15px;
+    }
+
+    .ais-Highlight-state{
+        font-weight: bold;
+        font-size: 12px;
+    }
+    .ais-Highlight-details{
+        font-size: 12px;
+    }
+    .appbar {
+        margin-left: var(--drawer-width);
+        width: calc(100% - var(--drawer-width));
+    }
+    .appbar-menu-button {
+        margin-right: 2px;
+    }
 }
 
+@media (min-width: 961px){
+    .ais-Highlight-header {
+        padding-right: 15px;
+        font-size: 40px;
+    }
+
+    .ais-Highlight-state{
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .ais-Highlight-details{
+        font-size: 30px;
+    }
+    .appbar {
+        margin-left: var(--drawer-width);
+    }
+}
 
 .ais-InfiniteHits-list,
 .ais-InfiniteResults-list{

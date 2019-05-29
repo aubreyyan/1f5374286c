@@ -10,7 +10,6 @@ const React = require('react');
 
 app.prepare().then(() => {
     const server = new Koa();
-
     server.use(session(server));
 
     server.use(async (ctx) => {

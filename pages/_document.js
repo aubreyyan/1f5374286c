@@ -1,9 +1,29 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Document, { Html, Head, Main, NextScript } from 'next/document';
+import {ServerStyleSheets} from "@material-ui/styles";
 
 class MyDocument extends Document {
     static async getInitialProps(ctx) {
-        const initialProps = await Document.getInitialProps(ctx);
-        return { ...initialProps }
+        const sheet = new ServerStyleSheets();
+        const originalRenderPage = ctx.renderPage;
+
+        try{
+            ctx.renderPage = () => originalRenderPage({
+                enhanceApp: App => props => sheet.collect(<App {...props}/>)
+            });
+
+            const initialProps = await Document.getInitialProps(ctx);
+            return { ...initialProps,
+                styles: (
+                    <>
+                        {initialProps.styles}
+                        {sheet.getStyleElement()}
+                    </>
+                )
+            }
+        } finally {
+            ctx.renderPage(sheet)
+        }
+
     }
     render() {
         return (
@@ -18,8 +38,7 @@ class MyDocument extends Document {
                     <NextScript />
                 </body>
             </Html>
-    )
-    }
+    )}
 }
 
 export default MyDocument;

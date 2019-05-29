@@ -1,21 +1,15 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import {Highlight} from "react-instantsearch-dom";
 import Card from '@material-ui/core/Card';
 import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
+import Button from '@material-ui/core/Button';
+import InputIcon from '@material-ui/icons/InputRounded';
 import Link from 'next/link';
 import {makeStyles} from "@material-ui/styles";
 import '../static/default.css';
-import algoliasearch from "algoliasearch";
 
-const searchClient = algoliasearch(
-    'CNVK9PPZLI',
-    '1e7524644d5732b65372e85998c98132'
-);
-
-const index = searchClient.initIndex("Parks");
-
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme =>({
     root: {
         background: 'linear-gradient(45deg, #4496DB 30%, #5df78e 90%)',
         border: 0,
@@ -35,44 +29,48 @@ const useStyles = makeStyles({
         margin: '0 2px',
         transform: 'scale(0.8)',
     },
-    title: {
-        fontSize: 14,
+    button: {
+        margin: theme.spacing(1),
+    },
+    rightIcon: {
+        marginLeft: theme.spacing(2),
     },
     pos: {
         marginBottom: 12,
     },
-});
+}));
 
-function indexSearch(objId){
-    return new Promise((resolve, reject) => {
-        index.getObject(objId, ['fullName'], (err, content) => {
-            if (content != null){
-                resolve(content.fullName);
-            }
-            else{
-                reject(Error());
-            }
-        });
-    });
-}
+// function indexSearch(objId){
+//     return new Promise((resolve, reject) => {
+//         index.getObject(objId, ['fullName'], (err, content) => {
+//             if (content != null){
+//                 resolve(content.fullName);
+//             }
+//             else{
+//                 reject(Error());
+//             }
+//         });
+//     });
+// }
 
-function NewButton({redirectId}){
+function NewButton({name, parkCode, redirectId}){
     const classes = useStyles();
-    const [someVar, setSomeVar] = useState(null);
-    useEffect(() => {
-        indexSearch(redirectId).then(result => {
-            setSomeVar(result);
-        })
-    }, []);
-    if(!someVar){
-        return null;
-    }
+    // const [someVar, setSomeVar] = useState(null);
+    // useEffect(() => {
+    //     indexSearch(redirectId).then(result => {
+    //         setSomeVar(result);
+    //     })
+    // }, []);
+    // if(!someVar){
+    //     return null;
+    // }
     return(
-        <Link as={`/details/${redirectId}`} href={`/details?objectId=${redirectId}`}>
-            <a>
-                <button type="button" className={classes.root}>
-                    {`Learn more about ${someVar}`}
-                </button>
+        <Link as={`/${parkCode}/details`} href={`/details?objectId=${parkCode}`}>
+            <a id="hitbox" href={`/details/${parkCode}`}>
+                <Button color="primary" className={classes.button} variant="contained">
+                    {`Learn more about ${name}`}
+                    <InputIcon className={classes.button}/>
+                </Button>
             </a>
         </Link>
     )
@@ -82,21 +80,21 @@ class Hit extends React.Component{
 
     render() {
         const props = this.props;
+        const {hit} = this.props;
         return(
-
             <Card>
                 <Paper id="paper" square>
-                    <Typography id="title" color="textPrimary" variant="h6">
+                    <Typography color="textPrimary" variant="h3">
                         <Highlight className="ais-Highlight-header" attribute="fullName" hit={props.hit}/>
                         <Highlight className="ais-Highlight-state" attribute="states" hit={props.hit}/>
                     </Typography>
                 </Paper>
-                <Paper square>
-                    <Typography color="textSecondary" variant="h6">
-                        <Highlight attribute="description" hit={props.hit}/>
+                <Paper id="paper" square>
+                    <Typography color="textSecondary">
+                        <Highlight className="ais-Highlight-details" attribute="description" hit={props.hit}/>
                     </Typography>
+                    <NewButton name={hit.fullName} parkCode={hit.parkCode} redirectId={props.hit.objectID}/>
                 </Paper>
-                <NewButton redirectId={props.hit.objectID}/>
             </Card>
         )
     }

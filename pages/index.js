@@ -1,16 +1,14 @@
 import React from 'react';
 import AppBar from '../components/AppBar';
+import {createMuiTheme} from "@material-ui/core/styles";
+import {ThemeProvider} from '@material-ui/styles';
 import {
     InstantSearch,
     InfiniteHits
 } from 'react-instantsearch-dom';
-import algoliasearch from 'algoliasearch';
 import Hit from '../components/Hit';
-
-const searchClient = algoliasearch(
-    'CNVK9PPZLI',
-    '1e7524644d5732b65372e85998c98132'
-);
+import CustomButton from '../components/CustomButton';
+import searchClient from '../components/SearchClient';
 
 const proxyClient = {
     search(requests){
@@ -29,14 +27,37 @@ const proxyClient = {
     },
 };
 
+const theme = createMuiTheme({
+    palette:{
+        primary:{
+            main: "#0096db",
+        },
+        secondary:{
+            main: "#29c609",
+        },
+    },
+    typography:{
+        fontFamily: [
+            'Avenir',
+            'Arial',
+        ].join(','),
+    },
+});
+
+
+
 class Index extends React.Component{
     render(){
         return(
             <div>
+                <ThemeProvider theme={theme}>
                 <InstantSearch indexName="Parks" searchClient={proxyClient}>
                     <AppBar/>
                     <InfiniteHits hitComponent={Hit} />
                 </InstantSearch>
+                    <br/>
+                <CustomButton/>
+                </ThemeProvider>
             </div>
         )
     }
