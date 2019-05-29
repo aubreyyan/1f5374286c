@@ -21,6 +21,7 @@ import PeopleIcon from '../components/StatueBlack30';
 import VisitorCenterIcon from '../components/VisitorCenterBlack30';
 import CampIcon from '../components/CampgroundBlack30';
 import NewsIcon from '../components/PostOfficeBlack30';
+import HomeIcon from '../components/DirectionsBlack30';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import MenuIcon from '@material-ui/icons/Menu';
 import Link from 'next/link';
@@ -74,6 +75,17 @@ function ResponsiveDrawer(props){
     const drawer = (
         <div>
             <div className={classes.toolbar}/>
+            <Divider/>
+            <List>
+                <Link as="/" href="/">
+                    <ListItem button key="Search Home">
+                        <ListItemIcon>
+                            <HomeIcon/>
+                        </ListItemIcon>
+                        <ListItemText primary="Search Home"/>
+                    </ListItem>
+                </Link>
+            </List>
             <Divider/>
             <List>
                 {['Alerts', 'Articles', 'Events', 'News Releases'].map((text, index) => (

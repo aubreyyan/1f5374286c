@@ -36,7 +36,6 @@ class ButtonComponent extends React.Component{
     }
 
     showPosition = (position) => {
-        console.log('3');
         this.setState(state => ({
             userlat: position.coords.latitude,
             userlong: position.coords.longitude,
@@ -82,12 +81,7 @@ class ButtonComponent extends React.Component{
     };
 
     calculateDistance = (coords) => {
-        if (coords.length < 2){
-            return 360;
-        }
-        else{
-            return Math.sqrt(Math.pow(coords[1] - this.state.userlong, 2) + Math.pow(coords[0] - this.state.userlat, 2));
-        }
+        return coords.length > 1 ? Math.sqrt(Math.pow(coords[1] - this.state.userlong, 2) + Math.pow(coords[0] - this.state.userlat, 2)) : 360;
     };
 
     handleSubmit = () => {
@@ -107,8 +101,6 @@ class ButtonComponent extends React.Component{
         console.log(this.state.parkData);
         var nearestPOI = {
             parkCode: null,
-            lat: 180.0,
-            long: 360.0,
             distance: 360.0
         };
         for (var i = 0; i < this.state.parkData.length; i++){
@@ -116,8 +108,6 @@ class ButtonComponent extends React.Component{
             const parkDistance = this.calculateDistance(parkCoords);
             if (parkDistance < nearestPOI.distance){
                 nearestPOI.parkCode = this.state.parkData[i].parkCode;
-                nearestPOI.lat = parkCoords[0];
-                nearestPOI.long = parkCoords[1];
                 nearestPOI.distance = parkDistance;
             }
         }
