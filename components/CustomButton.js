@@ -1,7 +1,9 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
-import Fade from '@material-ui/core/Fade';
-import LinearProgress from '@material-ui/core/LinearProgress';
+import {
+    Button,
+    Fade,
+    LinearProgress,
+} from "@material-ui/core";
 import LocationIcon from '@material-ui/icons/LocationSearchingOutlined';
 import searchClient from '../components/SearchClient';
 

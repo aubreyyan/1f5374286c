@@ -1,9 +1,11 @@
 import React from 'react';
 import {Highlight} from "react-instantsearch-dom";
-import Card from '@material-ui/core/Card';
-import Typography from '@material-ui/core/Typography';
-import Paper from '@material-ui/core/Paper';
-import Button from '@material-ui/core/Button';
+import {
+    Card,
+    Typography,
+    Paper,
+    Button,
+} from "@material-ui/core";
 import InputIcon from '@material-ui/icons/InputRounded';
 import Link from 'next/link';
 import {makeStyles} from "@material-ui/styles";

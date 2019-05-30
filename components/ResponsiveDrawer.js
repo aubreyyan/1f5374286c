@@ -1,17 +1,19 @@
 import React from 'react';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import Divider from '@material-ui/core/Divider';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
-import Hidden from '@material-ui/core/Hidden';
-import Drawer from '@material-ui/core/Drawer';
-import IconButton from '@material-ui/core/IconButton';
-import LinearProgress from '@material-ui/core/LinearProgress';
-import Fade from '@material-ui/core/Fade';
+import {
+    CssBaseline,
+    AppBar,
+    Toolbar,
+    Typography,
+    Divider,
+    List,
+    ListItem,
+    ListItemText,
+    Hidden,
+    Drawer,
+    IconButton,
+    LinearProgress,
+    Fade,
+} from "@material-ui/core";
 import AlertIcon from '../components/SafetyCautionAlertsBlack30';
 import EventsIcon from '../components/CalendarEventsBlack30';
 import LessonIcon from '../components/InterpretiveExhibitBlack30';
@@ -57,10 +59,6 @@ const useStyles = makeStyles(theme => ({
     drawerPaper: {
         width: drawerWidth,
     },
-    content: {
-        flexGrow: 1,
-        padding: theme.spacing(3),
-    },
 }));
 
 function ResponsiveDrawer(props){
@@ -103,7 +101,7 @@ function ResponsiveDrawer(props){
             <Divider/>
             <List>
                 {['Alerts', 'Articles', 'Events', 'News Releases'].map((text, index) => (
-                    <Link as={`/${props.park}/${text.toLowerCase().replace(" ", "-")}`} href={`/${text.toLowerCase().replace(" ", "")}?objectId=${props.park}`}>
+                    <Link href={`/${props.park}/${text.toLowerCase().replace(" ", "-")}`} as={`/${text.toLowerCase().replace(" ", "")}?objectId=${props.park}`}>
                         <ListItem button key={text} onClick={handleSubmit}>
                             <ListItemIcon>
                                 {index === 0 ? <AlertIcon/>: index === 1 ? <ArticlesIcon/>: index === 2 ? <EventsIcon/>: <NewsIcon/>}
@@ -116,7 +114,7 @@ function ResponsiveDrawer(props){
             <Divider/>
             <List>
                 {['Campgrounds', 'Visitor Centers'].map((text, index) => (
-                    <Link as={`/${props.park}/${text.toLowerCase().replace(" ", "-")}`} href={`/${text.toLowerCase().replace(" ", "")}?objectId=${props.park}`}>
+                    <Link href={`/${props.park}/${text.toLowerCase().replace(" ", "-")}`} as={`/${text.toLowerCase().replace(" ", "")}?objectId=${props.park}`}>
                         <ListItem button key={text} onClick={handleSubmit}>
                             <ListItemIcon>
                                 {index === 0 ? <CampIcon/>: <VisitorCenterIcon/>}
@@ -129,7 +127,7 @@ function ResponsiveDrawer(props){
             <Divider/>
             <List>
                 {['Lesson Plans', 'People', 'Places'].map((text, index) => (
-                    <Link as={`/${props.park}/${text.toLowerCase().replace(" ", "-")}`} href={`/${text.toLowerCase().replace(" ", "")}?objectId=${props.park}`}>
+                    <Link href={`/${props.park}/${text.toLowerCase().replace(" ", "-")}`} as={`/${text.toLowerCase().replace(" ", "")}?objectId=${props.park}`}>
                         <ListItem button key={text} onClick={handleSubmit}>
                             <ListItemIcon>
                                 {index === 0 ? <LessonIcon/>: index === 1 ? <PeopleIcon/>: <PlacesIcon/>}
