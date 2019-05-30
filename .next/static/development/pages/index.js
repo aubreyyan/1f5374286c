@@ -280,8 +280,6 @@ function (_React$Component) {
       console.log(_this.state.parkData);
       var nearestPOI = {
         parkCode: null,
-        lat: 180.0,
-        long: 360.0,
         distance: 360.0
       };
 
@@ -292,8 +290,6 @@ function (_React$Component) {
 
         if (parkDistance < nearestPOI.distance) {
           nearestPOI.parkCode = _this.state.parkData[i].parkCode;
-          nearestPOI.lat = parkCoords[0];
-          nearestPOI.long = parkCoords[1];
           nearestPOI.distance = parkDistance;
         }
       }
@@ -62320,7 +62316,7 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 0:
+/***/ 3:
 /*!*************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CUsers%5Cfusi0%5CIdeaProjects%5CNPS-revised%5Cpages%5Cindex.js ***!
   \*************************************************************************************************************************************/
@@ -62343,5 +62339,5 @@ module.exports = dll_829b10deddf10e1653a8;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js","styles"]]]);
+},[[3,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map

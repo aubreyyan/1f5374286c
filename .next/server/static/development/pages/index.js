@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -383,8 +383,6 @@ function (_React$Component) {
       console.log(_this.state.parkData);
       var nearestPOI = {
         parkCode: null,
-        lat: 180.0,
-        long: 360.0,
         distance: 360.0
       };
 
@@ -395,8 +393,6 @@ function (_React$Component) {
 
         if (parkDistance < nearestPOI.distance) {
           nearestPOI.parkCode = _this.state.parkData[i].parkCode;
-          nearestPOI.lat = parkCoords[0];
-          nearestPOI.long = parkCoords[1];
           nearestPOI.distance = parkDistance;
         }
       }
@@ -1556,7 +1552,7 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 3:
+/***/ 5:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/

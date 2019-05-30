@@ -1,4 +1,32 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\details.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\alerts.js"],{
+
+/***/ "./components/BrochureBlack30.js":
+/*!***************************************!*\
+  !*** ./components/BrochureBlack30.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+
+
+
+var SvgBrochureBlack30 = function SvgBrochureBlack30(props) {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    width: 30,
+    height: 30
+  }, props), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("path", {
+    d: "M1 1v24l8 5V6L1 1zm6 23.8l-4-2.5v-9l4 2.5v9zm0-13L3 9.2v-3l4 2.5v3.1zM21 1v24l8 5V6l-8-5zm6 22.8l-4-2.5v-3l4 2.5v3zm0-6l-4-2.5v-9l4 2.5v9zM11 6v24l8-5V1l-8 5zm6 17.2l-4 2.5v-3l4-2.5v3zm0-4l-4 2.5v-3l4-2.5v3zm0-4l-4 2.5v-3l4-2.5v3zm0-6l-4 2.5v-3l4-2.5v3z"
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (SvgBrochureBlack30);
+
+/***/ }),
 
 /***/ "./components/CalendarEventsBlack30.js":
 /*!*********************************************!*\
@@ -153,6 +181,25 @@ var SvgMapsBlack30 = function SvgMapsBlack30(props) {
 
 /***/ }),
 
+/***/ "./components/NPS_Query.js":
+/*!*********************************!*\
+  !*** ./components/NPS_Query.js ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var NPS_API_KEY = "0r8qcdfPgTUOtlMh61V1swRF7EtRtcgvaSuYfJiQ";
+
+function NPS_Query(endpoint, parkCode) {
+  return "https://developer.nps.gov/api/v1/" + endpoint + "?parkCode=" + parkCode + "&api_key=" + NPS_API_KEY;
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (NPS_Query);
+
+/***/ }),
+
 /***/ "./components/NewspaperBlack30.js":
 /*!****************************************!*\
   !*** ./components/NewspaperBlack30.js ***!
@@ -207,6 +254,241 @@ var SvgPostOfficeBlack30 = function SvgPostOfficeBlack30(props) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (SvgPostOfficeBlack30);
+
+/***/ }),
+
+/***/ "./components/ResponsiveDrawer.js":
+/*!****************************************!*\
+  !*** ./components/ResponsiveDrawer.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/CssBaseline */ "./node_modules/@material-ui/core/esm/CssBaseline/index.js");
+/* harmony import */ var _material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/AppBar */ "./node_modules/@material-ui/core/esm/AppBar/index.js");
+/* harmony import */ var _material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/Toolbar */ "./node_modules/@material-ui/core/esm/Toolbar/index.js");
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/Typography */ "./node_modules/@material-ui/core/esm/Typography/index.js");
+/* harmony import */ var _material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/Divider */ "./node_modules/@material-ui/core/esm/Divider/index.js");
+/* harmony import */ var _material_ui_core_List__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/core/List */ "./node_modules/@material-ui/core/esm/List/index.js");
+/* harmony import */ var _material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/core/ListItem */ "./node_modules/@material-ui/core/esm/ListItem/index.js");
+/* harmony import */ var _material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/core/ListItemText */ "./node_modules/@material-ui/core/esm/ListItemText/index.js");
+/* harmony import */ var _material_ui_core_Hidden__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/core/Hidden */ "./node_modules/@material-ui/core/esm/Hidden/index.js");
+/* harmony import */ var _material_ui_core_Drawer__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @material-ui/core/Drawer */ "./node_modules/@material-ui/core/esm/Drawer/index.js");
+/* harmony import */ var _material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @material-ui/core/IconButton */ "./node_modules/@material-ui/core/esm/IconButton/index.js");
+/* harmony import */ var _material_ui_core_LinearProgress__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @material-ui/core/LinearProgress */ "./node_modules/@material-ui/core/esm/LinearProgress/index.js");
+/* harmony import */ var _material_ui_core_Fade__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @material-ui/core/Fade */ "./node_modules/@material-ui/core/esm/Fade/index.js");
+/* harmony import */ var _components_SafetyCautionAlertsBlack30__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../components/SafetyCautionAlertsBlack30 */ "./components/SafetyCautionAlertsBlack30.js");
+/* harmony import */ var _components_CalendarEventsBlack30__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../components/CalendarEventsBlack30 */ "./components/CalendarEventsBlack30.js");
+/* harmony import */ var _components_InterpretiveExhibitBlack30__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../components/InterpretiveExhibitBlack30 */ "./components/InterpretiveExhibitBlack30.js");
+/* harmony import */ var _components_MapsBlack30__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../components/MapsBlack30 */ "./components/MapsBlack30.js");
+/* harmony import */ var _components_NewspaperBlack30__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../components/NewspaperBlack30 */ "./components/NewspaperBlack30.js");
+/* harmony import */ var _components_StatueBlack30__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../components/StatueBlack30 */ "./components/StatueBlack30.js");
+/* harmony import */ var _components_VisitorCenterBlack30__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../components/VisitorCenterBlack30 */ "./components/VisitorCenterBlack30.js");
+/* harmony import */ var _components_CampgroundBlack30__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../components/CampgroundBlack30 */ "./components/CampgroundBlack30.js");
+/* harmony import */ var _components_PostOfficeBlack30__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../components/PostOfficeBlack30 */ "./components/PostOfficeBlack30.js");
+/* harmony import */ var _components_DirectionsBlack30__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../components/DirectionsBlack30 */ "./components/DirectionsBlack30.js");
+/* harmony import */ var _components_BrochureBlack30__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ../components/BrochureBlack30 */ "./components/BrochureBlack30.js");
+/* harmony import */ var _material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! @material-ui/core/ListItemIcon */ "./node_modules/@material-ui/core/esm/ListItemIcon/index.js");
+/* harmony import */ var _material_ui_icons_Menu__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! @material-ui/icons/Menu */ "./node_modules/@material-ui/icons/Menu.js");
+/* harmony import */ var _material_ui_icons_Menu__WEBPACK_IMPORTED_MODULE_28___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Menu__WEBPACK_IMPORTED_MODULE_28__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_29___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_29__);
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/esm/styles/index.js");
+/* harmony import */ var _static_default_css__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ../static/default.css */ "./static/default.css");
+/* harmony import */ var _static_default_css__WEBPACK_IMPORTED_MODULE_31___default = /*#__PURE__*/__webpack_require__.n(_static_default_css__WEBPACK_IMPORTED_MODULE_31__);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var drawerWidth = 240;
+var useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_30__["makeStyles"])(function (theme) {
+  return {
+    root: {
+      display: 'flex'
+    },
+    drawer: Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])({}, theme.breakpoints.up('sm'), {
+      width: drawerWidth,
+      flexShrink: 0
+    }),
+    appBar: Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])({
+      marginLeft: drawerWidth
+    }, theme.breakpoints.up('sm'), {
+      width: "calc(100% - ".concat(drawerWidth, "px)")
+    }),
+    menuButton: Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])({
+      marginRight: theme.spacing(2)
+    }, theme.breakpoints.up('sm'), {
+      display: 'none'
+    }),
+    toolbar: theme.mixins.toolbar,
+    drawerPaper: {
+      width: drawerWidth
+    },
+    content: {
+      flexGrow: 1,
+      padding: theme.spacing(3)
+    }
+  };
+});
+
+function ResponsiveDrawer(props) {
+  var container = props.container;
+  var classes = useStyles();
+  var theme = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_30__["useTheme"])();
+
+  var _React$useState = react__WEBPACK_IMPORTED_MODULE_2___default.a.useState(false),
+      _React$useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$useState, 2),
+      mobileOpen = _React$useState2[0],
+      setMobileOpen = _React$useState2[1];
+
+  var _React$useState3 = react__WEBPACK_IMPORTED_MODULE_2___default.a.useState(false),
+      _React$useState4 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$useState3, 2),
+      loading = _React$useState4[0],
+      setLoading = _React$useState4[1];
+
+  function handleDrawerToggle() {
+    setMobileOpen(!mobileOpen);
+  }
+
+  function handleSubmit() {
+    setLoading(true);
+  }
+
+  var drawer = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    className: classes.toolbar
+  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_7__["default"], null), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_8__["default"], null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
+    id: "hitbox",
+    href: "/"
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_9__["default"], {
+    button: true,
+    onClick: handleSubmit
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_27__["default"], null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_DirectionsBlack30__WEBPACK_IMPORTED_MODULE_25__["default"], null)), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_10__["default"], {
+    primary: "Search Home"
+  }))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
+    id: "hitbox",
+    href: "details?objectId=".concat(props.park)
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_9__["default"], {
+    button: true,
+    onClick: handleSubmit
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_27__["default"], null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_BrochureBlack30__WEBPACK_IMPORTED_MODULE_26__["default"], null)), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_10__["default"], {
+    primary: "Details"
+  })))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_7__["default"], null), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_8__["default"], null, ['Alerts', 'Articles', 'Events', 'News Releases'].map(function (text, index) {
+    return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_29___default.a, {
+      as: "/".concat(props.park, "/").concat(text.toLowerCase().replace(" ", "-")),
+      href: "/".concat(text.toLowerCase().replace(" ", ""), "?objectId=").concat(props.park)
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_9__["default"], {
+      button: true,
+      key: text,
+      onClick: handleSubmit
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_27__["default"], null, index === 0 ? react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_SafetyCautionAlertsBlack30__WEBPACK_IMPORTED_MODULE_16__["default"], null) : index === 1 ? react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_NewspaperBlack30__WEBPACK_IMPORTED_MODULE_20__["default"], null) : index === 2 ? react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_CalendarEventsBlack30__WEBPACK_IMPORTED_MODULE_17__["default"], null) : react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_PostOfficeBlack30__WEBPACK_IMPORTED_MODULE_24__["default"], null)), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_10__["default"], {
+      primary: text
+    })));
+  })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_7__["default"], null), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_8__["default"], null, ['Campgrounds', 'Visitor Centers'].map(function (text, index) {
+    return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_29___default.a, {
+      as: "/".concat(props.park, "/").concat(text.toLowerCase().replace(" ", "-")),
+      href: "/".concat(text.toLowerCase().replace(" ", ""), "?objectId=").concat(props.park)
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_9__["default"], {
+      button: true,
+      key: text,
+      onClick: handleSubmit
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_27__["default"], null, index === 0 ? react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_CampgroundBlack30__WEBPACK_IMPORTED_MODULE_23__["default"], null) : react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_VisitorCenterBlack30__WEBPACK_IMPORTED_MODULE_22__["default"], null)), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_10__["default"], {
+      primary: text
+    })));
+  })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_7__["default"], null), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_8__["default"], null, ['Lesson Plans', 'People', 'Places'].map(function (text, index) {
+    return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_29___default.a, {
+      as: "/".concat(props.park, "/").concat(text.toLowerCase().replace(" ", "-")),
+      href: "/".concat(text.toLowerCase().replace(" ", ""), "?objectId=").concat(props.park)
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_9__["default"], {
+      button: true,
+      key: text,
+      onClick: handleSubmit
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_27__["default"], null, index === 0 ? react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_InterpretiveExhibitBlack30__WEBPACK_IMPORTED_MODULE_18__["default"], null) : index === 1 ? react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_StatueBlack30__WEBPACK_IMPORTED_MODULE_21__["default"], null) : react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_MapsBlack30__WEBPACK_IMPORTED_MODULE_19__["default"], null)), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_10__["default"], {
+      primary: text
+    })));
+  })));
+  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    className: classes.root
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    position: "fixed",
+    className: classes.appBar,
+    style: {
+      backgroundColor: "#0096db"
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_5__["default"], null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_13__["default"], {
+    color: "inherit",
+    "aria-label": "Open drawer",
+    edge: "start",
+    onClick: handleDrawerToggle,
+    className: classes.menuButton
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_icons_Menu__WEBPACK_IMPORTED_MODULE_28___default.a, null)), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    variant: "h6",
+    noWrap: true
+  }, props.name)), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_Fade__WEBPACK_IMPORTED_MODULE_15__["default"], {
+    in: loading
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_LinearProgress__WEBPACK_IMPORTED_MODULE_14__["default"], null))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("nav", {
+    className: classes.drawer
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_Hidden__WEBPACK_IMPORTED_MODULE_11__["default"], {
+    smUp: true,
+    implementation: "css"
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_Drawer__WEBPACK_IMPORTED_MODULE_12__["default"], {
+    container: container,
+    variant: "temporary",
+    anchor: theme.direction === 'rtl' ? 'right' : 'left',
+    open: mobileOpen,
+    onClose: handleDrawerToggle,
+    classes: {
+      paper: classes.drawerPaper
+    },
+    ModalProps: {
+      keepMounted: true
+    }
+  }, drawer)), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_Hidden__WEBPACK_IMPORTED_MODULE_11__["default"], {
+    xsDown: true,
+    implementation: "css"
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_Drawer__WEBPACK_IMPORTED_MODULE_12__["default"], {
+    classes: {
+      paper: classes.drawerPaper
+    },
+    variant: "permanent",
+    open: true
+  }, drawer))));
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (ResponsiveDrawer);
 
 /***/ }),
 
@@ -5181,6 +5463,325 @@ var IconButton = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(functio
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _IconButton__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./IconButton */ "./node_modules/@material-ui/core/esm/IconButton/IconButton.js");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _IconButton__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+
+
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/core/esm/LinearProgress/LinearProgress.js":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/@material-ui/core/esm/LinearProgress/LinearProgress.js ***!
+  \*****************************************************************************/
+/*! exports provided: styles, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "styles", function() { return styles; });
+/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/extends */ "./node_modules/@babel/runtime/helpers/extends.js");
+/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/objectWithoutProperties */ "./node_modules/@babel/runtime/helpers/objectWithoutProperties.js");
+/* harmony import */ var _babel_runtime_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
+/* harmony import */ var warning__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! warning */ "./node_modules/warning/warning.js");
+/* harmony import */ var warning__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(warning__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _styles_withStyles__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../styles/withStyles */ "./node_modules/@material-ui/core/esm/styles/withStyles.js");
+/* harmony import */ var _styles_colorManipulator__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../styles/colorManipulator */ "./node_modules/@material-ui/core/esm/styles/colorManipulator.js");
+
+
+
+
+
+
+
+
+var TRANSITION_DURATION = 4; // seconds
+
+var styles = function styles(theme) {
+  return {
+    /* Styles applied to the root element. */
+    root: {
+      position: 'relative',
+      overflow: 'hidden',
+      height: 4
+    },
+
+    /* Styles applied to the root & bar2 element if `color="primary"`; bar2 if `variant-"buffer"`. */
+    colorPrimary: {
+      backgroundColor: Object(_styles_colorManipulator__WEBPACK_IMPORTED_MODULE_7__["lighten"])(theme.palette.primary.light, 0.6)
+    },
+
+    /* Styles applied to the root & bar2 elements if `color="secondary"`; bar2 if `variant="buffer"`. */
+    colorSecondary: {
+      backgroundColor: Object(_styles_colorManipulator__WEBPACK_IMPORTED_MODULE_7__["lighten"])(theme.palette.secondary.light, 0.4)
+    },
+
+    /* Styles applied to the root element if `variant="determinate"`. */
+    determinate: {},
+
+    /* Styles applied to the root element if `variant="indeterminate"`. */
+    indeterminate: {},
+
+    /* Styles applied to the root element if `variant="buffer"`. */
+    buffer: {
+      backgroundColor: 'transparent'
+    },
+
+    /* Styles applied to the root element if `variant="query"`. */
+    query: {
+      transform: 'rotate(180deg)'
+    },
+
+    /* Styles applied to the additional bar element if `variant="buffer"`. */
+    dashed: {
+      position: 'absolute',
+      marginTop: 0,
+      height: '100%',
+      width: '100%',
+      animation: 'buffer 3s infinite linear',
+      // Backward compatible logic between JSS v9 and v10.
+      // To remove with the release of Material-UI v4
+      animationName: '$buffer'
+    },
+
+    /* Styles applied to the additional bar element if `variant="buffer"` & `color="primary"`. */
+    dashedColorPrimary: {
+      backgroundImage: "radial-gradient(".concat(Object(_styles_colorManipulator__WEBPACK_IMPORTED_MODULE_7__["lighten"])(theme.palette.primary.light, 0.6), " 0%, ").concat(Object(_styles_colorManipulator__WEBPACK_IMPORTED_MODULE_7__["lighten"])(theme.palette.primary.light, 0.6), " 16%, transparent 42%)"),
+      backgroundSize: '10px 10px',
+      backgroundPosition: '0px -23px'
+    },
+
+    /* Styles applied to the additional bar element if `variant="buffer"` & `color="secondary"`. */
+    dashedColorSecondary: {
+      backgroundImage: "radial-gradient(".concat(Object(_styles_colorManipulator__WEBPACK_IMPORTED_MODULE_7__["lighten"])(theme.palette.secondary.light, 0.4), " 0%, ").concat(Object(_styles_colorManipulator__WEBPACK_IMPORTED_MODULE_7__["lighten"])(theme.palette.secondary.light, 0.6), " 16%, transparent 42%)"),
+      backgroundSize: '10px 10px',
+      backgroundPosition: '0px -23px'
+    },
+
+    /* Styles applied to the layered bar1 & bar2 elements. */
+    bar: {
+      width: '100%',
+      position: 'absolute',
+      left: 0,
+      bottom: 0,
+      top: 0,
+      transition: 'transform 0.2s linear',
+      transformOrigin: 'left'
+    },
+
+    /* Styles applied to the bar elements if `color="primary"`; bar2 if `variant` not "buffer". */
+    barColorPrimary: {
+      backgroundColor: theme.palette.primary.main
+    },
+
+    /* Styles applied to the bar elements if `color="secondary"`; bar2 if `variant` not "buffer". */
+    barColorSecondary: {
+      backgroundColor: theme.palette.secondary.main
+    },
+
+    /* Styles applied to the bar1 element if `variant="indeterminate or query"`. */
+    bar1Indeterminate: {
+      width: 'auto',
+      animation: 'mui-indeterminate1 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite',
+      // Backward compatible logic between JSS v9 and v10.
+      // To remove with the release of Material-UI v4
+      animationName: '$mui-indeterminate1'
+    },
+
+    /* Styles applied to the bar1 element if `variant="determinate"`. */
+    bar1Determinate: {
+      transition: "transform .".concat(TRANSITION_DURATION, "s linear")
+    },
+
+    /* Styles applied to the bar1 element if `variant="buffer"`. */
+    bar1Buffer: {
+      zIndex: 1,
+      transition: "transform .".concat(TRANSITION_DURATION, "s linear")
+    },
+
+    /* Styles applied to the bar2 element if `variant="indeterminate or query"`. */
+    bar2Indeterminate: {
+      width: 'auto',
+      animation: 'mui-indeterminate2 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite',
+      // Backward compatible logic between JSS v9 and v10.
+      // To remove with the release of Material-UI v4
+      animationName: '$mui-indeterminate2',
+      animationDelay: '1.15s'
+    },
+
+    /* Styles applied to the bar2 element if `variant="buffer"`. */
+    bar2Buffer: {
+      transition: "transform .".concat(TRANSITION_DURATION, "s linear")
+    },
+    // Legends:
+    // || represents the viewport
+    // -  represents a light background
+    // x  represents a dark background
+    '@keyframes mui-indeterminate1': {
+      //  |-----|---x-||-----||-----|
+      '0%': {
+        left: '-35%',
+        right: '100%'
+      },
+      //  |-----|-----||-----||xxxx-|
+      '60%': {
+        left: '100%',
+        right: '-90%'
+      },
+      '100%': {
+        left: '100%',
+        right: '-90%'
+      }
+    },
+    '@keyframes mui-indeterminate2': {
+      //  |xxxxx|xxxxx||-----||-----|
+      '0%': {
+        left: '-200%',
+        right: '100%'
+      },
+      //  |-----|-----||-----||-x----|
+      '60%': {
+        left: '107%',
+        right: '-8%'
+      },
+      '100%': {
+        left: '107%',
+        right: '-8%'
+      }
+    },
+    '@keyframes buffer': {
+      '0%': {
+        opacity: 1,
+        backgroundPosition: '0px -23px'
+      },
+      '50%': {
+        opacity: 0,
+        backgroundPosition: '0px -23px'
+      },
+      '100%': {
+        opacity: 1,
+        backgroundPosition: '-200px -23px'
+      }
+    }
+  };
+};
+/**
+ * ## ARIA
+ *
+ * If the progress bar is describing the loading progress of a particular region of a page,
+ * you should use `aria-describedby` to point to the progress bar, and set the `aria-busy`
+ * attribute to `true` on that region until it has finished loading.
+ */
+
+var LinearProgress = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function LinearProgress(props, ref) {
+  var classes = props.classes,
+      classNameProp = props.className,
+      _props$color = props.color,
+      color = _props$color === void 0 ? 'primary' : _props$color,
+      value = props.value,
+      valueBuffer = props.valueBuffer,
+      _props$variant = props.variant,
+      variant = _props$variant === void 0 ? 'indeterminate' : _props$variant,
+      other = _babel_runtime_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1___default()(props, ["classes", "className", "color", "value", "valueBuffer", "variant"]);
+
+  var className = Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, color === 'primary' && classes.colorPrimary, color === 'secondary' && classes.colorSecondary, variant === 'determinate' && classes.determinate, variant === 'indeterminate' && classes.indeterminate, variant === 'buffer' && classes.buffer, variant === 'query' && classes.query, classNameProp);
+  var dashedClass = Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.dashed, color === 'primary' && classes.dashedColorPrimary, color === 'secondary' && classes.dashedColorSecondary);
+  var bar1ClassName = Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.bar, color === 'primary' && classes.barColorPrimary, color === 'secondary' && classes.barColorSecondary, (variant === 'indeterminate' || variant === 'query') && classes.bar1Indeterminate, variant === 'determinate' && classes.bar1Determinate, variant === 'buffer' && classes.bar1Buffer);
+  var bar2ClassName = Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.bar, (variant === 'indeterminate' || variant === 'query') && classes.bar2Indeterminate, variant === 'buffer' && [color === 'primary' && classes.colorPrimary, color === 'secondary' && classes.colorSecondary, classes.bar2Buffer], variant !== 'buffer' && [color === 'primary' && classes.barColorPrimary, color === 'secondary' && classes.barColorSecondary]);
+  var rootProps = {};
+  var inlineStyles = {
+    bar1: {},
+    bar2: {}
+  };
+
+  if (variant === 'determinate' || variant === 'buffer') {
+    if (value !== undefined) {
+      rootProps['aria-valuenow'] = Math.round(value);
+      inlineStyles.bar1.transform = "translateX(".concat(value - 100, "%)");
+    } else {
+       true ? warning__WEBPACK_IMPORTED_MODULE_5___default()(false, 'Material-UI: you need to provide a value property ' + 'when using the determinate or buffer variant of LinearProgress .') : undefined;
+    }
+  }
+
+  if (variant === 'buffer') {
+    if (valueBuffer !== undefined) {
+      inlineStyles.bar2.transform = "translateX(".concat((valueBuffer || 0) - 100, "%)");
+    } else {
+       true ? warning__WEBPACK_IMPORTED_MODULE_5___default()(false, 'Material-UI: you need to provide a valueBuffer property ' + 'when using the buffer variant of LinearProgress.') : undefined;
+    }
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({
+    className: className,
+    role: "progressbar"
+  }, rootProps, {
+    ref: ref
+  }, other), variant === 'buffer' ? react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    className: dashedClass
+  }) : null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    className: bar1ClassName,
+    style: inlineStyles.bar1
+  }), variant === 'determinate' ? null : react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    className: bar2ClassName,
+    style: inlineStyles.bar2
+  }));
+});
+ true ? LinearProgress.propTypes = {
+  /**
+   * Override or extend the styles applied to the component.
+   * See [CSS API](#css) below for more details.
+   */
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object.isRequired,
+
+  /**
+   * @ignore
+   */
+  className: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.string,
+
+  /**
+   * The color of the component. It supports those theme colors that make sense for this component.
+   */
+  color: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf(['primary', 'secondary']),
+
+  /**
+   * The value of the progress indicator for the determinate and buffer variants.
+   * Value between 0 and 100.
+   */
+  value: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.number,
+
+  /**
+   * The value for the buffer variant.
+   * Value between 0 and 100.
+   */
+  valueBuffer: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.number,
+
+  /**
+   * The variant to use.
+   * Use indeterminate or query when there is no progress value.
+   */
+  variant: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf(['determinate', 'indeterminate', 'buffer', 'query'])
+} : undefined;
+/* harmony default export */ __webpack_exports__["default"] = (Object(_styles_withStyles__WEBPACK_IMPORTED_MODULE_6__["default"])(styles, {
+  name: 'MuiLinearProgress'
+})(LinearProgress));
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/core/esm/LinearProgress/index.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/@material-ui/core/esm/LinearProgress/index.js ***!
+  \********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _LinearProgress__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./LinearProgress */ "./node_modules/@material-ui/core/esm/LinearProgress/LinearProgress.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _LinearProgress__WEBPACK_IMPORTED_MODULE_0__["default"]; });
 
 
 
@@ -21732,21 +22333,21 @@ exports.formatWithValidation = formatWithValidation;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fdetails&absolutePagePath=C%3A%5CUsers%5Cfusi0%5CIdeaProjects%5CNPS-revised%5Cpages%5Cdetails.js!./":
-/*!******************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fdetails&absolutePagePath=C%3A%5CUsers%5Cfusi0%5CIdeaProjects%5CNPS-revised%5Cpages%5Cdetails.js ***!
-  \******************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Falerts&absolutePagePath=C%3A%5CUsers%5Cfusi0%5CIdeaProjects%5CNPS-revised%5Cpages%5Calerts.js!./":
+/*!****************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Falerts&absolutePagePath=C%3A%5CUsers%5Cfusi0%5CIdeaProjects%5CNPS-revised%5Cpages%5Calerts.js ***!
+  \****************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/details", function() {
-      var page = __webpack_require__(/*! ./pages/details.js */ "./pages/details.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/alerts", function() {
+      var page = __webpack_require__(/*! ./pages/alerts.js */ "./pages/alerts.js")
       if(true) {
-        module.hot.accept(/*! ./pages/details.js */ "./pages/details.js", function() {
-          if(!next.router.components["/details"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/details.js */ "./pages/details.js")
-          next.router.update("/details", updatedPage.default || updatedPage)
+        module.hot.accept(/*! ./pages/alerts.js */ "./pages/alerts.js", function() {
+          if(!next.router.components["/alerts"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/alerts.js */ "./pages/alerts.js")
+          next.router.update("/alerts", updatedPage.default || updatedPage)
         })
       }
       return { page: page.default || page }
@@ -27901,52 +28502,26 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./pages/details.js":
-/*!**************************!*\
-  !*** ./pages/details.js ***!
-  \**************************/
+/***/ "./pages/alerts.js":
+/*!*************************!*\
+  !*** ./pages/alerts.js ***!
+  \*************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js");
+/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! isomorphic-unfetch */ "./node_modules/isomorphic-unfetch/browser.js");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/CssBaseline */ "./node_modules/@material-ui/core/esm/CssBaseline/index.js");
-/* harmony import */ var _material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/AppBar */ "./node_modules/@material-ui/core/esm/AppBar/index.js");
-/* harmony import */ var _material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/Toolbar */ "./node_modules/@material-ui/core/esm/Toolbar/index.js");
-/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/core/Typography */ "./node_modules/@material-ui/core/esm/Typography/index.js");
-/* harmony import */ var _material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/core/Divider */ "./node_modules/@material-ui/core/esm/Divider/index.js");
-/* harmony import */ var _material_ui_core_List__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/core/List */ "./node_modules/@material-ui/core/esm/List/index.js");
-/* harmony import */ var _material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/core/ListItem */ "./node_modules/@material-ui/core/esm/ListItem/index.js");
-/* harmony import */ var _material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @material-ui/core/ListItemText */ "./node_modules/@material-ui/core/esm/ListItemText/index.js");
-/* harmony import */ var _material_ui_core_Hidden__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @material-ui/core/Hidden */ "./node_modules/@material-ui/core/esm/Hidden/index.js");
-/* harmony import */ var _material_ui_core_Drawer__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @material-ui/core/Drawer */ "./node_modules/@material-ui/core/esm/Drawer/index.js");
-/* harmony import */ var _material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @material-ui/core/IconButton */ "./node_modules/@material-ui/core/esm/IconButton/index.js");
-/* harmony import */ var _components_SafetyCautionAlertsBlack30__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../components/SafetyCautionAlertsBlack30 */ "./components/SafetyCautionAlertsBlack30.js");
-/* harmony import */ var _components_CalendarEventsBlack30__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../components/CalendarEventsBlack30 */ "./components/CalendarEventsBlack30.js");
-/* harmony import */ var _components_InterpretiveExhibitBlack30__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../components/InterpretiveExhibitBlack30 */ "./components/InterpretiveExhibitBlack30.js");
-/* harmony import */ var _components_MapsBlack30__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../components/MapsBlack30 */ "./components/MapsBlack30.js");
-/* harmony import */ var _components_NewspaperBlack30__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../components/NewspaperBlack30 */ "./components/NewspaperBlack30.js");
-/* harmony import */ var _components_StatueBlack30__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../components/StatueBlack30 */ "./components/StatueBlack30.js");
-/* harmony import */ var _components_VisitorCenterBlack30__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../components/VisitorCenterBlack30 */ "./components/VisitorCenterBlack30.js");
-/* harmony import */ var _components_CampgroundBlack30__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../components/CampgroundBlack30 */ "./components/CampgroundBlack30.js");
-/* harmony import */ var _components_PostOfficeBlack30__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../components/PostOfficeBlack30 */ "./components/PostOfficeBlack30.js");
-/* harmony import */ var _components_DirectionsBlack30__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../components/DirectionsBlack30 */ "./components/DirectionsBlack30.js");
-/* harmony import */ var _material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! @material-ui/core/ListItemIcon */ "./node_modules/@material-ui/core/esm/ListItemIcon/index.js");
-/* harmony import */ var _material_ui_icons_Menu__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! @material-ui/icons/Menu */ "./node_modules/@material-ui/icons/Menu.js");
-/* harmony import */ var _material_ui_icons_Menu__WEBPACK_IMPORTED_MODULE_27___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Menu__WEBPACK_IMPORTED_MODULE_27__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_28___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_28__);
-/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/esm/styles/index.js");
-/* harmony import */ var _static_default_css__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ../static/default.css */ "./static/default.css");
-/* harmony import */ var _static_default_css__WEBPACK_IMPORTED_MODULE_30___default = /*#__PURE__*/__webpack_require__.n(_static_default_css__WEBPACK_IMPORTED_MODULE_30__);
+/* harmony import */ var _components_ResponsiveDrawer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/ResponsiveDrawer */ "./components/ResponsiveDrawer.js");
+/* harmony import */ var _components_NPS_Query__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/NPS_Query */ "./components/NPS_Query.js");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! isomorphic-unfetch */ "./node_modules/isomorphic-unfetch/browser.js");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_6__);
 
 
 
@@ -27954,183 +28529,76 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var drawerWidth = 240;
-var useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_29__["makeStyles"])(function (theme) {
-  return {
-    root: {
-      display: 'flex'
-    },
-    drawer: Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])({}, theme.breakpoints.up('sm'), {
-      width: drawerWidth,
-      flexShrink: 0
-    }),
-    appBar: Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])({
-      marginLeft: drawerWidth
-    }, theme.breakpoints.up('sm'), {
-      width: "calc(100% - ".concat(drawerWidth, "px)")
-    }),
-    menuButton: Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])({
-      marginRight: theme.spacing(2)
-    }, theme.breakpoints.up('sm'), {
-      display: 'none'
-    }),
-    toolbar: theme.mixins.toolbar,
-    drawerPaper: {
-      width: drawerWidth
-    },
-    content: {
-      flexGrow: 1,
-      padding: theme.spacing(3)
-    }
-  };
-});
-
-function ResponsiveDrawer(props) {
-  var container = props.container;
-  var classes = useStyles();
-  var theme = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_29__["useTheme"])();
-
-  var _React$useState = react__WEBPACK_IMPORTED_MODULE_2___default.a.useState(false),
-      _React$useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$useState, 2),
-      mobileOpen = _React$useState2[0],
-      setMobileOpen = _React$useState2[1];
-
-  function handleDrawerToggle() {
-    setMobileOpen(!mobileOpen);
-  }
-
-  var drawer = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-    className: classes.toolbar
-  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_9__["default"], null), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_10__["default"], null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_28___default.a, {
-    as: "/",
-    href: "/"
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_11__["default"], {
-    button: true,
-    key: "Search Home"
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_26__["default"], null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_DirectionsBlack30__WEBPACK_IMPORTED_MODULE_25__["default"], null)), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_12__["default"], {
-    primary: "Search Home"
-  })))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_9__["default"], null), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_10__["default"], null, ['Alerts', 'Articles', 'Events', 'News Releases'].map(function (text, index) {
-    return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_28___default.a, {
-      as: "/".concat(props.park, "/").concat(text.toLowerCase().replace(" ", "-")),
-      href: "/".concat(text.toLowerCase().replace(" ", "-"), "?objectId=").concat(props.park)
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_11__["default"], {
-      button: true,
-      key: text
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_26__["default"], null, index === 0 ? react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_SafetyCautionAlertsBlack30__WEBPACK_IMPORTED_MODULE_16__["default"], null) : index === 1 ? react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_NewspaperBlack30__WEBPACK_IMPORTED_MODULE_20__["default"], null) : index === 2 ? react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_CalendarEventsBlack30__WEBPACK_IMPORTED_MODULE_17__["default"], null) : react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_PostOfficeBlack30__WEBPACK_IMPORTED_MODULE_24__["default"], null)), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_12__["default"], {
-      primary: text
-    })));
-  })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_9__["default"], null), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_10__["default"], null, ['Campgrounds', 'Visitor Centers'].map(function (text, index) {
-    return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_28___default.a, {
-      as: "/".concat(props.park, "/").concat(text.toLowerCase().replace(" ", "-")),
-      href: "/".concat(text.toLowerCase().replace(" ", "-"), "?objectId=").concat(props.park)
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_11__["default"], {
-      button: true,
-      key: text
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_26__["default"], null, index === 0 ? react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_CampgroundBlack30__WEBPACK_IMPORTED_MODULE_23__["default"], null) : react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_VisitorCenterBlack30__WEBPACK_IMPORTED_MODULE_22__["default"], null)), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_12__["default"], {
-      primary: text
-    })));
-  })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_9__["default"], null), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_10__["default"], null, ['Lesson Plans', 'People', 'Places'].map(function (text, index) {
-    return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_28___default.a, {
-      as: "/".concat(props.park, "/").concat(text.toLowerCase().replace(" ", "-")),
-      href: "/".concat(text.toLowerCase().replace(" ", "-"), "?objectId=").concat(props.park)
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_11__["default"], {
-      button: true,
-      key: text
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_26__["default"], null, index === 0 ? react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_InterpretiveExhibitBlack30__WEBPACK_IMPORTED_MODULE_18__["default"], null) : index === 1 ? react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_StatueBlack30__WEBPACK_IMPORTED_MODULE_21__["default"], null) : react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_MapsBlack30__WEBPACK_IMPORTED_MODULE_19__["default"], null)), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_12__["default"], {
-      primary: text
-    })));
-  })));
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-    className: classes.root
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_5__["default"], null), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    position: "fixed",
-    className: classes.appBar,
-    style: {
-      backgroundColor: "#0096db"
-    }
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_7__["default"], null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_15__["default"], {
-    color: "inherit",
-    "aria-label": "Open drawer",
-    edge: "start",
-    onClick: handleDrawerToggle,
-    className: classes.menuButton
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_icons_Menu__WEBPACK_IMPORTED_MODULE_27___default.a, null)), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    variant: "h6",
-    noWrap: true
-  }, props.name))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("nav", {
-    className: classes.drawer
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_Hidden__WEBPACK_IMPORTED_MODULE_13__["default"], {
-    smUp: true,
-    implementation: "css"
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_Drawer__WEBPACK_IMPORTED_MODULE_14__["default"], {
-    container: container,
-    variant: "temporary",
-    anchor: theme.direction === 'rtl' ? 'right' : 'left',
-    open: mobileOpen,
-    onClose: handleDrawerToggle,
-    classes: {
-      paper: classes.drawerPaper
-    },
-    ModalProps: {
-      keepMounted: true
-    }
-  }, drawer)), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_Hidden__WEBPACK_IMPORTED_MODULE_13__["default"], {
-    xsDown: true,
-    implementation: "css"
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_Drawer__WEBPACK_IMPORTED_MODULE_14__["default"], {
-    classes: {
-      paper: classes.drawerPaper
-    },
-    variant: "permanent",
-    open: true
-  }, drawer))));
-}
-
-var Details = Object(next_router__WEBPACK_IMPORTED_MODULE_3__["withRouter"])(function (props) {
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(ResponsiveDrawer, {
-    name: "placeholder text",
+var Alerts = Object(next_router__WEBPACK_IMPORTED_MODULE_3__["withRouter"])(function (props) {
+  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_ResponsiveDrawer__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    name: props.parks.data[0].fullName + " Alerts",
     park: props.router.query.objectId
   });
-}); // Details.getInitialProps = async function() {
-//     const res = await fetch()
-// };
+});
 
-/* harmony default export */ __webpack_exports__["default"] = (Details);
+Alerts.getInitialProps =
+/*#__PURE__*/
+function () {
+  var _ref = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  /*#__PURE__*/
+  _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(context) {
+    var objectId, res, parks, res2, alerts;
+    return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+      while (1) {
+        switch (_context.prev = _context.next) {
+          case 0:
+            objectId = context.query.objectId;
+            _context.next = 3;
+            return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_6___default()(Object(_components_NPS_Query__WEBPACK_IMPORTED_MODULE_5__["default"])("parks", objectId));
+
+          case 3:
+            res = _context.sent;
+            _context.next = 6;
+            return res.json();
+
+          case 6:
+            parks = _context.sent;
+            _context.next = 9;
+            return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_6___default()(Object(_components_NPS_Query__WEBPACK_IMPORTED_MODULE_5__["default"])("alerts", objectId));
+
+          case 9:
+            res2 = _context.sent;
+            _context.next = 12;
+            return res2.json();
+
+          case 12:
+            alerts = _context.sent;
+            console.log("Fetched ".concat(parks.data[0].fullName));
+            return _context.abrupt("return", {
+              parks: parks,
+              alerts: alerts
+            });
+
+          case 15:
+          case "end":
+            return _context.stop();
+        }
+      }
+    }, _callee);
+  }));
+
+  return function (_x) {
+    return _ref.apply(this, arguments);
+  };
+}();
+
+/* harmony default export */ __webpack_exports__["default"] = (Alerts);
 
 /***/ }),
 
-/***/ 2:
-/*!**********************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fdetails&absolutePagePath=C%3A%5CUsers%5Cfusi0%5CIdeaProjects%5CNPS-revised%5Cpages%5Cdetails.js ***!
-  \**********************************************************************************************************************************************/
+/***/ 0:
+/*!********************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Falerts&absolutePagePath=C%3A%5CUsers%5Cfusi0%5CIdeaProjects%5CNPS-revised%5Cpages%5Calerts.js ***!
+  \********************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fdetails&absolutePagePath=C%3A%5CUsers%5Cfusi0%5CIdeaProjects%5CNPS-revised%5Cpages%5Cdetails.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fdetails&absolutePagePath=C%3A%5CUsers%5Cfusi0%5CIdeaProjects%5CNPS-revised%5Cpages%5Cdetails.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Falerts&absolutePagePath=C%3A%5CUsers%5Cfusi0%5CIdeaProjects%5CNPS-revised%5Cpages%5Calerts.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Falerts&absolutePagePath=C%3A%5CUsers%5Cfusi0%5CIdeaProjects%5CNPS-revised%5Cpages%5Calerts.js!./");
 
 
 /***/ }),
@@ -28146,5 +28614,5 @@ module.exports = dll_829b10deddf10e1653a8;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js","styles"]]]);
-//# sourceMappingURL=details.js.map
+},[[0,"static/runtime/webpack.js","styles"]]]);
+//# sourceMappingURL=alerts.js.map
