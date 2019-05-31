@@ -72,7 +72,10 @@ const useStyles = makeStyles(theme => ({
             },
             fontSize: 30,
         },
-    }
+    },
+    appBar:{
+        backgroundColor: "#0096db",
+    },
 }));
 
 function SearchBox({currentRefinement, refine}){
@@ -97,7 +100,7 @@ function SearchAppBar() {
     const classes = useStyles();
     return (
         <div className={classes.root}>
-            <AppBar position="static" style={{backgroundColor: "#0096db"}}>
+            <AppBar position="fixed" className={classes.appBar}>
                 <Toolbar>
                     <Typography className={classes.title} variant="h6" noWrap>
                         National Park Search

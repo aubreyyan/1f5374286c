@@ -190,7 +190,7 @@ var SvgMapsBlack30 = function SvgMapsBlack30(props) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-var NPS_API_KEY = "0r8qcdfPgTUOtlMh61V1swRF7EtRtcgvaSuYfJiQ";
+var NPS_API_KEY = "dO9vSk0ifbKf9pN3G9QwjG2dNI8JsMyd5S0jDp5h";
 
 function NPS_Query(endpoint, parkCode) {
   return "https://developer.nps.gov/api/v1/" + endpoint + "?parkCode=" + parkCode + "&api_key=" + NPS_API_KEY;
@@ -55275,19 +55275,20 @@ function CenteredGrid(_ref) {
     className: classes.content
   }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
     className: classes.toolbar
-  }), ">", react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Grid"], {
+  }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Grid"], {
     container: true,
     spacing: 3,
     className: classes.grid
-  }, alerts.map(function (alertObj, index) {
+  }, alerts.map(function (alertObj) {
     return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Grid"], {
       item: true,
-      xs: 15,
-      md: true
+      xs: 12,
+      md: 6,
+      lg: 4
     }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Paper"], {
       className: classes.paper
     }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Chip"], {
-      label: alertObj.category,
+      label: alertObj.category.length > 0 ? alertObj.category : "General",
       className: classes.chip,
       color: "secondary"
     }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Typography"], {
@@ -55386,7 +55387,7 @@ function () {
 
 /***/ }),
 
-/***/ 5:
+/***/ 0:
 /*!********************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Falerts&absolutePagePath=C%3A%5CUsers%5Cfusi0%5CIdeaProjects%5CNPS-revised%5Cpages%5Calerts.js ***!
   \********************************************************************************************************************************************/
@@ -55409,5 +55410,5 @@ module.exports = dll_829b10deddf10e1653a8;
 
 /***/ })
 
-},[[5,"static/runtime/webpack.js","styles"]]]);
+},[[0,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=alerts.js.map

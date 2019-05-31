@@ -53,6 +53,7 @@ class Index extends React.Component{
                 <ThemeProvider theme={theme}>
                 <InstantSearch indexName="Parks" searchClient={proxyClient}>
                     <AppBar/>
+                    <br/><br/>
                     <InfiniteHits hitComponent={Hit} />
                 </InstantSearch>
                     <br/>
