@@ -5,7 +5,7 @@ import {
     LinearProgress,
 } from "@material-ui/core";
 import LocationIcon from '@material-ui/icons/LocationSearchingOutlined';
-import searchClient from '../components/SearchClient';
+import searchClient from './api/SearchClient';
 
 const index = searchClient.initIndex("Parks");
 

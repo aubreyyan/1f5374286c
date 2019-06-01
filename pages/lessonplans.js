@@ -1,7 +1,7 @@
 import React from 'react';
 import {withRouter} from 'next/router';
 import ResponsiveDrawer from '../components/ResponsiveDrawer';
-import NPS_Query from '../components/NPS_Query';
+import NPS_Query from '../components/api/NPS_Query';
 import fetch from 'isomorphic-unfetch';
 
 const LessonPlans = withRouter( props => (

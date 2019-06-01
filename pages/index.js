@@ -8,7 +8,7 @@ import {
 } from 'react-instantsearch-dom';
 import Hit from '../components/Hit';
 import CustomButton from '../components/CustomButton';
-import searchClient from '../components/SearchClient';
+import searchClient from '../components/api/SearchClient';
 
 const proxyClient = {
     search(requests){

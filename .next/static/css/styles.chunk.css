@@ -80,7 +80,19 @@ body {
         flex-basis: 40%;
     }
     .rightcol {
+        position: relative;
         flex-basis: 57.5%;
+    }
+    .events-left {
+        position: relative;
+        flex-basis: 50%;
+    }
+    .events-right {
+        position: relative;
+        flex-basis: 50%;
+    }
+    .events-div {
+        width: 100%;
     }
 }
 

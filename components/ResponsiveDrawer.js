@@ -14,17 +14,17 @@ import {
     LinearProgress,
     Fade,
 } from "@material-ui/core";
-import AlertIcon from '../components/SafetyCautionAlertsBlack30';
-import EventsIcon from '../components/CalendarEventsBlack30';
-import LessonIcon from '../components/InterpretiveExhibitBlack30';
-import PlacesIcon from '../components/MapsBlack30';
-import ArticlesIcon from '../components/NewspaperBlack30';
-import PeopleIcon from '../components/StatueBlack30';
-import VisitorCenterIcon from '../components/VisitorCenterBlack30';
-import CampIcon from '../components/CampgroundBlack30';
-import NewsIcon from '../components/PostOfficeBlack30';
-import HomeIcon from '../components/DirectionsBlack30';
-import DetailsIcon from '../components/BrochureBlack30';
+import AlertIcon from './icons/SafetyCautionAlertsBlack30';
+import EventsIcon from './icons/CalendarEventsBlack30';
+import LessonIcon from './icons/InterpretiveExhibitBlack30';
+import PlacesIcon from './icons/MapsBlack30';
+import ArticlesIcon from './icons/NewspaperBlack30';
+import PeopleIcon from './icons/StatueBlack30';
+import VisitorCenterIcon from './icons/VisitorCenterBlack30';
+import CampIcon from './icons/CampgroundBlack30';
+import NewsIcon from './icons/PostOfficeBlack30';
+import HomeIcon from './icons/DirectionsBlack30';
+import DetailsIcon from './icons/BrochureBlack30';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import MenuIcon from '@material-ui/icons/Menu';
 import Link from 'next/link';

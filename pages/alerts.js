@@ -10,7 +10,7 @@ import {
     Divider,
 } from '@material-ui/core';
 import LaunchIcon from '@material-ui/icons/Launch';
-import NPS_Query from '../components/NPS_Query';
+import NPS_Query from '../components/api/NPS_Query';
 import fetch from 'isomorphic-unfetch';
 import {makeStyles} from "@material-ui/core/styles";
 

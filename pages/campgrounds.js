@@ -1,8 +1,8 @@
 import React from 'react';
 import {withRouter} from 'next/router';
 import ResponsiveDrawer from '../components/ResponsiveDrawer';
-import NPS_Query from '../components/NPS_Query';
-import Google_Query from '../components/Google_Query';
+import NPS_Query from '../components/api/NPS_Query';
+import Google_Query from '../components/api/Google_Query';
 import ButtonDialog from '../components/ButtonDialog';
 import fetch from 'isomorphic-unfetch';
 import {
@@ -16,30 +16,28 @@ import {
     Avatar,
     makeStyles} from "@material-ui/core";
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import BoatIcon from '../components/BoatLaunchWhite22';
-import AmphitheaterIcon from '../components/AmphitheaterWhite22';
-import TentIcon from '../components/CampsiteWhite22';
-import WaterIcon from '../components/DrinkingWaterWhite22';
-import GroupIcon from '../components/FamilyRestroomWhite22';
-import FirewoodIcon from '../components/FirewoodWhite22';
-import HorseIcon from '../components/HorsebackRidingWhite22';
-import SignalIcon from '../components/VolumeControlTelephoneWhite22';
-import WifiIcon from '../components/WiFiWhite22';
-import ToiletIcon from '../components/FlushToiletsWhite22';
-import IceIcon from '../components/IceWhite22';
-import LaundryIcon from '../components/LaundryWhite22';
-import HookupIcon from '../components/RvTrailerHookupWhite22';
-import ShowersIcon from '../components/ShowersWhite22';
-import DumpsterIcon from '../components/TrashDumpsterWhite22';
-import FoodStorageIcon from '../components/FoodCacheWhite22';
-import StaffIcon from '../components/GuidedToursWhite22';
-import TrashIcon from '../components/LitterReceptacleWhite22';
-import RVIcon from '../components/TrailerSiteWhite22';
-import TrailerIcon from '../components/RvCampgroundWhite22';
-import CampStoreIcon from '../components/StoreWhite22';
-import TrailIcon from '../components/AllTerrainTrailWhite22';
-
-const GOOGLE_API_KEY = "AIzaSyBQa3TN8TY501aB2H3Tr_m2ptPVNF-EqOM";
+import BoatIcon from '../components/icons/BoatLaunchWhite22';
+import AmphitheaterIcon from '../components/icons/AmphitheaterWhite22';
+import TentIcon from '../components/icons/CampsiteWhite22';
+import WaterIcon from '../components/icons/DrinkingWaterWhite22';
+import GroupIcon from '../components/icons/FamilyRestroomWhite22';
+import FirewoodIcon from '../components/icons/FirewoodWhite22';
+import HorseIcon from '../components/icons/HorsebackRidingWhite22';
+import SignalIcon from '../components/icons/VolumeControlTelephoneWhite22';
+import WifiIcon from '../components/icons/WiFiWhite22';
+import ToiletIcon from '../components/icons/FlushToiletsWhite22';
+import IceIcon from '../components/icons/IceWhite22';
+import LaundryIcon from '../components/icons/LaundryWhite22';
+import HookupIcon from '../components/icons/RvTrailerHookupWhite22';
+import ShowersIcon from '../components/icons/ShowersWhite22';
+import DumpsterIcon from '../components/icons/TrashDumpsterWhite22';
+import FoodStorageIcon from '../components/icons/FoodCacheWhite22';
+import StaffIcon from '../components/icons/GuidedToursWhite22';
+import TrashIcon from '../components/icons/LitterReceptacleWhite22';
+import RVIcon from '../components/icons/TrailerSiteWhite22';
+import TrailerIcon from '../components/icons/RvCampgroundWhite22';
+import CampStoreIcon from '../components/icons/StoreWhite22';
+import TrailIcon from '../components/icons/AllTerrainTrailWhite22';
 
 const drawerWidth = 240;
 
@@ -112,7 +110,10 @@ function CenteredGrid({name, state, camps}){
                                         <Chip label={classification} className={classes.chip} color="primary"/>
                                     ))}
                                     {(campObj.campsites.totalsites.length > 0 && parseInt(campObj.campsites.totalsites) > 0) ? <Chip label={campObj.campsites.totalsites + " Total Campsites"} className={classes.chip} style={{backgroundColor: "#29c609"}}/> : <span/>}
-                                    {(campObj.campsites.walkboatto.length > 0 && parseInt(campObj.campsites.walkboatto) > 0) ? <Chip avatar={<Avatar style={{backgroundColor: '#27a509'}}><BoatIcon/></Avatar>} label={campObj.campsites.walkboatto + " Dock Access"} className={classes.chip} style={{backgroundColor: "#ffc570"}}/> : <span/>}
+                                    {(campObj.accessibility.accessroads.length > 0 && !campObj.accessibility.accessroads[0].toLowerCase().includes("no")) ? <Chip avatar={<Avatar style={{backgroundColor: '#c7c837'}}><TrailIcon/></Avatar>} label={campObj.accessibility.accessroads[0]} className={classes.chip} style={{backgroundColor: "#feff47"}}/> : <span/>}
+                                    {(campObj.amenities.internetconnectivity.length > 0 && !campObj.amenities.internetconnectivity.toLowerCase().includes("no")) ? <Chip avatar={<Avatar style={{backgroundColor: '#66c6c8'}}><WifiIcon/></Avatar>} label="Internet Available" className={classes.chip} style={{backgroundColor: "#86fdff"}}/> : <span/>}
+                                    {(campObj.amenities.cellphonereception.length > 0 && !campObj.amenities.cellphonereception.toLowerCase().includes("no")) ? <Chip avatar={<Avatar style={{backgroundColor: '#66c6c8'}}><SignalIcon/></Avatar>} label="Cell Phone Reception" className={classes.chip} style={{backgroundColor: "#86fdff"}}/> : <span/>}
+                                    {(campObj.campsites.walkboatto.length > 0 && parseInt(campObj.campsites.walkboatto) > 0) ? <Chip avatar={<Avatar style={{backgroundColor: '#c89464'}}><BoatIcon/></Avatar>} label={campObj.campsites.walkboatto + " Dock Access"} className={classes.chip} style={{backgroundColor: "#ffc570"}}/> : <span/>}
                                     {(campObj.campsites.group.length > 0 && parseInt(campObj.campsites.group) > 0) ? <Chip avatar={<Avatar style={{backgroundColor: '#c89464'}}><GroupIcon/></Avatar>} label={campObj.campsites.group + " Group Reservable"} className={classes.chip} style={{backgroundColor: "#ffc570"}}/> : <span/>}
                                     {(campObj.campsites.horse.length > 0 && parseInt(campObj.campsites.horse) > 0) ? <Chip avatar={<Avatar style={{backgroundColor: '#c89464'}}><HorseIcon/></Avatar>} label={campObj.campsites.horse + " Horse"} className={classes.chip} style={{backgroundColor: "#ffc570"}}/> : <span/>}
                                     {(campObj.campsites.rvonly.length > 0 && parseInt(campObj.campsites.rvonly) > 0) ? <Chip avatar={<Avatar style={{backgroundColor: '#c89464'}}><RVIcon/></Avatar>} label={campObj.campsites.rvonly + " RV Only"} className={classes.chip} style={{backgroundColor: "#ffc570"}}/> : <span/>}
@@ -123,8 +124,6 @@ function CenteredGrid({name, state, camps}){
                                     {(campObj.accessibility.trailerallowed.length > 0 && (parseInt(campObj.accessibility.trailerallowed) > 0)) ? <Chip avatar={<Avatar style={{backgroundColor: '#c89464'}}><TrailerIcon/></Avatar>} label="Trailer Permitted" className={classes.chip} style={{backgroundColor: "#ffc570"}}/> : <span/>}
                                     {(campObj.reservationssitesfirstcome.length > 0 && parseInt(campObj.reservationssitesfirstcome) > 0) ? <Chip label={campObj.reservationssitesfirstcome + " First Come Basis"} className={classes.chip} style={{backgroundColor: "#ffc570"}}/> : <span/>}
                                     {(campObj.reservationssitesreservable.length > 0 && parseInt(campObj.reservationssitesreservable) > 0) ? <Chip label={campObj.reservationssitesreservable + " Reservation Basis"} className={classes.chip} style={{backgroundColor: "#ffc570"}}/> : <span/>}
-                                    {(campObj.amenities.internetconnectivity.length > 0 && !campObj.amenities.internetconnectivity.toLowerCase().includes("no")) ? <Chip avatar={<Avatar style={{backgroundColor: '#66c6c8'}}><WifiIcon/></Avatar>} label="Internet Available" className={classes.chip} style={{backgroundColor: "#86fdff"}}/> : <span/>}
-                                    {(campObj.amenities.cellphonereception.length > 0 && !campObj.amenities.cellphonereception.toLowerCase().includes("no")) ? <Chip avatar={<Avatar style={{backgroundColor: '#66c6c8'}}><SignalIcon/></Avatar>} label="Cell Phone Reception" className={classes.chip} style={{backgroundColor: "#86fdff"}}/> : <span/>}
                                     {(campObj.amenities.amphitheater.length > 0 && !campObj.amenities.amphitheater.toLowerCase().includes("no")) ? <Chip avatar={<Avatar style={{backgroundColor: '#c89464'}}><AmphitheaterIcon/></Avatar>} label="Amphitheater" className={classes.chip} style={{backgroundColor: "#ffc570"}}/> : <span/>}
                                     {(campObj.amenities.campstore.length > 0 && !campObj.amenities.campstore.toLowerCase().includes("no")) ? <Chip avatar={<Avatar style={{backgroundColor: '#c89464'}}><CampStoreIcon/></Avatar>} label="Camp Store" className={classes.chip} style={{backgroundColor: "#ffc570"}}/> : <span/>}
                                     {(campObj.amenities.dumpstation.length > 0 && !campObj.amenities.dumpstation.toLowerCase().includes("no")) ? <Chip avatar={<Avatar style={{backgroundColor: '#c89464'}}><DumpsterIcon/></Avatar>} label="Dump Station" className={classes.chip} style={{backgroundColor: "#ffc570"}}/> : <span/>}
@@ -137,7 +136,6 @@ function CenteredGrid({name, state, camps}){
                                     {(campObj.amenities.foodstoragelockers.length > 0 && !campObj.amenities.foodstoragelockers.toLowerCase().includes("no")) ? <Chip avatar={<Avatar style={{backgroundColor: '#c89464'}}><FoodStorageIcon/></Avatar>} label="Food Storage" className={classes.chip} style={{backgroundColor: "#ffc570"}}/> : <span/>}
                                     {(campObj.amenities.trashrecyclingcollection.length > 0 && !campObj.amenities.trashrecyclingcollection.toLowerCase().includes("no")) ? <Chip avatar={<Avatar style={{backgroundColor: '#c89464'}}><TrashIcon/></Avatar>} label="Trash & Recycling" className={classes.chip} style={{backgroundColor: "#ffc570"}}/> : <span/>}
                                     {(campObj.amenities.toilets.length > 0 && !campObj.amenities.toilets[0].toLowerCase().includes("no")) ? <Chip avatar={<Avatar style={{backgroundColor: '#c89464'}}><ToiletIcon/></Avatar>} label="Toilets" className={classes.chip} style={{backgroundColor: "#ffc570"}}/> : <span/>}
-                                    {(campObj.accessibility.accessroads.length > 0 && !campObj.accessibility.accessroads[0].toLowerCase().includes("no")) ? <Chip avatar={<Avatar style={{backgroundColor: '#c7c837'}}><TrailIcon/></Avatar>} label={campObj.accessibility.accessroads[0]} className={classes.chip} style={{backgroundColor: "#feff47"}}/> : <span/>}
                                 </Typography>
                             </ExpansionPanelSummary>
                             <ExpansionPanelDetails>
