@@ -9,6 +9,7 @@ import {
     Button,
     Divider,
 } from '@material-ui/core';
+import LaunchIcon from '@material-ui/icons/Launch';
 import NPS_Query from '../components/NPS_Query';
 import fetch from 'isomorphic-unfetch';
 import {makeStyles} from "@material-ui/core/styles";
@@ -44,6 +45,9 @@ const useStyles = makeStyles(theme => ({
     button: {
         margin: theme.spacing(1),
     },
+    rightIcon: {
+        marginLeft: theme.spacing(1),
+    },
 }));
 
 function CenteredGrid({alerts}){
@@ -63,7 +67,7 @@ function CenteredGrid({alerts}){
                             <Typography paragraph>
                                 {alertObj.description}
                             </Typography>
-                            {(alertObj.url.length > 0) ? <Button href={alertObj.url} color="primary">More Information</Button> : <div/>}
+                            {(alertObj.url.length > 0) ? <Button href={alertObj.url} color="primary">More Information<LaunchIcon className={classes.rightIcon}/></Button> : <div/>}
                         </Paper>
                     </Grid>
                 ))}

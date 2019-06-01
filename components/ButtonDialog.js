@@ -8,6 +8,9 @@ import {
     DialogTitle,
     makeStyles
 } from "@material-ui/core";
+import LaunchIcon from '@material-ui/icons/Launch';
+import FlipFrontIcon from '@material-ui/icons/FlipToFront';
+import FlipBackIcon from '@material-ui/icons/FlipToBack';
 
 const drawerWidth = 240;
 
@@ -52,6 +55,9 @@ const useStyles = makeStyles(theme => ({
     p: {
         width: "100%",
     },
+    rightIcon: {
+        marginLeft: theme.spacing(1),
+    },
 }));
 
 function ButtonDialog(props){
@@ -71,7 +77,7 @@ function ButtonDialog(props){
     if(props.text.replace(/^\s+|\s+$/g, '').length > 0) {
         return (
             <div>
-                <Button onClick={handleClick('body')} variant="outlined" className={classes.button} color="inherit">{props.buttonName}</Button>
+                <Button onClick={handleClick('body')} variant="outlined" className={classes.button} color="inherit">{props.buttonName}<FlipFrontIcon className={classes.rightIcon}/></Button>
                 <Dialog
                     open={open}
                     onClose={handleClose}
@@ -84,8 +90,8 @@ function ButtonDialog(props){
                         </DialogContentText>
                     </DialogContent>
                     <DialogActions>
-                        {(props.otherurl != null && props.otherurl.length > 0) ? <Button href={props.otherurl} className={classes.button}>{props.other}</Button>: <span/>}
-                        <Button onClick={handleClose} color="primary" className={classes.button}>Close</Button>
+                        {(props.otherurl != null && props.otherurl.length > 0) ? <Button href={props.otherurl} className={classes.button}>{props.other}<LaunchIcon className={classes.rightIcon}/></Button>: <span/>}
+                        <Button onClick={handleClose} color="primary" className={classes.button}>Close<FlipBackIcon className={classes.rightIcon}/></Button>
                     </DialogActions>
                 </Dialog>
             </div>

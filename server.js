@@ -6,17 +6,15 @@ const dev = process.env.NODE_ENV !== "production";
 const app = next({dev});
 const handle = app.getRequestHandler();
 
-const React = require('react');
-
 app.prepare().then(() => {
     const server = new Koa();
     server.use(session(server));
 
     server.use(async (ctx) => {
         await handle(ctx.req, ctx.res);
-    ctx.respond = false;
-    ctx.res.statusCode = 200;
-    return
+        ctx.respond = false;
+        ctx.res.statusCode = 200;
+        return
     });
 
     server.listen(port, () => {

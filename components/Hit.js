@@ -6,7 +6,7 @@ import {
     Paper,
     Button,
 } from "@material-ui/core";
-import InputIcon from '@material-ui/icons/InputRounded';
+import FlightIcon from '@material-ui/icons/FlightTakeoff';
 import Link from 'next/link';
 import {makeStyles} from "@material-ui/styles";
 import '../static/default.css';
@@ -42,36 +42,14 @@ const useStyles = makeStyles(theme =>({
     },
 }));
 
-// function indexSearch(objId){
-//     return new Promise((resolve, reject) => {
-//         index.getObject(objId, ['fullName'], (err, content) => {
-//             if (content != null){
-//                 resolve(content.fullName);
-//             }
-//             else{
-//                 reject(Error());
-//             }
-//         });
-//     });
-// }
-
-function NewButton({name, parkCode, redirectId}){
+function NewButton({name, parkCode}){
     const classes = useStyles();
-    // const [someVar, setSomeVar] = useState(null);
-    // useEffect(() => {
-    //     indexSearch(redirectId).then(result => {
-    //         setSomeVar(result);
-    //     })
-    // }, []);
-    // if(!someVar){
-    //     return null;
-    // }
     return(
         <Link as={`/${parkCode}/details`} href={`/details?objectId=${parkCode}`}>
             <a id="hitbox" href={`/details/${parkCode}`}>
                 <Button color="primary" className={classes.button} variant="contained">
                     {`Learn more about ${name}`}
-                    <InputIcon className={classes.button}/>
+                    <FlightIcon className={classes.rightIcon}/>
                 </Button>
             </a>
         </Link>
@@ -79,7 +57,6 @@ function NewButton({name, parkCode, redirectId}){
 }
 
 class Hit extends React.Component{
-
     render() {
         const props = this.props;
         const {hit} = this.props;
@@ -95,7 +72,7 @@ class Hit extends React.Component{
                     <Typography color="textSecondary">
                         <Highlight className="ais-Highlight-details" attribute="description" hit={props.hit}/>
                     </Typography>
-                    <NewButton name={hit.fullName} parkCode={hit.parkCode} redirectId={props.hit.objectID}/>
+                    <NewButton name={hit.fullName} parkCode={hit.parkCode}/>
                 </Paper>
             </Card>
         )

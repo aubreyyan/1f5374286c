@@ -9,6 +9,7 @@ import {
     Divider,
     makeStyles
 } from '@material-ui/core';
+import LaunchIcon from '@material-ui/icons/Launch';
 import NPS_Query from '../components/NPS_Query';
 import fetch from 'isomorphic-unfetch';
 import '../static/default.css';
@@ -49,11 +50,13 @@ const useStyles = makeStyles(theme => ({
     p: {
         backgroundColor: "#eaeaea",
     },
+    rightIcon: {
+        marginLeft: theme.spacing(1),
+    },
 }));
 
 function CenteredGrid({articles}){
     const classes = useStyles();
-
     return(
         <main className={classes.content}>
             <div className={classes.toolbar}/>
@@ -72,7 +75,7 @@ function CenteredGrid({articles}){
                             <Typography paragraph >
                                 {articleObj.listingdescription}
                             </Typography>
-                            {(articleObj.url.length > 0) ? <Button href={articleObj.url} color="primary">Read Full Article</Button> : <div/>}
+                            {(articleObj.url.length > 0) ? <Button href={articleObj.url} color="primary">Read Full Article<LaunchIcon className={classes.rightIcon}/></Button> : <div/>}
                             <Divider/>
                         </Paper>
                     </Grid>

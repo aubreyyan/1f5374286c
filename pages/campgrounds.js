@@ -38,7 +38,7 @@ import TrailerIcon from '../components/RvCampgroundWhite22';
 import CampStoreIcon from '../components/StoreWhite22';
 import TrailIcon from '../components/AllTerrainTrailWhite22';
 
-const GOOGLE_API_KEY = "***************************************";
+const GOOGLE_API_KEY = "*******************************";
 
 const drawerWidth = 240;
 
@@ -60,6 +60,7 @@ const useStyles = makeStyles(theme => ({
     },
     leftcolumn: {
         flexBasis: "55%",
+        position: "relative",
     },
     rightcolumn: {
         flexBasis: "42.5%",
@@ -91,7 +92,6 @@ const useStyles = makeStyles(theme => ({
 
 function CenteredGrid({name, state, camps}){
     const classes = useStyles();
-
     return(
         <main className={classes.content}>
             <div className={classes.toolbar}/>
@@ -112,7 +112,7 @@ function CenteredGrid({name, state, camps}){
                                     ))}
                                     {(campObj.campsites.totalsites.length > 0 && parseInt(campObj.campsites.totalsites) > 0) ? <Chip label={campObj.campsites.totalsites + " Total Campsites"} className={classes.chip} style={{backgroundColor: "#29c609"}}/> : <span/>}
                                     {(campObj.campsites.walkboatto.length > 0 && parseInt(campObj.campsites.walkboatto) > 0) ? <Chip avatar={<Avatar style={{backgroundColor: '#27a509'}}><BoatIcon/></Avatar>} label={campObj.campsites.walkboatto + " Dock Access"} className={classes.chip} style={{backgroundColor: "#ffc570"}}/> : <span/>}
-                                    {(campObj.campsites.group.length > 0 && parseInt(campObj.campsites.group) > 0) ? <Chip avatar={<Avatar style={{backgroundColor: '#c89464'}}><GroupIcon/></Avatar>} label={campObj.campsites.group + " Group"} className={classes.chip} style={{backgroundColor: "#ffc570"}}/> : <span/>}
+                                    {(campObj.campsites.group.length > 0 && parseInt(campObj.campsites.group) > 0) ? <Chip avatar={<Avatar style={{backgroundColor: '#c89464'}}><GroupIcon/></Avatar>} label={campObj.campsites.group + " Group Reservable"} className={classes.chip} style={{backgroundColor: "#ffc570"}}/> : <span/>}
                                     {(campObj.campsites.horse.length > 0 && parseInt(campObj.campsites.horse) > 0) ? <Chip avatar={<Avatar style={{backgroundColor: '#c89464'}}><HorseIcon/></Avatar>} label={campObj.campsites.horse + " Horse"} className={classes.chip} style={{backgroundColor: "#ffc570"}}/> : <span/>}
                                     {(campObj.campsites.rvonly.length > 0 && parseInt(campObj.campsites.rvonly) > 0) ? <Chip avatar={<Avatar style={{backgroundColor: '#c89464'}}><RVIcon/></Avatar>} label={campObj.campsites.rvonly + " RV Only"} className={classes.chip} style={{backgroundColor: "#ffc570"}}/> : <span/>}
                                     {(campObj.campsites.tentonly.length > 0 && parseInt(campObj.campsites.tentonly) > 0) ? <Chip avatar={<Avatar style={{backgroundColor: '#c89464'}}><TentIcon/></Avatar>} label={campObj.campsites.tentonly + " Tent Only"} className={classes.chip} style={{backgroundColor: "#ffc570"}}/> : <span/>}

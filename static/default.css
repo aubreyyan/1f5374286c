@@ -75,6 +75,13 @@ body {
     .appbar {
         margin-left: var(--drawer-width);
     }
+    .leftcol {
+        position: relative;
+        flex-basis: 40%;
+    }
+    .rightcol {
+        flex-basis: 57.5%;
+    }
 }
 
 @media (min-width: 1025px){

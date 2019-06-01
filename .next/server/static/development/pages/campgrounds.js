@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 7);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -227,6 +227,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core */ "@material-ui/core");
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _material_ui_icons_Launch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/icons/Launch */ "@material-ui/icons/Launch");
+/* harmony import */ var _material_ui_icons_Launch__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Launch__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _material_ui_icons_FlipToFront__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/icons/FlipToFront */ "@material-ui/icons/FlipToFront");
+/* harmony import */ var _material_ui_icons_FlipToFront__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_FlipToFront__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _material_ui_icons_FlipToBack__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/icons/FlipToBack */ "@material-ui/icons/FlipToBack");
+/* harmony import */ var _material_ui_icons_FlipToBack__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_FlipToBack__WEBPACK_IMPORTED_MODULE_6__);
+
+
+
 
 
 
@@ -272,6 +281,9 @@ var useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["makeStyle
     },
     p: {
       width: "100%"
+    },
+    rightIcon: {
+      marginLeft: theme.spacing(1)
     }
   };
 });
@@ -306,7 +318,9 @@ function ButtonDialog(props) {
       variant: "outlined",
       className: classes.button,
       color: "inherit"
-    }, props.buttonName), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Dialog"], {
+    }, props.buttonName, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_icons_FlipToFront__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      className: classes.rightIcon
+    })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Dialog"], {
       open: open,
       onClose: handleClose,
       scroll: scroll
@@ -315,11 +329,15 @@ function ButtonDialog(props) {
     }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["DialogContentText"], null, props.text)), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["DialogActions"], null, props.otherurl != null && props.otherurl.length > 0 ? react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Button"], {
       href: props.otherurl,
       className: classes.button
-    }, props.other) : react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Button"], {
+    }, props.other, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_icons_Launch__WEBPACK_IMPORTED_MODULE_4___default.a, {
+      className: classes.rightIcon
+    })) : react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Button"], {
       onClick: handleClose,
       color: "primary",
       className: classes.button
-    }, "Close"))));
+    }, "Close", react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_icons_FlipToBack__WEBPACK_IMPORTED_MODULE_6___default.a, {
+      className: classes.rightIcon
+    })))));
   } else {
     return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null);
   }
@@ -2456,7 +2474,8 @@ var useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_10__["makeStyl
       padding: theme.spacing(3)
     },
     leftcolumn: {
-      flexBasis: "55%"
+      flexBasis: "55%",
+      position: "relative"
     },
     rightcolumn: {
       flexBasis: "42.5%"
@@ -2544,7 +2563,7 @@ function CenteredGrid(_ref) {
           backgroundColor: '#c89464'
         }
       }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_FamilyRestroomWhite22__WEBPACK_IMPORTED_MODULE_16__["default"], null)),
-      label: campObj.campsites.group + " Group",
+      label: campObj.campsites.group + " Group Reservable",
       className: classes.chip,
       style: {
         backgroundColor: "#ffc570"
@@ -2932,7 +2951,7 @@ function () {
 
 /***/ }),
 
-/***/ 7:
+/***/ 6:
 /*!************************************!*\
   !*** multi ./pages/campgrounds.js ***!
   \************************************/
@@ -2985,6 +3004,39 @@ module.exports = require("@material-ui/core/styles");
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/icons/ExpandMore");
+
+/***/ }),
+
+/***/ "@material-ui/icons/FlipToBack":
+/*!************************************************!*\
+  !*** external "@material-ui/icons/FlipToBack" ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/icons/FlipToBack");
+
+/***/ }),
+
+/***/ "@material-ui/icons/FlipToFront":
+/*!*************************************************!*\
+  !*** external "@material-ui/icons/FlipToFront" ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/icons/FlipToFront");
+
+/***/ }),
+
+/***/ "@material-ui/icons/Launch":
+/*!********************************************!*\
+  !*** external "@material-ui/icons/Launch" ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/icons/Launch");
 
 /***/ }),
 
