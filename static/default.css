@@ -19,11 +19,6 @@ body {
     color: black;
 }
 
-#trim {
-    max-height: 300px;
-    overflow: hidden;
-}
-
 #card{
     min-width: 275px;
 }
@@ -79,6 +74,13 @@ body {
     }
     .appbar {
         margin-left: var(--drawer-width);
+    }
+}
+
+@media (min-width: 1025px){
+    #trim {
+        max-height: 400px;
+        overflow: hidden;
     }
 }
 
@@ -189,3 +191,4 @@ body {
 
 .ais-InfiniteHits-loadPrevious {
     margin-bottom: 1rem; }
+

@@ -7,10 +7,10 @@ import {
     Typography,
     Button,
     Divider,
+    makeStyles
 } from '@material-ui/core';
 import NPS_Query from '../components/NPS_Query';
 import fetch from 'isomorphic-unfetch';
-import {makeStyles} from "@material-ui/core";
 import '../static/default.css';
 
 const drawerWidth = 240;
@@ -44,6 +44,7 @@ const useStyles = makeStyles(theme => ({
     image: {
         width: "100%",
         position: "relative",
+        objectFit: "cover",
     },
     p: {
         backgroundColor: "#eaeaea",
@@ -57,8 +58,7 @@ function CenteredGrid({articles}){
         <main className={classes.content}>
             <div className={classes.toolbar}/>
             <Grid container spacing={3} className={classes.grid}>
-                {articles.map((articleObj, index) => (
-
+                {articles.map((articleObj) => (
                     <Grid item xs={12} md={6}>
                         <Paper className={classes.p}>
                             <Typography color="textPrimary" variant="h3" style={{fontWeight: 'bold'}}>
@@ -72,8 +72,7 @@ function CenteredGrid({articles}){
                             <Typography paragraph >
                                 {articleObj.listingdescription}
                             </Typography>
-                            {(articleObj.url.length > 0) ? <Button href={articleObj.url} color="primary">Read More</Button> : <div/>}
-
+                            {(articleObj.url.length > 0) ? <Button href={articleObj.url} color="primary">Read Full Article</Button> : <div/>}
                             <Divider/>
                         </Paper>
                     </Grid>

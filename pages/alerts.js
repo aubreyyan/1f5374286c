@@ -48,21 +48,6 @@ const useStyles = makeStyles(theme => ({
 
 function CenteredGrid({alerts}){
     const classes = useStyles();
-    // var states = [];
-    // for(var i = 0; i < alerts.length; i++){
-    //     const [open, setOpen] = React.useState(false);
-    //     states.push([open, setOpen]);
-    // }
-    // const [scroll, setScroll] = React.useState('body');
-    //
-    // const handleClick = (scrollType, index) => () => {
-    //     states[index][1](true);
-    //     setScroll(scrollType);
-    // };
-    //
-    // const handleClose = (index) => () => {
-    //     states[index][1](false);
-    // };
     return(
         <main className={classes.content}>
             <div className={classes.toolbar}/>
@@ -79,26 +64,6 @@ function CenteredGrid({alerts}){
                                 {alertObj.description}
                             </Typography>
                             {(alertObj.url.length > 0) ? <Button href={alertObj.url} color="primary">More Information</Button> : <div/>}
-                            {/*<Button variant="outlined" size="large" className={classes.button} onClick={handleClick('body', index)}>Learn More</Button>*/}
-                            {/*<Dialog*/}
-                            {/*    open={states[index][0]}*/}
-                            {/*    onClose={handleClose(index)}*/}
-                            {/*    scroll={scroll}*/}
-                            {/*    aria-labelledby="scroll-diialog-title"*/}
-                            {/*>*/}
-                            {/*    <DialogTitle id="scroll-dialog-title">{alertObj.title}</DialogTitle>*/}
-                            {/*    <DialogContent dividers={false}>*/}
-                            {/*        <DialogContentText>*/}
-                            {/*            {alertObj.description}*/}
-                            {/*        </DialogContentText>*/}
-                            {/*    </DialogContent>*/}
-                            {/*    <DialogActions>*/}
-                            {/*        {(alertObj.url.length > 0) ? <Button href={alertObj.url} color="primary">More Information</Button> : <div/>}*/}
-                            {/*        <Button variant="contained" onClick={handleClose(index)} color="primary">*/}
-                            {/*            Close*/}
-                            {/*        </Button>*/}
-                            {/*    </DialogActions>*/}
-                            {/*</Dialog>*/}
                         </Paper>
                     </Grid>
                 ))}
