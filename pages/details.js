@@ -2,6 +2,7 @@ import React from 'react';
 import {withRouter} from 'next/router';
 import ResponsiveDrawer from '../components/ResponsiveDrawer';
 import NPS_Query from '../components/NPS_Query';
+import Google_Query from '../components/Google_Query';
 import {
     Chip,
     Grid,
@@ -14,8 +15,6 @@ import fetch from 'isomorphic-unfetch';
 import '../static/default.css';
 import ButtonDialog from "../components/ButtonDialog";
 import LaunchIcon from '@material-ui/icons/Launch';
-
-const GOOGLE_API_KEY = "*******************************";
 
 const drawerWidth = 240;
 
@@ -102,7 +101,7 @@ function CenteredGrid({park}){
                 </div>
                 <div style={{flexBasis: "2.5%"}}/>
                 <div className="rightcol">
-                    <img className={classes.image} src={`https://maps.googleapis.com/maps/api/staticmap?center=${(park.latLong.length > 0) ? park.latLong.replace(/[^\d.,-]/g, ''): park.fullName.replace(/\s/g, '', "") + "," + park.fullName.replace(/\s/g, '', "") + "," + park.states}&zoom=12&size=1300x500&scale=2&maptype=terrain&key=${GOOGLE_API_KEY}`}/>
+                    <img className={classes.image} src={Google_Query(park.latLong, "", park.fullName, park.states, 1300, 500, 12)}/>
                 </div>
             </Grid>
         </main>

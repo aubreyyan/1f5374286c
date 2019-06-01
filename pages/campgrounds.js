@@ -2,6 +2,7 @@ import React from 'react';
 import {withRouter} from 'next/router';
 import ResponsiveDrawer from '../components/ResponsiveDrawer';
 import NPS_Query from '../components/NPS_Query';
+import Google_Query from '../components/Google_Query';
 import ButtonDialog from '../components/ButtonDialog';
 import fetch from 'isomorphic-unfetch';
 import {
@@ -38,7 +39,7 @@ import TrailerIcon from '../components/RvCampgroundWhite22';
 import CampStoreIcon from '../components/StoreWhite22';
 import TrailIcon from '../components/AllTerrainTrailWhite22';
 
-const GOOGLE_API_KEY = "*******************************";
+const GOOGLE_API_KEY = "AIzaSyBQa3TN8TY501aB2H3Tr_m2ptPVNF-EqOM";
 
 const drawerWidth = 240;
 
@@ -157,7 +158,7 @@ function CenteredGrid({name, state, camps}){
                                 </div>
                                 <div style={{flexBasis: "2.5%"}}/>
                                 <div className={classes.rightcolumn}>
-                                    {/*<img className={classes.image} src={`https://maps.googleapis.com/maps/api/staticmap?center=${(campObj.latLong.length > 0) ? campObj.latLong.replace(/[^\d.,-]/g, ''): campObj.name.replace(/\s/g, '', "") + "," + name.replace(/\s/g, '', "") + "," + state}&zoom=15&size=1000x350&scale=2&maptype=terrain&key=${GOOGLE_API_KEY}`}/>*/}
+                                    <img className={classes.image} src={Google_Query(campObj.latLong, campObj.name, name, state, 1000, 350, 15)}/>
                                 </div>
                             </ExpansionPanelDetails>
                             </ExpansionPanel>
