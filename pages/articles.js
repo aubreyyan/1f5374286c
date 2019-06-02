@@ -47,11 +47,18 @@ const useStyles = makeStyles(theme => ({
         position: "relative",
         objectFit: "cover",
     },
-    p: {
-        backgroundColor: "#eaeaea",
-    },
     rightIcon: {
         marginLeft: theme.spacing(1),
+    },
+    p: {
+        [theme.breakpoints.only('xs')]:{
+            fontSize: "large",
+        },
+    },
+    maintitle: {
+        [theme.breakpoints.only('xs')]:{
+            fontSize: "xx-large"
+        },
     },
 }));
 
@@ -63,16 +70,16 @@ function CenteredGrid({articles}){
             <Grid container spacing={3} className={classes.grid}>
                 {articles.map((articleObj) => (
                     <Grid item xs={12} md={6}>
-                        <Paper className={classes.p}>
-                            <Typography color="textPrimary" variant="h3" style={{fontWeight: 'bold'}}>
+                        <Paper className={classes.paper}>
+                            <Typography color="textPrimary" variant="h3" style={{fontWeight: 'bold'}} className={classes.maintitle}>
                                 {articleObj.title}
                             </Typography>
                             <Divider/><br/>
                             <div id="trim">
-                            {(articleObj.listingimage.url.length > 0) ? <img className={classes.image} src={articleObj.listingimage.url}/> : <div/>}
+                            {(articleObj.listingimage.url.length > 0) ? <img className={classes.image} src={articleObj.listingimage.url}/> : <span/>}
                             </div>
-                            {(articleObj.listingimage.url.length > 0) ? <br/> : <div/>}
-                            <Typography paragraph >
+                            {(articleObj.listingimage.url.length > 0) ? <br/> : <span/>}
+                            <Typography paragraph className={classes.p}>
                                 {articleObj.listingdescription}
                             </Typography>
                             {(articleObj.url.length > 0) ? <Button href={articleObj.url} color="primary">Read Full Article<LaunchIcon className={classes.rightIcon}/></Button> : <div/>}

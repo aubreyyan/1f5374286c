@@ -5,23 +5,48 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/.next/build-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/server/pages-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/pages-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/lessonplans.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/static/development/pages/lessonplans.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/alerts.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/static/development/pages/alerts.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/articles.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/static/development/pages/articles.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/campgrounds.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/static/development/pages/campgrounds.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/details.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/static/development/pages/details.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/static/development/pages/index.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/lessonplans.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/lessonplans.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/static/development/pages/lessonplans.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/next/dist/pages/_error.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/static/chunks/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/chunks/styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/static/chunks/styles.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/chunks/styles.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/development/pages/lessonplans.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/development/pages/lessonplans.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/development/pages/lessonplans.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/development/pages/lessonplans.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/development/pages/next/dist/pages/_error.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/development/pages/articles.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/development/pages/articles.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/development/pages/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/development/pages/lessonplans.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/static/runtime/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/runtime/webpack.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/static/runtime/webpack.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/runtime/webpack.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/22aa292ff1d8b6b40075.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/35840f5e8523393436e9.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/3aa9a2792a9c27e57e45.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/5dc271e6d57744defe0f.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/6621993ef7c159b08bf4.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/70f1acd2c039c1f719b4.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/79a253424854d94eaad7.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/922cfdc3f7838cc75824.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/947ddf207b007332f40a.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/9c711722c277e7a6a46d.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/c2e6e04d68c8a34d1ccb.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/d23cd06bff19a3589bad.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/d5f734b47c4513b5c8e6.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/db09f1d1fcf8e2349553.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/dcc6a734ad0b55742b56.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/e8b5f1033ad340805e72.hot-update.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/static/webpack/e8b7d5940536fb0d0274.hot-update.json" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/webpack/e8b7d5940536fb0d0274.hot-update.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/ec4952873ab6f3aee0cd.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/lessonplans.js.ec4952873ab6f3aee0cd.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/lessonplans.js.ec4952873ab6f3aee0cd.hot-update.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/campgrounds.js.922cfdc3f7838cc75824.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/campgrounds.js.922cfdc3f7838cc75824.hot-update.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/events.js.c2e6e04d68c8a34d1ccb.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/events.js.c2e6e04d68c8a34d1ccb.hot-update.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/lessonplans.js.3aa9a2792a9c27e57e45.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/lessonplans.js.3aa9a2792a9c27e57e45.hot-update.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/components/api/Google_Query.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/api/Google_Query.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/utils/getList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/utils/getList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/events.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/utils/sanitized.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/articles.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/articles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/newsreleases.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/newsreleases.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,64 +61,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/lessonplans.js">
+        <entry file="file://$PROJECT_DIR$/pages/newsreleases.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="117" column="51" selection-start-line="117" selection-start-column="51" selection-end-line="117" selection-end-column="51" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/ContactDialog.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="102" column="156" selection-start-line="102" selection-start-column="24" selection-end-line="102" selection-end-column="156" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/LessonDialog.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="122" column="152" selection-start-line="122" selection-start-column="152" selection-end-line="122" selection-end-column="152" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/utils/getList.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/ButtonDialog.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="104" column="13" selection-start-line="104" selection-start-column="13" selection-end-line="104" selection-end-column="13" />
+            <state relative-caret-position="187">
+              <caret line="59" column="6" selection-start-line="59" selection-start-column="6" selection-end-line="69" selection-end-column="6" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -102,12 +73,48 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pages/events.js">
+        <entry file="file://$PROJECT_DIR$/pages/articles.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="144" column="123" selection-start-line="144" selection-start-column="123" selection-end-line="144" selection-end-column="123" />
+            <state relative-caret-position="360">
+              <caret line="81" column="70" selection-start-line="81" selection-start-column="70" selection-end-line="81" selection-end-column="70" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/alerts.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="66" column="50" selection-start-line="66" selection-start-column="50" selection-end-line="66" selection-end-column="50" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/lessonplans.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="89" column="53" selection-start-line="89" selection-start-column="20" selection-end-line="89" selection-end-column="53" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/utils/getDateRange.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -171,7 +178,6 @@
         <option value="$PROJECT_DIR$/pages/news-releases.js" />
         <option value="$PROJECT_DIR$/pages/places.js" />
         <option value="$PROJECT_DIR$/pages/people.js" />
-        <option value="$PROJECT_DIR$/pages/newsreleases.js" />
         <option value="$PROJECT_DIR$/pages/visitorcenters.js" />
         <option value="$PROJECT_DIR$/components/GetButtons.js" />
         <option value="$PROJECT_DIR$/components/CustomButton.js" />
@@ -205,16 +211,17 @@
         <option value="$PROJECT_DIR$/components/ContactDialog.js" />
         <option value="$PROJECT_DIR$/components/ButtonDialog.js" />
         <option value="$PROJECT_DIR$/pages/details.js" />
-        <option value="$PROJECT_DIR$/pages/articles.js" />
         <option value="$PROJECT_DIR$/pages/alerts.js" />
         <option value="$PROJECT_DIR$/static/default.css" />
         <option value="$PROJECT_DIR$/components/api/NPS_Query.js" />
         <option value="$PROJECT_DIR$/components/LessonsDialog.js" />
         <option value="$PROJECT_DIR$/pages/lessonplans.js" />
         <option value="$PROJECT_DIR$/components/LessonDialog.js" />
-        <option value="$PROJECT_DIR$/components/api/Google_Query.js" />
         <option value="$PROJECT_DIR$/components/utils/getList.js" />
         <option value="$PROJECT_DIR$/pages/events.js" />
+        <option value="$PROJECT_DIR$/components/api/Google_Query.js" />
+        <option value="$PROJECT_DIR$/pages/newsreleases.js" />
+        <option value="$PROJECT_DIR$/pages/articles.js" />
       </list>
     </option>
   </component>
@@ -225,8 +232,8 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="205" />
-    <option name="y" value="138" />
+    <option name="x" value="812" />
+    <option name="y" value="56" />
     <option name="width" value="1541" />
     <option name="height" value="1023" />
   </component>
@@ -329,15 +336,15 @@
       <workItem from="1559001290314" duration="23739000" />
       <workItem from="1559185452874" duration="31139000" />
       <workItem from="1559277796869" duration="7570000" />
-      <workItem from="1559340984153" duration="81801000" />
+      <workItem from="1559340984153" duration="85542000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="219704000" />
+    <option name="totallyTimeSpent" value="223445000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="233" y="93" width="1541" height="1023" extended-state="0" />
+    <frame x="258" y="125" width="1541" height="1023" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3119514" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -411,9 +418,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/family-restroom-white-30.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/campsite-white-30.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -504,16 +508,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/utils/getDateRange.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/utils/convertStringToDate.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -525,13 +519,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/utils/getTimeZone.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1819">
-          <caret line="107" column="27" selection-start-line="107" selection-start-column="27" selection-end-line="107" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -587,40 +574,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/articles.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="83" column="34" lean-forward="true" selection-start-line="83" selection-start-column="34" selection-end-line="83" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/alerts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="85" column="15" lean-forward="true" selection-start-line="85" selection-start-column="15" selection-end-line="85" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/default.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="90" column="27" selection-start-line="90" selection-start-column="27" selection-end-line="90" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/campgrounds.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-232">
-          <caret line="142" column="58" selection-start-line="142" selection-start-column="36" selection-end-line="142" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -670,23 +627,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/lessonplans.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="117" column="51" selection-start-line="117" selection-start-column="51" selection-end-line="117" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/api/Google_Query.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/LessonDialog.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="343">
@@ -697,10 +637,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/utils/getList.js">
+    <entry file="file://$PROJECT_DIR$/components/utils/getTimeZone.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+        <state relative-caret-position="1819">
+          <caret line="107" column="27" selection-start-line="107" selection-start-column="27" selection-end-line="107" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/campgrounds.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-144">
+          <caret line="170" column="39" selection-start-line="170" selection-start-column="32" selection-end-line="170" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -711,10 +661,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/components/utils/getList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/api/Google_Query.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/alerts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="66" column="50" selection-start-line="66" selection-start-column="50" selection-end-line="66" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/utils/getDateRange.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pages/events.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
+        <state relative-caret-position="1530">
           <caret line="144" column="123" selection-start-line="144" selection-start-column="123" selection-end-line="144" selection-end-column="123" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/lessonplans.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="89" column="53" selection-start-line="89" selection-start-column="20" selection-end-line="89" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/newsreleases.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="59" column="6" selection-start-line="59" selection-start-column="6" selection-end-line="69" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/articles.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="81" column="70" selection-start-line="81" selection-start-column="70" selection-end-line="81" selection-end-column="70" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
