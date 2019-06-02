@@ -12,8 +12,6 @@ const index = searchClient.initIndex("Parks");
 class ButtonComponent extends React.Component{
     state = {
         loading: false,
-        userlat: null,
-        userlong: null,
         parkData: null,
     };
     render(){
@@ -43,10 +41,6 @@ class ButtonComponent extends React.Component{
             userlong: position.coords.longitude,
         }));
         this.handleSubmit();
-    };
-
-    showError = (err) => {
-        console.warn('error');
     };
 
     getLocation = () => {
@@ -94,13 +88,12 @@ class ButtonComponent extends React.Component{
             this.getLocation();
             return false;
         }
-        console.log(this.state.userlat);
-        console.log(this.state.userlong);
+
         if(this.state.parkData == null){
             this.indexData();
             return false;
         }
-        console.log(this.state.parkData);
+
         var nearestPOI = {
             parkCode: null,
             distance: 360.0
@@ -113,7 +106,6 @@ class ButtonComponent extends React.Component{
                 nearestPOI.distance = parkDistance;
             }
         }
-        console.log(nearestPOI.parkCode);
         window.location.href = "/details?objectId=" + nearestPOI.parkCode;
     }
 }

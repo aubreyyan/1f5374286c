@@ -16,6 +16,7 @@ class InfiniteHits extends React.Component {
 
     componentDidMount() {
         this.observer = new IntersectionObserver(this.onSentinelIntersection);
+        this.observer.observe(this.sentinel);
     }
 
     componentWillUnmount(){
@@ -33,6 +34,10 @@ class InfiniteHits extends React.Component {
                             <Hit hit={hit} />
                         </li>
                     ))}
+                    <li
+                        className="ais-InfiniteHits-sentinel"
+                        ref={c => (this.sentinel = c)}
+                    />
                 </ul>
             </div>
         );

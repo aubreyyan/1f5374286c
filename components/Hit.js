@@ -12,33 +12,11 @@ import {makeStyles} from "@material-ui/styles";
 import '../static/default.css';
 
 const useStyles = makeStyles(theme =>({
-    root: {
-        background: 'linear-gradient(45deg, #4496DB 30%, #5df78e 90%)',
-        border: 0,
-        fontSize: 16,
-        borderRadius: 3,
-        boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
-        color: 'white',
-        height: 48,
-        width: "100%",
-        padding: '0 30px',
-    },
-    card: {
-        minWidth: 275,
-    },
-    bullet: {
-        display: 'inline-block',
-        margin: '0 2px',
-        transform: 'scale(0.8)',
-    },
     button: {
         margin: theme.spacing(1),
     },
     rightIcon: {
         marginLeft: theme.spacing(2),
-    },
-    pos: {
-        marginBottom: 12,
     },
 }));
 
