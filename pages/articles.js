@@ -83,11 +83,11 @@ function CenteredGrid({articles}){
                 {(articles.length === 0) ?
                     <Grid item xs>
                         <Paper className={classes.paper}>
-                            <Typography color="textPrimary" variant="h4">
+                            <Typography color="textPrimary" variant="h4" style={{fontWeight: 'bold'}}>
                                 No Articles Found
                             </Typography>
                         </Paper>
-                    </Grid> : <div/>}
+                    </Grid> : <span/>}
             </Grid>
         </main>
     )

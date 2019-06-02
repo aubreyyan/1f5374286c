@@ -77,7 +77,7 @@ function CenteredGrid({alerts}){
                             <Chip label="No Alerts Reported" className={classes.chip} style={{
                                 backgroundColor: "#29c609",
                             }}/>
-                            <Typography color="textPrimary" variant="h4">
+                            <Typography color="textPrimary" variant="h4" style={{fontWeight: 'bold'}}>
                                 No Alerts Reported
                             </Typography>
                         </Paper>

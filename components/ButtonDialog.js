@@ -6,7 +6,7 @@ import {
     DialogContent,
     DialogContentText,
     DialogTitle,
-    makeStyles
+    makeStyles, Typography
 } from "@material-ui/core";
 import LaunchIcon from '@material-ui/icons/Launch';
 import FlipFrontIcon from '@material-ui/icons/FlipToFront';
@@ -74,7 +74,40 @@ function ButtonDialog(props){
         setOpen(false);
     };
 
-    if(props.text.replace(/^\s+|\s+$/g, '').length > 0) {
+    if(props.multitext != null){
+        if(props.multitext.length > 0){
+            return (
+                <div>
+                    <Button onClick={handleClick('body')} variant="outlined" className={classes.button} color="inherit">{props.buttonName}<FlipFrontIcon className={classes.rightIcon}/></Button>
+                    <Dialog
+                        open={open}
+                        onClose={handleClose}
+                        scroll={scroll}
+                    >
+                        <DialogTitle>{props.buttonName}</DialogTitle>
+                        <DialogContent dividers={false}>
+                            <DialogContentText>
+                                {props.multitext.map((subj) => (
+                                    <Typography variant="h5" color="textSecondary">
+                                        {subj}
+                                    </Typography>
+                                ))}
+                            </DialogContentText>
+                        </DialogContent>
+                        <DialogActions>
+                            {(props.otherurl != null && props.otherurl.length > 0) ? <Button href={props.otherurl} className={classes.button}>{props.other}<LaunchIcon className={classes.rightIcon}/></Button>: <span/>}
+                            <Button onClick={handleClose} color="primary" className={classes.button}>Close<FlipBackIcon className={classes.rightIcon}/></Button>
+                        </DialogActions>
+                    </Dialog>
+                </div>
+            )
+        }
+        else{
+            return(<span></span>)
+        }
+
+    }
+    else if(props.text.replace(/^\s+|\s+$/g, '').length > 0) {
         return (
             <div>
                 <Button onClick={handleClick('body')} variant="outlined" className={classes.button} color="inherit">{props.buttonName}<FlipFrontIcon className={classes.rightIcon}/></Button>

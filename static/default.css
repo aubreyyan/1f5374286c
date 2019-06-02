@@ -87,12 +87,27 @@ body {
         position: relative;
         flex-basis: 50%;
     }
+    .events-middle {
+        position: relative;
+        flex-basis: 5%;
+    }
     .events-right {
         position: relative;
         flex-basis: 50%;
     }
     .events-div {
         width: 100%;
+    }
+    .lessonplans-left {
+        position: relative;
+        flex-basis: 20%;
+    }
+    .lessonplans-middle {
+        position:relative;
+        flex-basis: 30%;
+    }
+    .lessonplans-right {
+        flex-basis: 100%;
     }
 }
 

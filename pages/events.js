@@ -12,7 +12,6 @@ import {
     Grid,
     Paper,
     Hidden,
-    Button,
     Typography,
     ExpansionPanel,
     ExpansionPanelDetails,
@@ -44,6 +43,7 @@ const useStyles = makeStyles(theme => ({
     singlecolumn: {
         flexBasis: "100%",
         position: "relative",
+        float: "left",
     },
     grid: {
         [theme.breakpoints.up('xs')]: {
@@ -82,6 +82,19 @@ function CenteredGrid({state, events}){
         return string.replace(/(&nbsp;|<([^>]+)>)/ig, "");
     }
 
+    function capitalize(string){
+        var final = "";
+        for(var i = 1; i < string.length; i++){
+            if(string.substring(i - 1, i) === " "){
+                final += string.substring(i, i + 1).toUpperCase();
+            }
+            else{
+                final += string.substring(i, i + 1);
+            }
+        }
+        return string.substring(0, 1).toUpperCase() + final;
+    }
+
     return(
         <main className={classes.content}>
             <div className={classes.toolbar}/>
@@ -107,7 +120,7 @@ function CenteredGrid({state, events}){
                                         {(eventObj.isallday.length > 0 && !eventObj.isallday.toLowerCase().includes("false")) ? <Chip label="All Day" className={classes.chip} style={{backgroundColor: "#ffc570"}}/> : <span/> }
                                         {(eventObj.isrecurring.length > 0 && !eventObj.isrecurring.toLowerCase().includes("false")) ? <Chip label="Recurring" className={classes.chip} style={{backgroundColor: "#ffc570"}}/> : <span/> }
                                         {eventObj.tags.map((tag) => (
-                                            <Chip label={tag} className={classes.chip} style={{backgroundColor: "#ffc570"}}/>
+                                            <Chip label={capitalize(tag)} className={classes.chip} style={{backgroundColor: "#ffc570"}}/>
                                         ))}
                                     </Typography>
                                 </ExpansionPanelSummary>
@@ -125,8 +138,6 @@ function CenteredGrid({state, events}){
                                                     {(timeRange.timestart.length > 0 || timeRange.timeend.length > 0) ? getTimeRange(timeRange.timestart, timeRange.timeend) + " " + getTimeZone(state):  ""}
                                                 </Typography>
                                             ))}
-                                        </div>
-                                        <div className="events-right">
                                             <Typography variant="h3" color="textPrimary" style={{fontWeight: 'bold'}}>
                                                 Where
                                             </Typography>
@@ -137,6 +148,10 @@ function CenteredGrid({state, events}){
                                         <ContactDialog name={eventObj.contactname} phone={eventObj.contacttelephonenumber} email={eventObj.contactemailaddress}/>
                                         <ButtonDialog buttonName="Registration" text={eventObj.regresinfo} other="Details" otherurl={eventObj.regresurl}/>
                                         <ButtonDialog buttonName="Payment" text={eventObj.feeinfo}/>
+
+                                    </div>
+                                    <div className="events-middle"/>
+                                    <div>
                                         <Hidden smUp>
                                             <div className={classes.singlecolumn}>
                                                 <Typography paragraph style={{display: "block"}}>
@@ -147,7 +162,7 @@ function CenteredGrid({state, events}){
                                     </div>
                                     <Hidden xsDown>
                                         <div className={classes.singlecolumn}>
-                                            <Typography paragraph>
+                                            <Typography variant="h5" paragraph>
                                                 {sanitized(eventObj.description)}
                                             </Typography>
                                         </div>
@@ -157,6 +172,14 @@ function CenteredGrid({state, events}){
                         </Paper>
                     </Grid>
                 ))}
+                {(events.length === 0) ?
+                    <Grid item xs>
+                        <Paper className={classes.paper}>
+                            <Typography color="textPrimary" variant="h4" style={{fontWeight: 'bold'}}>
+                                No Events Found
+                            </Typography>
+                        </Paper>
+                    </Grid> : <span/>}
             </Grid>
         </main>
     )

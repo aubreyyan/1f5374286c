@@ -78,13 +78,16 @@ function CenteredGrid({park}){
                     <Typography variant="h5" paragraph>
                         {park.description}
                     </Typography>
-                    <Typography variant="h3" color="textPrimary" style={{fontWeight: 'bold'}}>
-                        Weather
-                        <Divider/>
-                    </Typography>
-                    <Typography variant="h5" paragraph>
-                        {park.weatherInfo}
-                    </Typography>
+                    {(park.weatherInfo.length > 0) ?
+                    <div>
+                        <Typography variant="h4" color="textPrimary" style={{fontWeight: 'bold'}}>
+                            Weather
+                            <Divider/>
+                        </Typography>
+                        <Typography variant="h6" paragraph>
+                            {park.weatherInfo}
+                        </Typography>
+                    </div> : <span/>}
                     <Hidden smUp>
                         <ButtonDialog buttonName="Directions" text={park.directionsInfo} other="Details" otherurl={park.directionsUrl}/>
                     </Hidden>
