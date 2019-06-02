@@ -24,7 +24,7 @@ function getList(string, format){
             }
             else{
                 temp += string.substring(i, i + 1);
-                if(temp.length > 1 && temp.substring(0, 2) === "CC"){
+                if(temp.length === 2 && temp.substring(0, 2) === "CC"){
                     inCCSS = true;
                 }
             }

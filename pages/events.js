@@ -142,7 +142,7 @@ function CenteredGrid({state, events}){
                                                 Where
                                             </Typography>
                                             <Typography variant="h5" color="textSecondary" style={{fontWeight: 'bold'}}>
-                                                {eventObj.location}
+                                                {(eventObj.location.length > 0) ? eventObj.location : "No Information Found"}
                                             </Typography>
                                         </div>
                                         <ContactDialog name={eventObj.contactname} phone={eventObj.contacttelephonenumber} email={eventObj.contactemailaddress}/>
