@@ -1,19 +1,21 @@
 import React from 'react';
 import {
-    CssBaseline,
     AppBar,
-    Toolbar,
-    Typography,
+    CssBaseline,
     Divider,
-    List,
-    ListItem,
-    ListItemText,
-    Hidden,
     Drawer,
+    Fade,
+    Hidden,
     IconButton,
     LinearProgress,
-    Fade,
+    List,
+    ListItem,
+    ListItemIcon,
+    ListItemText,
+    Toolbar,
+    Typography,
 } from "@material-ui/core";
+import MenuIcon from '@material-ui/icons/Menu';
 import AlertIcon from './icons/SafetyCautionAlertsBlack30';
 import EventsIcon from './icons/CalendarEventsBlack30';
 import LessonIcon from './icons/InterpretiveExhibitBlack30';
@@ -25,8 +27,6 @@ import CampIcon from './icons/CampgroundBlack30';
 import NewsIcon from './icons/PostOfficeBlack30';
 import HomeIcon from './icons/DirectionsBlack30';
 import DetailsIcon from './icons/BrochureBlack30';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import MenuIcon from '@material-ui/icons/Menu';
 import Link from 'next/link';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import '../static/default.css';
@@ -80,24 +80,24 @@ function ResponsiveDrawer(props){
         <div>
             <div className={classes.toolbar}/>
             <Divider/>
-            <List>
-                <a id="hitbox" href="/">
-                    <ListItem button onClick={handleSubmit}>
-                        <ListItemIcon>
-                            <HomeIcon/>
-                        </ListItemIcon>
-                        <ListItemText primary="Search Home"/>
-                    </ListItem>
-                </a>
-                <a id="hitbox" href={`details?objectId=${props.park}`}>
-                    <ListItem button onClick={handleSubmit}>
-                        <ListItemIcon>
-                            <DetailsIcon/>
-                        </ListItemIcon>
-                        <ListItemText primary="Details"/>
-                    </ListItem>
-                </a>
-            </List>
+                <List>
+                    <a id="hitbox" href="/">
+                        <ListItem button onClick={handleSubmit}>
+                            <ListItemIcon>
+                                <HomeIcon/>
+                            </ListItemIcon>
+                            <ListItemText primary="Search Home"/>
+                        </ListItem>
+                    </a>
+                    <a id="hitbox" href={`details?objectId=${props.park}`}>
+                        <ListItem button onClick={handleSubmit}>
+                            <ListItemIcon>
+                                <DetailsIcon/>
+                            </ListItemIcon>
+                            <ListItemText primary="Details"/>
+                        </ListItem>
+                    </a>
+                </List>
             <Divider/>
             <List>
                 {['Alerts', 'Articles', 'Events', 'News Releases'].map((text, index) => (

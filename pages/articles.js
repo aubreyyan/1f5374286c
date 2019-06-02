@@ -1,32 +1,24 @@
 import React from 'react';
 import {withRouter} from 'next/router';
 import ResponsiveDrawer from '../components/ResponsiveDrawer';
+import NPS_Query from '../components/api/NPS_Query';
 import {
+    Button,
+    Divider,
     Grid,
     Paper,
     Typography,
-    Button,
-    Divider,
     makeStyles
 } from '@material-ui/core';
 import LaunchIcon from '@material-ui/icons/Launch';
-import NPS_Query from '../components/api/NPS_Query';
 import fetch from 'isomorphic-unfetch';
 import '../static/default.css';
 
-const drawerWidth = 240;
-
 const useStyles = makeStyles(theme => ({
-    root:{
-        flexGrow: 1,
-    },
     paper:{
         padding: theme.spacing(2),
     },
     toolbar: theme.mixins.toolbar,
-    drawerPaper: {
-        width: drawerWidth,
-    },
     content: {
         flexGrow: 1,
         padding: theme.spacing(3),
@@ -43,7 +35,6 @@ const useStyles = makeStyles(theme => ({
         marginLeft: theme.spacing(1),
         marginRight: theme.spacing(1),
         marginTop: theme.spacing(1),
-        float: 'left',
     },
     image: {
         width: "100%",
@@ -85,7 +76,11 @@ function CenteredGrid({articles}){
                             <Typography paragraph className={classes.p}>
                                 {articleObj.listingdescription}
                             </Typography>
-                            {(articleObj.url.length > 0) ? <Button href={articleObj.url} color="primary">Read Full Article<LaunchIcon className={classes.rightIcon}/></Button> : <div/>}
+                            {(articleObj.url.length > 0) ?
+                                <Button href={articleObj.url} color="primary" className={classes.button}>
+                                    Read Full Article
+                                    <LaunchIcon className={classes.rightIcon}/>
+                                </Button> : <span/>}
                             <Divider/>
                         </Paper>
                     </Grid>

@@ -1,48 +1,37 @@
 import React from 'react';
 import {withRouter} from 'next/router';
 import ResponsiveDrawer from '../components/ResponsiveDrawer';
+import ButtonDialog from "../components/ButtonDialog";
 import LessonDialog from '../components/LessonDialog';
 import NPS_Query from '../components/api/NPS_Query';
 import getList from '../components/utils/getList';
 import fetch from 'isomorphic-unfetch';
 import {
-    Chip,
-    Grid,
-    Paper,
     Button,
+    Chip,
     Divider,
-    Typography,
     ExpansionPanel,
     ExpansionPanelDetails,
     ExpansionPanelSummary,
+    Grid,
+    Paper,
+    Typography,
     makeStyles,
 } from "@material-ui/core";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import LaunchIcon from '@material-ui/icons/Launch';
+import {
+    ExpandMore as ExpandMoreIcon,
+    Launch as LaunchIcon,
+} from '@material-ui/icons';
 import '../static/default.css';
-import ButtonDialog from "../components/ButtonDialog";
-
-const drawerWidth = 240;
 
 const useStyles = makeStyles(theme => ({
-    root:{
-        flexGrow: 1,
-        width: "100%",
-    },
     paper:{
         padding: theme.spacing(2),
     },
     toolbar: theme.mixins.toolbar,
-    drawerPaper: {
-        width: drawerWidth,
-    },
     content: {
         flexGrow: 1,
         padding: theme.spacing(3),
-    },
-    singlecolumn: {
-        flexBasis: "100%",
-        position: "relative",
     },
     grid: {
         [theme.breakpoints.up('xs')]: {
@@ -61,14 +50,6 @@ const useStyles = makeStyles(theme => ({
         marginTop: theme.spacing(1),
         float: 'left',
     },
-    image: {
-        width: "100%",
-        position: "relative",
-        objectFit: 'cover',
-    },
-    p: {
-        width: "100%",
-    },
     maintitle: {
         [theme.breakpoints.only('xs')]:{
             fontSize: "xx-large"
@@ -82,8 +63,6 @@ const useStyles = makeStyles(theme => ({
 
 function CenteredGrid({plans}){
     const classes = useStyles();
-
-
     return(
         <main className={classes.content}>
             <div className={classes.toolbar}/>
@@ -126,11 +105,15 @@ function CenteredGrid({plans}){
                                                     </Typography>
                                                 ))}
                                             </div> : <span/>}
-                                        {(planObj.url.length > 0) ? <Button href={planObj.url} className={classes.button} variant="outlined" color="inherit">Details<LaunchIcon className={classes.rightIcon}/> </Button> : <span/>}
+                                        {(planObj.url.length > 0) ?
+                                            <Button href={planObj.url} className={classes.button} variant="outlined" color="inherit">
+                                                Details
+                                                <LaunchIcon className={classes.rightIcon}/>
+                                            </Button> : <span/>}
                                         <ButtonDialog buttonName="Math Standards" multitext={planObj.commoncore.mathstandards}/>
                                         <ButtonDialog buttonName="English & L.A. Standards" multitext={planObj.commoncore.elastandards}/>
                                         {(planObj.commoncore.statestandards.length > 0 || planObj.commoncore.additionalstandards.length > 0) ?
-                                         <LessonDialog state={planObj.commoncore.statestandards} other={planObj.commoncore.additionalstandards}/>   : <span/>}
+                                            <LessonDialog state={planObj.commoncore.statestandards} other={planObj.commoncore.additionalstandards}/> : <span/>}
                                     </div>
                                 </ExpansionPanelDetails>
                             </ExpansionPanel>

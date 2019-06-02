@@ -5,37 +5,24 @@ import NPS_Query from '../components/api/NPS_Query';
 import getDateRange from '../components/utils/getDateRange';
 import fetch from 'isomorphic-unfetch';
 import {
-    Grid,
-    Paper,
     Button,
     Divider,
+    Grid,
+    Paper,
     Typography,
     makeStyles,
 } from "@material-ui/core";
 import LaunchIcon from '@material-ui/icons/Launch';
 import '../static/default.css';
 
-const drawerWidth = 240;
-
 const useStyles = makeStyles(theme => ({
-    root:{
-        flexGrow: 1,
-        width: "100%",
-    },
     paper:{
         padding: theme.spacing(2),
     },
     toolbar: theme.mixins.toolbar,
-    drawerPaper: {
-        width: drawerWidth,
-    },
     content: {
         flexGrow: 1,
         padding: theme.spacing(3),
-    },
-    singlecolumn: {
-        flexBasis: "100%",
-        position: "relative",
     },
     grid: {
         [theme.breakpoints.up('xs')]: {
@@ -44,9 +31,6 @@ const useStyles = makeStyles(theme => ({
         [theme.breakpoints.up('sm')]: {
             paddingLeft: theme.spacing(30),
         },
-    },
-    chip: {
-        margin: theme.spacing(1),
     },
     button: {
         marginLeft: theme.spacing(1),
@@ -96,7 +80,11 @@ function CenteredGrid({news}){
                             <Typography paragraph variant="h4" className={classes.p}>
                                 {newsObj.abstract}
                             </Typography>
-                            {(newsObj.url.length > 0) ? <Button href={newsObj.url} color="primary">Read Full Release<LaunchIcon className={classes.rightIcon}/></Button> : <div/>}
+                            {(newsObj.url.length > 0) ?
+                                <Button href={newsObj.url} color="primary" className={classes.button}>
+                                    Read Full Release
+                                    <LaunchIcon className={classes.rightIcon}/>
+                                </Button> : <div/>}
                             <Divider/>
                         </Paper>
                     </Grid>

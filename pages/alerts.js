@@ -1,32 +1,24 @@
 import React from 'react';
 import {withRouter} from 'next/router';
 import ResponsiveDrawer from '../components/ResponsiveDrawer';
+import NPS_Query from '../components/api/NPS_Query';
 import {
+    Button,
+    Chip,
+    Divider,
     Grid,
     Paper,
     Typography,
-    Chip,
-    Button,
-    Divider,
+    makeStyles,
 } from '@material-ui/core';
 import LaunchIcon from '@material-ui/icons/Launch';
-import NPS_Query from '../components/api/NPS_Query';
 import fetch from 'isomorphic-unfetch';
-import {makeStyles} from "@material-ui/core/styles";
-
-const drawerWidth = 240;
 
 const useStyles = makeStyles(theme => ({
-    root:{
-        flexGrow: 1,
-    },
     paper:{
         padding: theme.spacing(2),
     },
     toolbar: theme.mixins.toolbar,
-    drawerPaper: {
-        width: drawerWidth,
-    },
     content: {
         flexGrow: 1,
         padding: theme.spacing(3),
@@ -70,7 +62,11 @@ function CenteredGrid({alerts}){
                             <Typography paragraph>
                                 {alertObj.description}
                             </Typography>
-                            {(alertObj.url.length > 0) ? <Button href={alertObj.url} color="primary">More Information<LaunchIcon className={classes.rightIcon}/></Button> : <div/>}
+                            {(alertObj.url.length > 0) ?
+                                <Button href={alertObj.url} color="primary" className={classes.button}>
+                                    More Information
+                                    <LaunchIcon className={classes.rightIcon}/>
+                                </Button> : <div/>}
                         </Paper>
                     </Grid>
                 ))}

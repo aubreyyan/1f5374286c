@@ -1,7 +1,10 @@
 import React from 'react';
 import {withRouter} from 'next/router';
 import ResponsiveDrawer from '../components/ResponsiveDrawer';
+import ButtonDialog from "../components/ButtonDialog";
 import ContactDialog from '../components/ContactDialog';
+import sanitized from '../components/utils/sanitized';
+import capitalize from '../components/utils/capitalize';
 import NPS_Query from '../components/api/NPS_Query';
 import getTimeRange from '../components/utils/getTimeRange';
 import getDateRange from "../components/utils/getDateRange";
@@ -9,33 +12,23 @@ import getTimeZone from '../components/utils/getTimeZone';
 import fetch from 'isomorphic-unfetch';
 import {
     Chip,
-    Grid,
-    Paper,
-    Hidden,
-    Typography,
     ExpansionPanel,
     ExpansionPanelDetails,
     ExpansionPanelSummary,
+    Grid,
+    Hidden,
+    Paper,
+    Typography,
     makeStyles
 } from "@material-ui/core";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import '../static/default.css';
-import ButtonDialog from "../components/ButtonDialog";
-
-const drawerWidth = 240;
 
 const useStyles = makeStyles(theme => ({
-    root:{
-        flexGrow: 1,
-        width: "100%",
-    },
     paper:{
         padding: theme.spacing(2),
     },
     toolbar: theme.mixins.toolbar,
-    drawerPaper: {
-        width: drawerWidth,
-    },
     content: {
         flexGrow: 1,
         padding: theme.spacing(3),
@@ -56,16 +49,6 @@ const useStyles = makeStyles(theme => ({
     chip: {
         margin: theme.spacing(1),
     },
-    button: {
-        marginLeft: theme.spacing(1),
-        marginRight: theme.spacing(1),
-        marginTop: theme.spacing(1),
-    },
-    image: {
-        width: "100%",
-        position: "relative",
-        objectFit: 'cover',
-    },
     p: {
         width: "100%",
     },
@@ -78,24 +61,6 @@ const useStyles = makeStyles(theme => ({
 
 function CenteredGrid({state, events}){
     const classes = useStyles();
-
-    function sanitized(string){
-        return string.replace(/(&nbsp;|<([^>]+)>)/ig, "");
-    }
-
-    function capitalize(string){
-        var final = "";
-        for(var i = 1; i < string.length; i++){
-            if(string.substring(i - 1, i) === " "){
-                final += string.substring(i, i + 1).toUpperCase();
-            }
-            else{
-                final += string.substring(i, i + 1);
-            }
-        }
-        return string.substring(0, 1).toUpperCase() + final;
-    }
-
     return(
         <main className={classes.content}>
             <div className={classes.toolbar}/>
@@ -111,15 +76,21 @@ function CenteredGrid({state, events}){
                                 >
                                     <Typography variant="h3" color="textPrimary" style={{fontWeight: 'bold'}} className={classes.maintitle}>
                                         {eventObj.title + " "}
-                                        {(eventObj.category.length > 0) ? <Chip label={eventObj.category} className={classes.chip} style={{backgroundColor: "#29c609"}}/> : <span/>}
+                                        {(eventObj.category.length > 0) ?
+                                            <Chip label={eventObj.category} className={classes.chip} style={{backgroundColor: "#29c609"}}/> : <span/>}
                                         {eventObj.types.map((type) => (
                                             <Chip label={type} className={classes.chip} style={{backgroundColor: "#29c609"}}/>
                                         ))}
-                                        {(eventObj.organizationname.length > 0) ? <Chip label={eventObj.organizationname} className={classes.chip} style={{backgroundColor: "#86fdff"}}/> : <span/> }
-                                        {(eventObj.isfree.length >  0 && !eventObj.isfree.toLowerCase().includes("false")) ? <Chip label="Free" className={classes.chip} style={{backgroundColor: "#29c609"}}/> : <span/>}
-                                        {(eventObj.isregresrequired.length > 0 && !eventObj.isregresrequired.toLowerCase().includes("false")) ? <Chip label="Registration Required" className={classes.chip} style={{backgroundColor: "#29c609"}}/> : <span/>}
-                                        {(eventObj.isallday.length > 0 && !eventObj.isallday.toLowerCase().includes("false")) ? <Chip label="All Day" className={classes.chip} style={{backgroundColor: "#ffc570"}}/> : <span/> }
-                                        {(eventObj.isrecurring.length > 0 && !eventObj.isrecurring.toLowerCase().includes("false")) ? <Chip label="Recurring" className={classes.chip} style={{backgroundColor: "#ffc570"}}/> : <span/> }
+                                        {(eventObj.organizationname.length > 0) ?
+                                            <Chip label={eventObj.organizationname} className={classes.chip} style={{backgroundColor: "#86fdff"}}/> : <span/> }
+                                        {(eventObj.isfree.length >  0 && !eventObj.isfree.toLowerCase().includes("false")) ?
+                                            <Chip label="Free" className={classes.chip} style={{backgroundColor: "#29c609"}}/> : <span/>}
+                                        {(eventObj.isregresrequired.length > 0 && !eventObj.isregresrequired.toLowerCase().includes("false")) ?
+                                            <Chip label="Registration Required" className={classes.chip} style={{backgroundColor: "#29c609"}}/> : <span/>}
+                                        {(eventObj.isallday.length > 0 && !eventObj.isallday.toLowerCase().includes("false")) ?
+                                            <Chip label="All Day" className={classes.chip} style={{backgroundColor: "#ffc570"}}/> : <span/> }
+                                        {(eventObj.isrecurring.length > 0 && !eventObj.isrecurring.toLowerCase().includes("false")) ?
+                                            <Chip label="Recurring" className={classes.chip} style={{backgroundColor: "#ffc570"}}/> : <span/> }
                                         {eventObj.tags.map((tag) => (
                                             <Chip label={capitalize(tag)} className={classes.chip} style={{backgroundColor: "#ffc570"}}/>
                                         ))}
@@ -136,7 +107,8 @@ function CenteredGrid({state, events}){
                                             </Typography>
                                             {eventObj.times.map((timeRange) => (
                                                 <Typography variant="h5" color="textSecondary" style={{fontWeight: 'bold'}}>
-                                                    {(timeRange.timestart.length > 0 || timeRange.timeend.length > 0) ? getTimeRange(timeRange.timestart, timeRange.timeend) + " " + getTimeZone(state):  ""}
+                                                    {(timeRange.timestart.length > 0 || timeRange.timeend.length > 0) ?
+                                                        getTimeRange(timeRange.timestart, timeRange.timeend) + " " + getTimeZone(state):  ""}
                                                 </Typography>
                                             ))}
                                             <Typography variant="h3" color="textPrimary" style={{fontWeight: 'bold'}}>
@@ -149,7 +121,6 @@ function CenteredGrid({state, events}){
                                         <ContactDialog name={eventObj.contactname} phone={eventObj.contacttelephonenumber} email={eventObj.contactemailaddress}/>
                                         <ButtonDialog buttonName="Registration" text={eventObj.regresinfo} other="Details" otherurl={eventObj.regresurl}/>
                                         <ButtonDialog buttonName="Payment" text={eventObj.feeinfo}/>
-
                                     </div>
                                     <div className="events-middle"/>
                                     <div>

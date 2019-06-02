@@ -1,9 +1,9 @@
 import React from 'react';
 import {
     AppBar,
+    InputBase,
     Toolbar,
     Typography,
-    InputBase
 } from "@material-ui/core";
 import SearchIcon from '@material-ui/icons/Search';
 import { fade } from '@material-ui/core/styles/colorManipulator';

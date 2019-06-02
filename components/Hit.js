@@ -1,10 +1,10 @@
 import React from 'react';
 import {Highlight} from "react-instantsearch-dom";
 import {
-    Card,
-    Typography,
-    Paper,
     Button,
+    Card,
+    Paper,
+    Typography,
 } from "@material-ui/core";
 import FlightIcon from '@material-ui/icons/FlightTakeoff';
 import Link from 'next/link';

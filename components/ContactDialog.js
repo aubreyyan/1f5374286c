@@ -7,9 +7,9 @@ import {
     DialogContent,
     DialogContentText,
     DialogTitle,
-    Typography,
     Divider,
-    makeStyles
+    Typography,
+    makeStyles,
 } from "@material-ui/core";
 import {
     Call as PhoneIcon,

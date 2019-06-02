@@ -1,20 +1,20 @@
 import React from 'react';
 import {withRouter} from 'next/router';
+import ButtonDialog from "../components/ButtonDialog";
 import ResponsiveDrawer from '../components/ResponsiveDrawer';
 import NPS_Query from '../components/api/NPS_Query';
 import fetch from 'isomorphic-unfetch';
 import {
-    Grid,
-    Paper,
     Button,
-    Hidden,
     Divider,
+    Grid,
+    Hidden,
+    Paper,
     Typography,
     makeStyles
 } from '@material-ui/core';
 import LaunchIcon from '@material-ui/icons/Launch';
 import '../static/default.css';
-import ButtonDialog from "../components/ButtonDialog";
 
 const useStyles = makeStyles(theme => ({
     content:{
@@ -81,11 +81,19 @@ function CenteredGrid({centers}){
                                         <Typography paragraph variant="h4" className={classes.p}>
                                             {centerObj.directionsInfo}
                                         </Typography>
-                                        {(centerObj.directionsUrl.length > 0) ? <Button href={centerObj.directionsUrl} color="primary" className={classes.button}>Directions<LaunchIcon className={classes.rightIcon}/></Button> : <span/>}
+                                        {(centerObj.directionsUrl.length > 0) ?
+                                            <Button href={centerObj.directionsUrl} color="primary" className={classes.button}>
+                                                Directions
+                                                <LaunchIcon className={classes.rightIcon}/>
+                                            </Button> : <span/>}
                                     </span>
                                 : <span/>}
                             </Hidden>
-                            {(centerObj.url.length > 0) ? <Button href={centerObj.url} color="primary" className={classes.button}>More Information<LaunchIcon className={classes.rightIcon}/></Button> : <span/> }
+                            {(centerObj.url.length > 0) ?
+                                <Button href={centerObj.url} color="primary" className={classes.button}>
+                                    More Information
+                                    <LaunchIcon className={classes.rightIcon}/>
+                                </Button> : <span/> }
                         </Paper>
                     </Grid>
                 ))}

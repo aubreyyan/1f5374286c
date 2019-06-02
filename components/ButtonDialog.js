@@ -6,15 +6,14 @@ import {
     DialogContent,
     DialogContentText,
     DialogTitle,
-    makeStyles, Typography
+    Typography,
+    makeStyles,
 } from "@material-ui/core";
 import {
     Launch as LaunchIcon,
     FlipToFront as FlipFrontIcon,
     FlipToBack as FlipBackIcon,
 } from '@material-ui/icons';
-
-const drawerWidth = 240;
 
 const useStyles = makeStyles(theme => ({
     toolbar: theme.mixins.toolbar,

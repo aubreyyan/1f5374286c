@@ -1,12 +1,12 @@
 import React from 'react';
 import AppBar from '../components/AppBar';
-import {createMuiTheme} from "@material-ui/core/styles";
-import {ThemeProvider} from '@material-ui/styles';
-import {InstantSearch} from 'react-instantsearch-dom';
 import InfiniteHits from '../components/InfiniteHits';
 import Hit from '../components/Hit';
 import CustomButton from '../components/CustomButton';
 import searchClient from '../components/api/SearchClient';
+import {createMuiTheme} from "@material-ui/core/styles";
+import {ThemeProvider} from '@material-ui/styles';
+import {InstantSearch} from 'react-instantsearch-dom';
 
 const proxyClient = {
     search(requests){

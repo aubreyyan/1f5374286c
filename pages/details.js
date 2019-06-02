@@ -1,35 +1,27 @@
 import React from 'react';
 import {withRouter} from 'next/router';
 import ResponsiveDrawer from '../components/ResponsiveDrawer';
+import ButtonDialog from "../components/ButtonDialog";
+import addSpacing from '../components/utils/addSpacing';
 import NPS_Query from '../components/api/NPS_Query';
 import Google_Query from '../components/api/Google_Query';
-import {
-    Chip,
-    Grid,
-    Typography,
-    Divider,
-    Hidden,
-    Button,
-    makeStyles} from "@material-ui/core";
 import fetch from 'isomorphic-unfetch';
-import '../static/default.css';
-import ButtonDialog from "../components/ButtonDialog";
+import {
+    Button,
+    Chip,
+    Divider,
+    Grid,
+    Hidden,
+    Typography,
+    makeStyles} from "@material-ui/core";
 import LaunchIcon from '@material-ui/icons/Launch';
-
-const drawerWidth = 240;
+import '../static/default.css';
 
 const useStyles = makeStyles(theme => ({
-    root:{
-        flexGrow: 1,
-        width: "100%",
-    },
     paper:{
         padding: theme.spacing(2),
     },
     toolbar: theme.mixins.toolbar,
-    drawerPaper: {
-        width: drawerWidth,
-    },
     content: {
         flexGrow: 1,
         padding: theme.spacing(3),
@@ -56,9 +48,6 @@ const useStyles = makeStyles(theme => ({
         position: "relative",
         objectFit: 'cover',
     },
-    p: {
-        width: "100%",
-    },
     rightIcon: {
         marginLeft: theme.spacing(1),
     },
@@ -66,27 +55,14 @@ const useStyles = makeStyles(theme => ({
 
 function CenteredGrid({park}){
     const classes = useStyles();
-
-    function addSpacing(states){
-        var final = "";
-        for(var i = 0; i < states.length; i++){
-            if(states.substring(i, i + 1) === ","){
-                final += ", ";
-            }
-            else{
-                final += states.substring(i, i + 1);
-            }
-        }
-        return final;
-    }
-
     return(
         <main className={classes.content}>
             <div className={classes.toolbar}/>
             <Grid container spacing={3} className={classes.grid}>
                 <Typography color="textPrimary" variant="h2" style={{fontWeight: 'bold', paddingBottom: "15px", width: "100%"}}>
                     {"Welcome to " + park.fullName + ", " + addSpacing(park.states) + " "}
-                    {(park.designation.length > 0) ? <Chip label={park.designation} className={classes.chip} color="primary"/> : <span/> }
+                    {(park.designation.length > 0) ?
+                        <Chip label={park.designation} className={classes.chip} color="primary"/> : <span/> }
                     <Divider/>
                 </Typography>
                 <div className="leftcol">
@@ -114,7 +90,11 @@ function CenteredGrid({park}){
                         <Typography variant="h6" paragraph>
                             {park.directionsInfo}
                         </Typography>
-                        {(park.directionsUrl.length > 0) ? <Button href={park.directionsUrl} variant="contained" color="inherit">Directions<LaunchIcon className={classes.rightIcon}/></Button> : <span/>}
+                        {(park.directionsUrl.length > 0) ?
+                            <Button href={park.directionsUrl} variant="contained" color="inherit" className={classes.button}>
+                                Directions
+                                <LaunchIcon className={classes.rightIcon}/>
+                            </Button> : <span/>}
                     </Hidden>
                 </div>
                 <div style={{flexBasis: "2.5%"}}/>

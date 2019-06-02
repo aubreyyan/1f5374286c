@@ -4,37 +4,24 @@ import ResponsiveDrawer from '../components/ResponsiveDrawer';
 import NPS_Query from '../components/api/NPS_Query';
 import fetch from 'isomorphic-unfetch';
 import {
-    Grid,
-    Paper,
     Button,
     Divider,
+    Grid,
+    Paper,
     Typography,
     makeStyles,
 } from "@material-ui/core";
 import LaunchIcon from '@material-ui/icons/Launch';
 import '../static/default.css';
 
-const drawerWidth = 240;
-
 const useStyles = makeStyles(theme => ({
-    root:{
-        flexGrow: 1,
-        width: "100%",
-    },
     paper:{
         padding: theme.spacing(2),
     },
     toolbar: theme.mixins.toolbar,
-    drawerPaper: {
-        width: drawerWidth,
-    },
     content: {
         flexGrow: 1,
         padding: theme.spacing(3),
-    },
-    singlecolumn: {
-        flexBasis: "100%",
-        position: "relative",
     },
     grid: {
         [theme.breakpoints.up('xs')]: {
@@ -43,9 +30,6 @@ const useStyles = makeStyles(theme => ({
         [theme.breakpoints.up('sm')]: {
             paddingLeft: theme.spacing(30),
         },
-    },
-    chip: {
-        margin: theme.spacing(1),
     },
     button: {
         marginLeft: theme.spacing(1),
@@ -92,7 +76,11 @@ function CenteredGrid({places}){
                             <Typography paragraph variant="h4" className={classes.p}>
                                 {placeObj.listingdescription}
                             </Typography>
-                            {(placeObj.url.length > 0) ? <Button href={placeObj.url} color="primary">{"Read More About " + placeObj.title}<LaunchIcon className={classes.rightIcon}/></Button> : <span/>}
+                            {(placeObj.url.length > 0) ?
+                                <Button href={placeObj.url} color="primary" className={classes.button}>
+                                    {"Read More About " + placeObj.title}
+                                    <LaunchIcon className={classes.rightIcon}/>
+                                </Button> : <span/>}
                             <Divider/>
                         </Paper>
                     </Grid>
