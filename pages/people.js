@@ -91,7 +91,7 @@ function CenteredGrid({people}){
                             <Typography paragraph variant="h4" className={classes.p}>
                                 {peopleObj.listingdescription}
                             </Typography>
-                            {(peopleObj.url.length > 0) ? <Button href={peopleObj.url} color="primary">Read More<LaunchIcon className={classes.rightIcon}/></Button> : <div/>}
+                            {(peopleObj.url.length > 0) ? <Button href={peopleObj.url} color="primary">{"Read More About " + peopleObj.title}<LaunchIcon className={classes.rightIcon}/></Button> : <span/>}
                             <Divider/>
                         </Paper>
                     </Grid>

@@ -113,7 +113,7 @@ function LessonDialog({state, other}){
                             </Typography>
                             <Divider/>
                             {getList(other, "ccss").map((std) => (
-                                <Typography paragraph>
+                                <Typography variant="h5" color="textSecondary">
                                     {std}
                                 </Typography>
                             ))}
