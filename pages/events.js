@@ -57,8 +57,9 @@ const useStyles = makeStyles(theme => ({
         margin: theme.spacing(1),
     },
     button: {
-        margin: theme.spacing(1),
-        float: 'left',
+        marginLeft: theme.spacing(1),
+        marginRight: theme.spacing(1),
+        marginTop: theme.spacing(1),
     },
     image: {
         width: "100%",

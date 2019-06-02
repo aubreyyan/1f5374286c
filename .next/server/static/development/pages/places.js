@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1544,8 +1544,9 @@ var useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["makeStyle
       margin: theme.spacing(1)
     },
     button: {
-      margin: theme.spacing(1),
-      float: 'left'
+      marginLeft: theme.spacing(1),
+      marginRight: theme.spacing(1),
+      marginTop: theme.spacing(1)
     },
     image: {
       width: "100%",
@@ -1700,7 +1701,7 @@ function () {
 
 /***/ }),
 
-/***/ 4:
+/***/ 5:
 /*!*******************************!*\
   !*** multi ./pages/places.js ***!
   \*******************************/

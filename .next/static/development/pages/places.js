@@ -55309,8 +55309,9 @@ var useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["makeStyle
       margin: theme.spacing(1)
     },
     button: {
-      margin: theme.spacing(1),
-      float: 'left'
+      marginLeft: theme.spacing(1),
+      marginRight: theme.spacing(1),
+      marginTop: theme.spacing(1)
     },
     image: {
       width: "100%",
@@ -55454,7 +55455,7 @@ function () {
 
 /***/ }),
 
-/***/ 2:
+/***/ 0:
 /*!********************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fplaces&absolutePagePath=C%3A%5CUsers%5Cfusi0%5CIdeaProjects%5CNPS-revised%5Cpages%5Cplaces.js ***!
   \********************************************************************************************************************************************/
@@ -55477,5 +55478,5 @@ module.exports = dll_829b10deddf10e1653a8;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js","styles"]]]);
+},[[0,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=places.js.map

@@ -11,19 +11,13 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/lessonplans": [
+    "/people": [
       "static/runtime/webpack.js",
       "static/css/styles.chunk.css",
       "static/chunks/styles.js",
       "static/runtime/main.js"
     ],
     "/places": [
-      "static/runtime/webpack.js",
-      "static/css/styles.chunk.css",
-      "static/chunks/styles.js",
-      "static/runtime/main.js"
-    ],
-    "/visitorcenters": [
       "static/runtime/webpack.js",
       "static/css/styles.chunk.css",
       "static/chunks/styles.js",

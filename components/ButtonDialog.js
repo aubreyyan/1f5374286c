@@ -45,8 +45,10 @@ const useStyles = makeStyles(theme => ({
         margin: theme.spacing(1),
     },
     button: {
-        margin: theme.spacing(1),
-        float: 'left',
+        marginLeft: theme.spacing(1),
+        marginRight: theme.spacing(1),
+        marginTop: theme.spacing(1),
+        float: 'left'
     },
     image: {
         width: "100%",
@@ -109,7 +111,7 @@ function ButtonDialog(props){
     }
     else if(props.text.replace(/^\s+|\s+$/g, '').length > 0) {
         return (
-            <div>
+            <span>
                 <Button onClick={handleClick('body')} variant="outlined" className={classes.button} color="inherit">{props.buttonName}<FlipFrontIcon className={classes.rightIcon}/></Button>
                 <Dialog
                     open={open}
@@ -127,7 +129,7 @@ function ButtonDialog(props){
                         <Button onClick={handleClose} color="primary" className={classes.button}>Close<FlipBackIcon className={classes.rightIcon}/></Button>
                     </DialogActions>
                 </Dialog>
-            </div>
+            </span>
         )
     }
     else{

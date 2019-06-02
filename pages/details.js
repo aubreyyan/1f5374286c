@@ -46,7 +46,9 @@ const useStyles = makeStyles(theme => ({
         margin: theme.spacing(1),
     },
     button: {
-        margin: theme.spacing(1),
+        marginLeft: theme.spacing(1),
+        marginRight: theme.spacing(1),
+        marginTop: theme.spacing(1),
         float: 'left',
     },
     image: {
@@ -65,12 +67,25 @@ const useStyles = makeStyles(theme => ({
 function CenteredGrid({park}){
     const classes = useStyles();
 
+    function addSpacing(states){
+        var final = "";
+        for(var i = 0; i < states.length; i++){
+            if(states.substring(i, i + 1) === ","){
+                final += ", ";
+            }
+            else{
+                final += states.substring(i, i + 1);
+            }
+        }
+        return final;
+    }
+
     return(
         <main className={classes.content}>
             <div className={classes.toolbar}/>
             <Grid container spacing={3} className={classes.grid}>
                 <Typography color="textPrimary" variant="h2" style={{fontWeight: 'bold', paddingBottom: "15px", width: "100%"}}>
-                    {"Welcome to " + park.fullName + ", " + park.states + " "}
+                    {"Welcome to " + park.fullName + ", " + addSpacing(park.states) + " "}
                     {(park.designation.length > 0) ? <Chip label={park.designation} className={classes.chip} color="primary"/> : <span/> }
                     <Divider/>
                 </Typography>

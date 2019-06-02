@@ -56,7 +56,9 @@ const useStyles = makeStyles(theme => ({
         margin: theme.spacing(1),
     },
     button: {
-        margin: theme.spacing(1),
+        marginLeft: theme.spacing(1),
+        marginRight: theme.spacing(1),
+        marginTop: theme.spacing(1),
         float: 'left',
     },
     image: {
@@ -124,9 +126,9 @@ function CenteredGrid({plans}){
                                                     </Typography>
                                                 ))}
                                             </div> : <span/>}
-                                        {(planObj.url.length > 0) ? <div style={{float: 'left'}}><Button href={planObj.url} className={classes.button} variant="outlined" color="inherit">Details<LaunchIcon className={classes.rightIcon}/> </Button></div> : <span/>}
+                                        {(planObj.url.length > 0) ? <Button href={planObj.url} className={classes.button} variant="outlined" color="inherit">Details<LaunchIcon className={classes.rightIcon}/> </Button> : <span/>}
                                         <ButtonDialog buttonName="Math Standards" multitext={planObj.commoncore.mathstandards}/>
-                                        <ButtonDialog buttonName="English & Language Arts Standards" multitext={planObj.commoncore.elastandards}/>
+                                        <ButtonDialog buttonName="English & L.A. Standards" multitext={planObj.commoncore.elastandards}/>
                                         {(planObj.commoncore.statestandards.length > 0 || planObj.commoncore.additionalstandards.length > 0) ?
                                          <LessonDialog state={planObj.commoncore.statestandards} other={planObj.commoncore.additionalstandards}/>   : <span/>}
                                     </div>

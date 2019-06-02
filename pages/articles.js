@@ -40,7 +40,10 @@ const useStyles = makeStyles(theme => ({
         },
     },
     button: {
-        margin: theme.spacing(1),
+        marginLeft: theme.spacing(1),
+        marginRight: theme.spacing(1),
+        marginTop: theme.spacing(1),
+        float: 'left',
     },
     image: {
         width: "100%",
