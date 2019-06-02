@@ -5,7 +5,6 @@ import NPS_Query from '../components/api/NPS_Query';
 import getDateRange from '../components/utils/getDateRange';
 import fetch from 'isomorphic-unfetch';
 import {
-    Chip,
     Grid,
     Paper,
     Button,
