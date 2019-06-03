@@ -5,5 +5,4 @@ module.exports = withCSS({
         maxInactiveAge: 25*1000,
         pagesBufferLength: 2
     },
-    // useFileSystemPublicRoutes: false,
 });
