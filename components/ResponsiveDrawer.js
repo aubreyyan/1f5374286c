@@ -90,7 +90,7 @@ function ResponsiveDrawer(props){
                         </ListItem>
                     </a>
                     <a id="hitbox" href={`details?objectId=${props.park}`}>
-                        <ListItem button onClick={handleSubmit}>
+                        <ListItem button onClick={handleSubmit} selected={props.current === "Details"}>
                             <ListItemIcon>
                                 <DetailsIcon/>
                             </ListItemIcon>
@@ -102,7 +102,7 @@ function ResponsiveDrawer(props){
             <List>
                 {['Alerts', 'Articles', 'Events', 'News Releases'].map((text, index) => (
                     <Link href={`/${props.park}/${text.toLowerCase().replace(" ", "-")}`} as={`/${text.toLowerCase().replace(" ", "")}?objectId=${props.park}`}>
-                        <ListItem button key={text} onClick={handleSubmit}>
+                        <ListItem button key={text} onClick={handleSubmit} selected={props.current === text}>
                             <ListItemIcon>
                                 {index === 0 ? <AlertIcon/>: index === 1 ? <ArticlesIcon/>: index === 2 ? <EventsIcon/>: <NewsIcon/>}
                             </ListItemIcon>
@@ -115,7 +115,7 @@ function ResponsiveDrawer(props){
             <List>
                 {['Campgrounds', 'Visitor Centers'].map((text, index) => (
                     <Link href={`/${props.park}/${text.toLowerCase().replace(" ", "-")}`} as={`/${text.toLowerCase().replace(" ", "")}?objectId=${props.park}`}>
-                        <ListItem button key={text} onClick={handleSubmit}>
+                        <ListItem button key={text} onClick={handleSubmit} selected={props.current === text}>
                             <ListItemIcon>
                                 {index === 0 ? <CampIcon/>: <VisitorCenterIcon/>}
                             </ListItemIcon>
@@ -128,7 +128,7 @@ function ResponsiveDrawer(props){
             <List>
                 {['Lesson Plans', 'People', 'Places'].map((text, index) => (
                     <Link href={`/${props.park}/${text.toLowerCase().replace(" ", "-")}`} as={`/${text.toLowerCase().replace(" ", "")}?objectId=${props.park}`}>
-                        <ListItem button key={text} onClick={handleSubmit}>
+                        <ListItem button key={text} onClick={handleSubmit} selected={props.current === text}>
                             <ListItemIcon>
                                 {index === 0 ? <LessonIcon/>: index === 1 ? <PeopleIcon/>: <PlacesIcon/>}
                             </ListItemIcon>

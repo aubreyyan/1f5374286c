@@ -18,19 +18,22 @@ class ButtonComponent extends React.Component{
         const loading = this.state.loading;
         return(
             <div>
+                <Fade in={loading}>
+                    <LinearProgress style={{position: "relative", bottom: "-79vh"}}/>
+                </Fade>
                 <Button color="secondary" variant="contained" size="large" onClick={this.handleSubmit} style={{
                     width: "100%",
                     fontSize: 30,
-                    color: "#FFFFFF"
+                    color: "#FFFFFF",
+                    position: "fixed",
+                    bottom: 0,
+                    right: 0,
                 }}>
                     Find the nearest point of interest
                     <LocationIcon style={{
                         paddingLeft: '10px',
                     }} />
                 </Button>
-                <Fade in={loading}>
-                    <LinearProgress/>
-                </Fade>
             </div>
         )
     }

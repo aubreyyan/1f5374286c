@@ -55,6 +55,11 @@ const useStyles = makeStyles(theme => ({
 
 function CenteredGrid({centers}){
     const classes = useStyles();
+
+    React.useEffect(() => {
+        document.title = "Visitor Centers";
+    }, []);
+
     return(
         <main className={classes.content}>
             <div className={classes.toolbar}/>
@@ -62,11 +67,11 @@ function CenteredGrid({centers}){
                 {centers.map((centerObj) => (
                     <Grid item xs={12} md={6} lg={6}>
                         <Paper className={classes.paper}>
-                            <Typography variant="h3" color="textPrimary" style={{fontWeight: 'bold'}} className={classes.maintitle}>
+                            <Typography variant="h4" color="textPrimary" style={{fontWeight: 'bold'}} className={classes.maintitle}>
                                 {centerObj.name}
                             </Typography>
                             <Divider/><br/>
-                            <Typography paragraph variant="h4" className={classes.p}>
+                            <Typography paragraph className={classes.p}>
                                 {centerObj.description}
                             </Typography>
                             <Hidden smUp>
@@ -75,10 +80,10 @@ function CenteredGrid({centers}){
                             <Hidden xsDown>
                                 {(centerObj.directionsInfo.length > 0) ?
                                     <span>
-                                        <Typography variant="h4" color="textPrimary" style={{fontWeight: 'bold'}} className={classes.maintitle}>
+                                        <Typography variant="h5" color="textPrimary" style={{fontWeight: 'bold'}} className={classes.maintitle}>
                                             Directions
                                         </Typography>
-                                        <Typography paragraph variant="h4" className={classes.p}>
+                                        <Typography paragraph className={classes.p}>
                                             {centerObj.directionsInfo}
                                         </Typography>
                                         {(centerObj.directionsUrl.length > 0) ?
@@ -116,7 +121,7 @@ const VisitorCenters = withRouter( props => (
             flexGrow: 1,
         },
     }}>
-        <ResponsiveDrawer name={props.parks.data[0].fullName + " Visitor Centers"} park={props.router.query.objectId}/>
+        <ResponsiveDrawer name={props.parks.data[0].fullName + " Visitor Centers"} park={props.router.query.objectId} current="Visitor Centers"/>
         <CenteredGrid centers={props.centers.data}/>
     </div>
 ));

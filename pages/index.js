@@ -7,6 +7,7 @@ import searchClient from '../components/api/SearchClient';
 import {createMuiTheme} from "@material-ui/core/styles";
 import {ThemeProvider} from '@material-ui/styles';
 import {InstantSearch} from 'react-instantsearch-dom';
+import '../static/default.css';
 
 const proxyClient = {
     search(requests){
@@ -42,19 +43,30 @@ const theme = createMuiTheme({
 });
 
 class Index extends React.Component{
+    componentDidMount() {
+        document.title = "National Park Search";
+
+    }
+
     render(){
         return(
-            <div>
+            <section style={{
+                width: "100%",
+                height: "95vh",
+                backgroundImage: "url(../static/rocky-mountain-national-park-desktop-background.jpg)",
+                backgroundRepeat: 'no-repeat',
+                backgroundAttachment: 'fixed',
+            }}>
                 <ThemeProvider theme={theme}>
-                <InstantSearch indexName="Parks" searchClient={proxyClient}>
-                    <AppBar/>
-                    <br/><br/>
-                    <InfiniteHits hitComponent={Hit} />
-                </InstantSearch>
+                    <InstantSearch indexName="Parks" searchClient={proxyClient}>
+                        <AppBar/>
+                        <br/><br/>
+                        <InfiniteHits hitComponent={Hit} />
+                    </InstantSearch>
                     <br/>
-                <CustomButton/>
+                    <CustomButton/>
                 </ThemeProvider>
-            </div>
+            </section>
         )
     }
 }

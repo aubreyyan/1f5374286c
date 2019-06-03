@@ -61,6 +61,11 @@ const useStyles = makeStyles(theme => ({
 
 function CenteredGrid({state, events}){
     const classes = useStyles();
+
+    React.useEffect(() => {
+        document.title = "Events";
+    }, []);
+
     return(
         <main className={classes.content}>
             <div className={classes.toolbar}/>
@@ -134,7 +139,7 @@ function CenteredGrid({state, events}){
                                     </div>
                                     <Hidden xsDown>
                                         <div className={classes.singlecolumn}>
-                                            <Typography variant="h5" paragraph>
+                                            <Typography paragraph style={{fontSize: "x-large"}}>
                                                 {sanitized(eventObj.description)}
                                             </Typography>
                                         </div>
@@ -163,7 +168,7 @@ const Events = withRouter( props => (
             flexGrow: 1,
         },
     }}>
-        <ResponsiveDrawer name={props.parks.data[0].fullName + " Events"} park={props.router.query.objectId}/>
+        <ResponsiveDrawer name={props.parks.data[0].fullName + " Events"} park={props.router.query.objectId} current="Events"/>
         <CenteredGrid events={props.events.data} state={props.parks.data[0].states}/>
     </div>
 ));

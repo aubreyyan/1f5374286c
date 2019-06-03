@@ -63,7 +63,7 @@ function ButtonDialog(props){
                         <DialogContent dividers={false}>
                             <DialogContentText>
                                 {props.multitext.map((subj) => (
-                                    <Typography variant="h5" color="textSecondary">
+                                    <Typography paragraph color="textSecondary">
                                         {subj}
                                     </Typography>
                                 ))}

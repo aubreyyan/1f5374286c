@@ -46,6 +46,9 @@ const useStyles = makeStyles(theme => ({
         [theme.breakpoints.only('xs')]:{
             fontSize: "large",
         },
+        [theme.breakpoints.up('lg')]:{
+            fontSize: "x-large",
+        },
     },
     maintitle: {
         [theme.breakpoints.only('xs')]:{
@@ -59,6 +62,11 @@ const useStyles = makeStyles(theme => ({
 
 function CenteredGrid({news}){
     const classes = useStyles();
+
+    React.useEffect(() => {
+        document.title = "News Releases";
+    }, []);
+
     return(
         <main className={classes.content}>
             <div className={classes.toolbar}/>
@@ -77,7 +85,7 @@ function CenteredGrid({news}){
                             <Typography variant="h5" paragraph color="textSecondary">
                                 {(newsObj.releasedate.includes(" ")) ? getDateRange(newsObj.releasedate.split(" ")[0], null) : ""}
                             </Typography>
-                            <Typography paragraph variant="h4" className={classes.p}>
+                            <Typography paragraph className={classes.p}>
                                 {newsObj.abstract}
                             </Typography>
                             {(newsObj.url.length > 0) ?
@@ -108,7 +116,7 @@ const NewsReleases = withRouter(props => (
             flexGrow: 1,
         },
     }}>
-        <ResponsiveDrawer name={props.parks.data[0].fullName + " News Releases"} park={props.router.query.objectId}/>
+        <ResponsiveDrawer name={props.parks.data[0].fullName + " News Releases"} park={props.router.query.objectId} current="News Releases"/>
         <CenteredGrid news={props.news.data}/>
     </div>
 ));

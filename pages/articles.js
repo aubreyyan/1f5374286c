@@ -58,6 +58,11 @@ const useStyles = makeStyles(theme => ({
 
 function CenteredGrid({articles}){
     const classes = useStyles();
+
+    React.useEffect(() => {
+        document.title = "Articles";
+    }, []);
+
     return(
         <main className={classes.content}>
             <div className={classes.toolbar}/>
@@ -104,7 +109,7 @@ const Details = withRouter( props => (
             flexGrow: 1,
         },
     }}>
-        <ResponsiveDrawer name={props.parks.data[0].fullName + " Articles"} park={props.router.query.objectId}/>
+        <ResponsiveDrawer name={props.parks.data[0].fullName + " Articles"} park={props.router.query.objectId} current="Articles"/>
         <CenteredGrid articles={props.articles.data}/>
     </div>
 ));

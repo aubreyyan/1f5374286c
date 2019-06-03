@@ -38,7 +38,6 @@ const useStyles = makeStyles(theme => ({
         marginLeft: theme.spacing(1),
         marginRight: theme.spacing(1),
         marginTop: theme.spacing(1),
-        float: 'left',
     },
     rightIcon: {
         marginLeft: theme.spacing(1),
@@ -47,6 +46,11 @@ const useStyles = makeStyles(theme => ({
 
 function CenteredGrid({alerts}){
     const classes = useStyles();
+
+    React.useEffect(() => {
+        document.title = "Alerts";
+    }, []);
+
     return(
         <main className={classes.content}>
             <div className={classes.toolbar}/>
@@ -86,13 +90,13 @@ function CenteredGrid({alerts}){
     )
 }
 
-const Alerts = withRouter( props => (
+const Alerts = withRouter( props=> (
     <div style={{
         root:{
             flexGrow: 1,
         },
     }}>
-        <ResponsiveDrawer name={props.parks.data[0].fullName + " Alerts"} park={props.router.query.objectId}/>
+        <ResponsiveDrawer name={props.parks.data[0].fullName + " Alerts"} park={props.router.query.objectId} current="Alerts"/>
         <CenteredGrid alerts={props.alerts.data}/>
     </div>
 ));

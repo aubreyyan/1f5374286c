@@ -45,6 +45,9 @@ const useStyles = makeStyles(theme => ({
         [theme.breakpoints.only('xs')]:{
             fontSize: "large",
         },
+        [theme.breakpoints.up('lg')]:{
+            fontSize: "x-large",
+        },
     },
     maintitle: {
         [theme.breakpoints.only('xs')]:{
@@ -58,6 +61,11 @@ const useStyles = makeStyles(theme => ({
 
 function CenteredGrid({places}){
     const classes = useStyles();
+
+    React.useEffect(() => {
+        document.title = "Places";
+    }, []);
+
     return(
         <main className={classes.content}>
             <div className={classes.toolbar}/>
@@ -73,7 +81,7 @@ function CenteredGrid({places}){
                                 {(placeObj.listingimage.url.length > 0) ? <img className={classes.image} src={placeObj.listingimage.url}/> : <span/> }
                             </div>
                             {(placeObj.listingimage.url.length > 0) ? <br/> : <span/>}
-                            <Typography paragraph variant="h4" className={classes.p}>
+                            <Typography paragraph className={classes.p}>
                                 {placeObj.listingdescription}
                             </Typography>
                             {(placeObj.url.length > 0) ?
@@ -104,7 +112,7 @@ const Places = withRouter( props => (
             flexGrow: 1,
         },
     }}>
-        <ResponsiveDrawer name={props.parks.data[0].fullName + " Places"} park={props.router.query.objectId}/>
+        <ResponsiveDrawer name={props.parks.data[0].fullName + " Places"} park={props.router.query.objectId} current="Places"/>
         <CenteredGrid places={props.places.data}/>
     </div>
 ));

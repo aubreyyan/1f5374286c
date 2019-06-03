@@ -51,10 +51,18 @@ const useStyles = makeStyles(theme => ({
     rightIcon: {
         marginLeft: theme.spacing(1),
     },
+    p: {
+        fontSize: "large",
+    },
 }));
 
 function CenteredGrid({park}){
     const classes = useStyles();
+
+    React.useEffect(() => {
+        document.title = "Details";
+    }, []);
+
     return(
         <main className={classes.content}>
             <div className={classes.toolbar}/>
@@ -66,7 +74,7 @@ function CenteredGrid({park}){
                     <Divider/>
                 </Typography>
                 <div className="leftcol">
-                    <Typography variant="h5" paragraph>
+                    <Typography paragraph style={{fontSize: "x-large"}}>
                         {park.description}
                     </Typography>
                     {(park.weatherInfo.length > 0) ?
@@ -75,7 +83,7 @@ function CenteredGrid({park}){
                             Weather
                             <Divider/>
                         </Typography>
-                        <Typography variant="h6" paragraph>
+                        <Typography paragraph className={classes.p}>
                             {park.weatherInfo}
                         </Typography>
                     </div> : <span/>}
@@ -87,7 +95,7 @@ function CenteredGrid({park}){
                             Directions
                             <Divider/>
                         </Typography>
-                        <Typography variant="h6" paragraph>
+                        <Typography paragraph className={classes.p}>
                             {park.directionsInfo}
                         </Typography>
                         {(park.directionsUrl.length > 0) ?
@@ -112,7 +120,7 @@ const Details = withRouter( props => (
             flexGrow: 1,
         },
     }}>
-        <ResponsiveDrawer name={props.parks.data[0].fullName + " Details"} park={props.router.query.objectId}/>
+        <ResponsiveDrawer name={props.parks.data[0].fullName + " Details"} park={props.router.query.objectId} current="Details"/>
         <CenteredGrid park={props.parks.data[0]}/>
     </div>
 ));

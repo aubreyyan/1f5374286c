@@ -39,6 +39,7 @@ class InfiniteHits extends React.Component {
                         ref={c => (this.sentinel = c)}
                     />
                 </ul>
+                <br/><br/>
             </div>
         );
     }
