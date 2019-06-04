@@ -2,46 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0b2b08d-61f1-4530-92c6-7edc1b7de1b9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.next/build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/.next/build-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/react-loadable-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/.next/react-loadable-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/server/pages-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/pages-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/server/ssr-module-cache.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/ssr-module-cache.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/static/development/pages/_app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/_document.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/static/development/pages/_document.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/_error.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/static/development/pages/_error.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/alerts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/alerts.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/details.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/static/development/pages/details.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/details.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/static/development/pages/details.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/static/development/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/static/development/pages/index.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/chunks/0.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/chunks/0.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/chunks/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/chunks/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/chunks/styles.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/chunks/styles.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/css/styles.chunk.css" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/css/styles.chunk.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/development/dll/dll_7bc611f04f4f15742e11.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/development/dll/dll_7bc611f04f4f15742e11.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/development/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/development/pages/_app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/development/pages/_error.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/development/pages/_error.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/development/pages/alerts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/development/pages/alerts.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/development/pages/details.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/development/pages/details.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/development/pages/details.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/development/pages/details.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/development/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/development/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/development/pages/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/development/pages/index.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/runtime/amp.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/runtime/amp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/runtime/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/runtime/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/runtime/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/runtime/webpack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/runtime/webpack.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/runtime/webpack.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/37dc14a42748b7baa05c.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/a3bc90e597365e15dfec.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/f9f211e799766cd4320c.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/alerts.js.37dc14a42748b7baa05c.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/alerts.js.37dc14a42748b7baa05c.hot-update.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/index.js.37dc14a42748b7baa05c.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/index.js.37dc14a42748b7baa05c.hot-update.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/styles.a3bc90e597365e15dfec.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/styles.a3bc90e597365e15dfec.hot-update.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/api/SearchClient.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/api/SearchClient.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,16 +16,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="578">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/api/Google_Query.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
@@ -76,7 +37,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/utils/addSpacing.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
+            <state>
               <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
             </state>
           </provider>
@@ -85,7 +46,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/CustomButton.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="238">
               <caret line="21" column="79" selection-start-line="21" selection-start-column="79" selection-end-line="21" selection-end-column="79" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -159,7 +120,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/components/NPS_Query.js" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/static/leaflet.css" />
         <option value="$PROJECT_DIR$/components/ScriptCache.js" />
@@ -210,6 +170,7 @@
         <option value="$PROJECT_DIR$/components/ResponsiveDrawer.js" />
         <option value="$PROJECT_DIR$/components/api/SearchClient.js" />
         <option value="$PROJECT_DIR$/components/api/Google_Query.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -219,7 +180,7 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="394" />
     <option name="y" value="12" />
     <option name="width" value="1541" />
@@ -231,7 +192,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -255,6 +215,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -275,17 +236,18 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.1.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\fusi0\IdeaProjects\codename-arcane-island" />
+      <recent name="C:\Users\fusi0\IdeaProjects\NPS-revised\static" />
+      <recent name="C:\Users\fusi0\IdeaProjects\NPS-revised\components" />
+      <recent name="C:\Users\fusi0\IdeaProjects\NPS-revised" />
+      <recent name="C:\Users\fusi0\IdeaProjects\NPS-revised\pages" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\fusi0\IdeaProjects\NPS-revised\static" />
       <recent name="C:\Users\fusi0\IdeaProjects\NPS-revised\components\icons" />
       <recent name="C:\Users\fusi0\IdeaProjects\NPS-revised\components\api" />
       <recent name="C:\Users\fusi0\IdeaProjects\NPS-revised\components\utils" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\fusi0\IdeaProjects\NPS-revised\static" />
-      <recent name="C:\Users\fusi0\IdeaProjects\NPS-revised\components" />
-      <recent name="C:\Users\fusi0\IdeaProjects\NPS-revised" />
-      <recent name="C:\Users\fusi0\IdeaProjects\NPS-revised\pages" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -316,16 +278,17 @@
       <workItem from="1559277796869" duration="7570000" />
       <workItem from="1559340984153" duration="111609000" />
       <workItem from="1559522923380" duration="13744000" />
+      <workItem from="1559609697962" duration="489000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="263628000" />
+    <option name="totallyTimeSpent" value="264117000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="394" y="12" width="1541" height="1012" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22822417" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23160027" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -335,7 +298,7 @@
       <window_info id="npm" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32968238" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32968238" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3287827" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -397,12 +360,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/trash-dumpster-white-22.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/rv-campground-white-22.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/food-cache-white-22.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -733,21 +690,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/components/utils/addSpacing.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
+        <state>
           <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/components/CustomButton.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="238">
           <caret line="21" column="79" selection-start-line="21" selection-start-column="79" selection-end-line="21" selection-end-column="79" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
@@ -762,10 +712,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/readme.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/components/api/Google_Query.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>
