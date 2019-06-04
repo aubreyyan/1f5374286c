@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -672,7 +672,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var algoliasearch__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! algoliasearch */ "algoliasearch");
 /* harmony import */ var algoliasearch__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(algoliasearch__WEBPACK_IMPORTED_MODULE_0__);
 
-/* harmony default export */ __webpack_exports__["default"] = (algoliasearch__WEBPACK_IMPORTED_MODULE_0___default()('CNVK9PPZLI', '5b4c0d87a60bd9b1cc648e519b465fe7'));
+/* harmony default export */ __webpack_exports__["default"] = (algoliasearch__WEBPACK_IMPORTED_MODULE_0___default()('CNVK9PPZLI', '1e7524644d5732b65372e85998c98132'));
 
 /***/ }),
 
@@ -1252,14 +1252,14 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\fusi0\IdeaProjects\NPS-revised\pages\index.js */"./pages/index.js");
+module.exports = __webpack_require__(/*! C:\Users\fusi0\IdeaProjects\codename-arcane-island\pages\index.js */"./pages/index.js");
 
 
 /***/ }),

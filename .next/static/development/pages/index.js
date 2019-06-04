@@ -571,7 +571,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var algoliasearch__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! algoliasearch */ "./node_modules/algoliasearch/src/browser/builds/algoliasearch.js");
 /* harmony import */ var algoliasearch__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(algoliasearch__WEBPACK_IMPORTED_MODULE_0__);
 
-/* harmony default export */ __webpack_exports__["default"] = (algoliasearch__WEBPACK_IMPORTED_MODULE_0___default()('CNVK9PPZLI', '5b4c0d87a60bd9b1cc648e519b465fe7'));
+/* harmony default export */ __webpack_exports__["default"] = (algoliasearch__WEBPACK_IMPORTED_MODULE_0___default()('CNVK9PPZLI', '1e7524644d5732b65372e85998c98132'));
 
 /***/ }),
 
@@ -67905,10 +67905,10 @@ function plural(ms, n, name) {
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CUsers%5Cfusi0%5CIdeaProjects%5CNPS-revised%5Cpages%5Cindex.js!./":
-/*!*********************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CUsers%5Cfusi0%5CIdeaProjects%5CNPS-revised%5Cpages%5Cindex.js ***!
-  \*********************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CUsers%5Cfusi0%5CIdeaProjects%5Ccodename-arcane-island%5Cpages%5Cindex.js!./":
+/*!********************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CUsers%5Cfusi0%5CIdeaProjects%5Ccodename-arcane-island%5Cpages%5Cindex.js ***!
+  \********************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -85796,14 +85796,14 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 2:
-/*!*************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CUsers%5Cfusi0%5CIdeaProjects%5CNPS-revised%5Cpages%5Cindex.js ***!
-  \*************************************************************************************************************************************/
+/***/ 0:
+/*!************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CUsers%5Cfusi0%5CIdeaProjects%5Ccodename-arcane-island%5Cpages%5Cindex.js ***!
+  \************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CUsers%5Cfusi0%5CIdeaProjects%5CNPS-revised%5Cpages%5Cindex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CUsers%5Cfusi0%5CIdeaProjects%5CNPS-revised%5Cpages%5Cindex.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CUsers%5Cfusi0%5CIdeaProjects%5Ccodename-arcane-island%5Cpages%5Cindex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CUsers%5Cfusi0%5CIdeaProjects%5Ccodename-arcane-island%5Cpages%5Cindex.js!./");
 
 
 /***/ }),
@@ -85819,5 +85819,5 @@ module.exports = dll_829b10deddf10e1653a8;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js","styles"]]]);
+},[[0,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map

@@ -276,8 +276,8 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="180" />
-    <option name="y" value="48" />
+    <option name="x" value="394" />
+    <option name="y" value="12" />
     <option name="width" value="1541" />
     <option name="height" value="1012" />
   </component>
@@ -288,34 +288,18 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="NPS-revised" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NPS-revised" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NPS-revised" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NPS-revised" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NPS-revised" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NPS-revised" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NPS-revised" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NPS-revised" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="codename-arcane-island" type="b2602c69:ProjectViewProjectNode" />
+              <item name="codename-arcane-island" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -381,7 +365,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="263256000" />
+    <option name="totallyTimeSpent" value="263299000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="180" y="48" width="1541" height="1012" extended-state="0" />
