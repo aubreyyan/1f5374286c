@@ -1,4 +1,7 @@
 function addSpacing(states){
+    if(states == null){
+        return "";
+    }
     var final = "";
     for(var i = 0; i < states.length; i++){
         if(states.substring(i, i + 1) === ","){

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1559654020757" clover="3.2.0">
+  <project timestamp="1559654020757" name="All files">
+    <metrics statements="21" coveredstatements="21" conditionals="15" coveredconditionals="15" methods="3" coveredmethods="3" elements="39" coveredelements="39" complexity="0" loc="21" ncloc="21" packages="1" files="3" classes="3"/>
+    <file name="addSpacing.js" path="C:\Users\fusi0\IdeaProjects\codename-arcane-island\components\utils\addSpacing.js">
+      <metrics statements="8" coveredstatements="8" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <line num="2" count="6" type="cond" truecount="2" falsecount="0"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="5" count="5" type="stmt"/>
+      <line num="6" count="5" type="stmt"/>
+      <line num="7" count="18" type="cond" truecount="2" falsecount="0"/>
+      <line num="8" count="3" type="stmt"/>
+      <line num="11" count="15" type="stmt"/>
+      <line num="14" count="5" type="stmt"/>
+    </file>
+    <file name="capitalize.js" path="C:\Users\fusi0\IdeaProjects\codename-arcane-island\components\utils\capitalize.js">
+      <metrics statements="8" coveredstatements="8" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <line num="2" count="8" type="cond" truecount="2" falsecount="0"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="5" count="7" type="stmt"/>
+      <line num="6" count="7" type="stmt"/>
+      <line num="7" count="50" type="cond" truecount="2" falsecount="0"/>
+      <line num="8" count="6" type="stmt"/>
+      <line num="11" count="44" type="stmt"/>
+      <line num="14" count="7" type="stmt"/>
+    </file>
+    <file name="convertStringToDate.js" path="C:\Users\fusi0\IdeaProjects\codename-arcane-island\components\utils\convertStringToDate.js">
+      <metrics statements="5" coveredstatements="5" conditionals="7" coveredconditionals="7" methods="1" coveredmethods="1"/>
+      <line num="2" count="8" type="stmt"/>
+      <line num="3" count="8" type="stmt"/>
+      <line num="4" count="7" type="stmt"/>
+      <line num="5" count="7" type="cond" truecount="7" falsecount="0"/>
+      <line num="8" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>

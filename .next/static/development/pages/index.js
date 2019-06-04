@@ -171,23 +171,12 @@ var ButtonComponent =
 function (_React$Component) {
   Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(ButtonComponent, _React$Component);
 
-  function ButtonComponent() {
-    var _getPrototypeOf2;
-
+  function ButtonComponent(props) {
     var _this;
 
     Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, ButtonComponent);
 
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(ButtonComponent)).call.apply(_getPrototypeOf2, [this].concat(args)));
-
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "state", {
-      loading: false,
-      parkData: null
-    });
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(ButtonComponent).call(this, props));
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "showPosition", function (position) {
       _this.setState(function (state) {
@@ -269,6 +258,10 @@ function (_React$Component) {
       window.location.href = "/details?objectId=" + nearestPOI.parkCode;
     });
 
+    _this.state = {
+      loading: false,
+      parkData: null
+    };
     return _this;
   }
 
@@ -571,7 +564,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var algoliasearch__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! algoliasearch */ "./node_modules/algoliasearch/src/browser/builds/algoliasearch.js");
 /* harmony import */ var algoliasearch__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(algoliasearch__WEBPACK_IMPORTED_MODULE_0__);
 
-/* harmony default export */ __webpack_exports__["default"] = (algoliasearch__WEBPACK_IMPORTED_MODULE_0___default()('CNVK9PPZLI', '1e7524644d5732b65372e85998c98132'));
+/* harmony default export */ __webpack_exports__["default"] = (algoliasearch__WEBPACK_IMPORTED_MODULE_0___default()('CNVK9PPZLI', '7f37ca0af224e9f4a701f4a5e0abe829'));
 
 /***/ }),
 

@@ -10,10 +10,13 @@ import searchClient from './api/SearchClient';
 const index = searchClient.initIndex("Parks");
 
 class ButtonComponent extends React.Component{
-    state = {
-        loading: false,
-        parkData: null,
-    };
+    constructor(props){
+        super(props);
+        this.state = {
+            loading: false,
+            parkData: null,
+        };
+    }
     render(){
         const loading = this.state.loading;
         return(

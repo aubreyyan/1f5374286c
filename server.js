@@ -1,3 +1,4 @@
+require("@babel/polyfill");
 const Koa = require('koa');
 const next = require('next');
 const session = require('koa-session');

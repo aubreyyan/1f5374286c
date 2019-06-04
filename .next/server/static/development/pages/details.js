@@ -814,6 +814,10 @@ var SvgVisitorCenterBlack30 = function SvgVisitorCenterBlack30(props) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 function addSpacing(states) {
+  if (states == null) {
+    return "";
+  }
+
   var final = "";
 
   for (var i = 0; i < states.length; i++) {

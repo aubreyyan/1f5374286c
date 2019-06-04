@@ -1,4 +1,7 @@
 function capitalize(string){
+    if(string == null){
+        return "";
+    }
     var final = "";
     for(var i = 1; i < string.length; i++){
         if(string.substring(i - 1, i) === " "){
