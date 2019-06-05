@@ -8,21 +8,28 @@ A refined search UI that allows any user to query National Park Service database
 ## Link me.
 [No problem.](https://national-park-s.herokuapp.com/)
 
+##Quick Links
+- [Okay, so what did you build it with?](#okay-so-what-did-you-build-it-with)
+- [Why these technologies?](#why-these-technologies)
+- [What sets your project apart from other submissions?](#what-sets-your-project-apart-from-other-submissions)
+- [What were the project requirements and how did you satisfy them?](#what-were-the-project-requirements-and-how-did-you-satisfy-them)
+- [Can I fork your Git and run it myself?](#can-i-fork-your-git-and-run-it-myself)
+
 ## Okay, so what did you build it with?
 I took advantage of my current stack to build an app that allowed me to try new technologies.
 
 Among the technologies I used were:
 
-- **Node.js**
-- **React.js**
-- **Next.js**
-- **Koa.js**
-- **Algolia React InstantSearch**
-- **Material-UI**
-- **Google Static Maps API**
-- **National Parks Service API**
-- **CSS**
-- **Jest.js Testing Framework**
+- [**Node.js**](https://nodejs.org/en/)
+- [**React.js**](https://reactjs.org/)
+- [**Next.js**](https://nextjs.org/)
+- [**Koa.js**](https://koajs.com/)
+- [**Algolia React InstantSearch**](https://www.algolia.com/)
+- [**Material-UI**](https://material-ui.com/)
+- [**Google Static Maps API**](https://developers.google.com/maps/documentation/maps-static/intro)
+- [**National Parks Service API**](https://www.nps.gov/subjects/developer/index.htm)
+- [**CSS3**](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3)
+- [**Jest.js Testing Framework**](https://jestjs.io/)
 
 ## Why these technologies?
 Having only completed one full year of university, I haven't had as much time as others might have to learn the ins and outs of many different stacks.
@@ -59,6 +66,11 @@ redirects the user automatically to the closest match.
 This functionality could be useful if installed at physical
 locations, absolving users the need of having to manually search for the associated park. It's also just fun to be able to see
 which parks are near you.
+
+One of the big emphases of the webapp is mobile compatibility. You'll find that as you size down the screen, the site's
+CSS and React Components that only render depending on the screen size, elements on the page will dynamically react in
+order to provide the best possible viewing experience for people who, when visiting places like National Parks, probably
+won't have the inconvenience of a 1920x1080 laptop screen with them.
 
 ## What were the project requirements and how did you satisfy them?
 
@@ -111,7 +123,7 @@ Lastly, run the following command if you ever need to convert icons from .svg to
 
 I hope you have as much fun using the app as I had making it!
 
-As an added bonus and just for fun, here is a ~1 minute clip of me coding out and debugging the last page of the website, to the tune o
-Nickelback's *How You Remind Me* (it actually took much longer than 1 minute).
+As an added bonus and just for fun, here is a ~1 minute clip of me coding out and debugging the last page of the 
+website, to the tune of Nickelback's *How You Remind Me* (it actually took much longer than 1 minute).
 
 [![A description](https://img.youtube.com/vi/DyQxKOtSFxg/maxresdefault.jpg)](https://www.youtube.com/watch?v=DyQxKOtSFxg)
