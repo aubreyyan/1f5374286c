@@ -127,7 +127,7 @@ const Details = withRouter( props => (
 
 Details.getInitialProps = async function(context) {
     const {objectId} = context.query;
-    const res = await fetch(NPS_Query("parks", objectId));
+    const res = await fetch(NPS_Query("parks", objectId, ["addresses", "contacts", "entranceFees", "entrancePasses", "images"]));
     const parks = await res.json();
 
     console.log(`Fetched ${parks.data[0].fullName}`);

@@ -175,10 +175,10 @@ const Events = withRouter( props => (
 
 Events.getInitialProps = async function(context) {
     const {objectId} = context.query;
-    const res = await fetch(NPS_Query("parks", objectId));
+    const res = await fetch(NPS_Query("parks", objectId, []));
     const parks = await res.json();
 
-    const res2 = await fetch(NPS_Query("events", objectId));
+    const res2 = await fetch(NPS_Query("events", objectId, []));
     const events = await res2.json();
 
     console.log(`Fetched ${parks.data[0].fullName}`);
