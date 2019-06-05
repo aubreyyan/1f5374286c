@@ -2,6 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0b2b08d-61f1-4530-92c6-7edc1b7de1b9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/details.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/static/development/pages/details.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/details.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/static/development/pages/details.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/chunks/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/chunks/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/chunks/styles.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/chunks/styles.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/development/pages/details.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/development/pages/details.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/development/pages/details.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/development/pages/details.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/runtime/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/runtime/webpack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/runtime/webpack.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/runtime/webpack.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/d94edfe1436270edb4a2.hot-update.json" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/webpack/d94edfe1436270edb4a2.hot-update.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme.MD" beforeDir="false" afterPath="$PROJECT_DIR$/readme.MD" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -153,6 +162,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/api/Google_Query.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
@@ -165,8 +183,8 @@
         <entry file="file://$PROJECT_DIR$/readme.MD">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="34">
-                <caret line="2" column="94" lean-forward="true" selection-start-line="2" selection-start-column="94" selection-end-line="2" selection-end-column="94" />
+              <first_editor relative-caret-position="272">
+                <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
               </first_editor>
               <second_editor />
             </state>
@@ -294,7 +312,7 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -500,12 +518,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="285002000" />
+    <option name="totallyTimeSpent" value="286594000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15536106" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.07569297" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -524,7 +543,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32921347" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="TypeScript" order="10" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.30196938" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.2990249" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.25" />
@@ -874,13 +893,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/api/Google_Query.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/utils/convertStringToDate.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="454">
@@ -1013,11 +1025,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/components/api/Google_Query.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/readme.MD">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="34">
-            <caret line="2" column="94" lean-forward="true" selection-start-line="2" selection-start-column="94" selection-end-line="2" selection-end-column="94" />
+          <first_editor relative-caret-position="272">
+            <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
           </first_editor>
           <second_editor />
         </state>
