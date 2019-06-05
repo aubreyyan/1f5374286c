@@ -208,10 +208,10 @@ const Campgrounds = withRouter( props => (
 
 Campgrounds.getInitialProps = async function(context) {
     const {objectId} = context.query;
-    const res = await fetch(NPS_Query("parks", objectId));
+    const res = await fetch(NPS_Query("parks", objectId, []));
     const parks = await res.json();
 
-    const res2 = await fetch(NPS_Query("campgrounds", objectId));
+    const res2 = await fetch(NPS_Query("campgrounds", objectId, ["addresses", "contacts"]));
     const camps = await res2.json();
 
     console.log(`Fetched ${parks.data[0].fullName}`);
