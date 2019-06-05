@@ -1,6 +1,6 @@
 # National Park Search Tool
 [![Build Status](https://travis-ci.com/joshua-yan/codename-arcane-island.svg?token=CyhsPMjdSgzb7x2ksr3Q&branch=master)](https://travis-ci.com/joshua-yan/codename-arcane-island)
-![Vulnerability Scan](https://snyk.io/test/github/joshua-yan/codename-arcane-island/badge.svg)
+[![Known Vulnerabilities](https://snyk.io/test/github/joshua-yan/codename-arcane-island/badge.svg?targetFile=package.json)](https://snyk.io/test/github/joshua-yan/codename-arcane-island?targetFile=package.json)
 [![Coverage Status](https://coveralls.io/repos/github/joshua-yan/codename-arcane-island/badge.svg)](https://coveralls.io/github/joshua-yan/codename-arcane-island)
 
 A refined search UI that allows any user to query National Park Service databases for information.
