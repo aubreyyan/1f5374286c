@@ -1,5 +1,10 @@
 function getReadableDate(dateObj){
-    return getDayOfWeek(dateObj.getDay()) + ", " + getMonth(dateObj.getMonth()) + " " + dateObj.getDate() + ", " + dateObj.getFullYear();
+    if(dateObj instanceof Date){
+        return getDayOfWeek(dateObj.getDay()) + ", " + getMonth(dateObj.getMonth()) + " " + dateObj.getDate() + ", " + dateObj.getFullYear();
+    }
+    else{
+        return null;
+    }
 }
 
 function getDayOfWeek(num){

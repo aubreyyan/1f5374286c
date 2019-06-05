@@ -1,12 +1,15 @@
 function getList(string, format){
     var final = [];
-    if(format === "number"){
+    if(string == null || string.constructor !== String){
+        return [""];
+    }
+    else if(format === "number"){
         var curr = "2.";
         var index = 0;
         for(var i = 0; i < string.length - 1; i++){
             if(string.substring(i, i + 2) === curr){
                 curr = (parseInt(curr.substring(0, 1)) + 1).toString() + ".";
-                final.push(string.substring(index, i));
+                final.push(string.substring(index, i).replace(/\s+$/g, ''));
                 index = i;
             }
         }
@@ -18,7 +21,7 @@ function getList(string, format){
         var inCCSS = false;
         for(var i = 0; i < string.length; i++){
             if(inCCSS && (string.substring(i, i + 1) === "\n" || string.substring(i, i + 1) === " ")){
-                final.push(temp);
+                final.push(temp.replace(/\s/g, ''));
                 temp = "";
                 inCCSS = false;
             }
@@ -29,8 +32,11 @@ function getList(string, format){
                 }
             }
         }
-        final.push(temp);
+        final.push(temp.replace(/\s/g, ''));
         return final;
+    }
+    else{
+        return [""];
     }
 }
 

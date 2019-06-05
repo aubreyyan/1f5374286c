@@ -40,3 +40,7 @@ test("input of correctly formatted date should return valid date object", () => 
 test("input of decimals should return null", () => {
     expect(toDate("5.22-6.0-2010.")).toBeNull();
 });
+
+test("input of numbers should return null", () => {
+    expect(toDate(24)).toBeNull();
+});

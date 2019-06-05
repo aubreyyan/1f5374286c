@@ -1,5 +1,5 @@
 function sanitized(string){
-    return string.replace(/(&nbsp;|<([^>]+)>)/ig, "");
+    return (string == null || string.constructor !== String) ? "" : string.replace(/(&nbsp;|<([^>]+)>)/ig, "");
 }
 
 export default sanitized;

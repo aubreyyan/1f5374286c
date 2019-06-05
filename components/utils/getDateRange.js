@@ -4,14 +4,23 @@ import getReadableDate from "./getReadableDate";
 function getDateRange(start, end){
     const startDateObj = toDate(start);
     const endDateObj = toDate(end);
+    if(endDateObj != null && endDateObj < startDateObj){
+        return "";
+    }
     const newStartDate = getReadableDate(startDateObj);
-
-    if(endDateObj != null && start !== end){
-        const newEndDate = getReadableDate(endDateObj);
-        return newStartDate + " - " + newEndDate;
+    if(newStartDate != null){
+        if(endDateObj != null){
+            return newStartDate + " - " + getReadableDate(endDateObj);
+        }
+        else{
+            return newStartDate;
+        }
+    }
+    else if(endDateObj != null){
+        return "Ends " + getReadableDate(endDateObj);
     }
     else{
-        return newStartDate;
+        return "";
     }
 }
 
