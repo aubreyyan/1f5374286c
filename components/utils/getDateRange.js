@@ -9,7 +9,7 @@ function getDateRange(start, end){
     }
     const newStartDate = getReadableDate(startDateObj);
     if(newStartDate != null){
-        if(endDateObj != null){
+        if(endDateObj != null && startDateObj < endDateObj){
             return newStartDate + " - " + getReadableDate(endDateObj);
         }
         else{
