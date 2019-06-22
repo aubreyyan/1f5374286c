@@ -1,7 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1559712913432" clover="3.2.0">
-  <project timestamp="1559712913432" name="All files">
-    <metrics statements="149" coveredstatements="149" conditionals="136" coveredconditionals="136" methods="12" coveredmethods="12" elements="297" coveredelements="297" complexity="0" loc="149" ncloc="149" packages="1" files="10" classes="10"/>
+<coverage generated="1561163083766" clover="3.2.0">
+  <project timestamp="1561163083766" name="All files">
+    <metrics statements="180" coveredstatements="180" conditionals="171" coveredconditionals="169" methods="16" coveredmethods="16" elements="367" coveredelements="365" complexity="0" loc="180" ncloc="180" packages="1" files="14" classes="14"/>
+    <file name="JSONtoArray.js" path="C:\Users\fusi0\IdeaProjects\codename-arcane-island\components\utils\JSONtoArray.js">
+      <metrics statements="6" coveredstatements="6" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <line num="2" count="4" type="cond" truecount="4" falsecount="0"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="5" count="3" type="stmt"/>
+      <line num="6" count="3" type="stmt"/>
+      <line num="7" count="3" type="stmt"/>
+      <line num="9" count="3" type="stmt"/>
+    </file>
+    <file name="JSONtoString.js" path="C:\Users\fusi0\IdeaProjects\codename-arcane-island\components\utils\JSONtoString.js">
+      <metrics statements="6" coveredstatements="6" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <line num="5" count="4" type="cond" truecount="4" falsecount="0"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="8" count="3" type="stmt"/>
+      <line num="9" count="3" type="stmt"/>
+      <line num="10" count="3" type="stmt"/>
+      <line num="12" count="3" type="stmt"/>
+    </file>
+    <file name="StringToJSON.js" path="C:\Users\fusi0\IdeaProjects\codename-arcane-island\components\utils\StringToJSON.js">
+      <metrics statements="7" coveredstatements="7" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
+      <line num="2" count="4" type="cond" truecount="4" falsecount="0"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="5" count="3" type="stmt"/>
+      <line num="6" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="7" count="3" type="stmt"/>
+      <line num="8" count="3" type="stmt"/>
+      <line num="10" count="3" type="stmt"/>
+    </file>
     <file name="addSpacing.js" path="C:\Users\fusi0\IdeaProjects\codename-arcane-island\components\utils\addSpacing.js">
       <metrics statements="8" coveredstatements="8" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
       <line num="2" count="6" type="cond" truecount="2" falsecount="0"/>
@@ -26,21 +54,21 @@
     </file>
     <file name="convertStringToDate.js" path="C:\Users\fusi0\IdeaProjects\codename-arcane-island\components\utils\convertStringToDate.js">
       <metrics statements="5" coveredstatements="5" conditionals="7" coveredconditionals="7" methods="1" coveredmethods="1"/>
-      <line num="2" count="23" type="stmt"/>
-      <line num="3" count="23" type="stmt"/>
-      <line num="4" count="16" type="stmt"/>
-      <line num="5" count="16" type="cond" truecount="7" falsecount="0"/>
+      <line num="2" count="27" type="stmt"/>
+      <line num="3" count="27" type="stmt"/>
+      <line num="4" count="20" type="stmt"/>
+      <line num="5" count="20" type="cond" truecount="7" falsecount="0"/>
       <line num="8" count="7" type="stmt"/>
     </file>
     <file name="getDateRange.js" path="C:\Users\fusi0\IdeaProjects\codename-arcane-island\components\utils\getDateRange.js">
-      <metrics statements="12" coveredstatements="12" conditionals="10" coveredconditionals="10" methods="1" coveredmethods="1"/>
-      <line num="5" count="7" type="stmt"/>
-      <line num="6" count="7" type="stmt"/>
+      <metrics statements="12" coveredstatements="12" conditionals="16" coveredconditionals="14" methods="1" coveredmethods="1"/>
+      <line num="5" count="7" type="cond" truecount="1" falsecount="1"/>
+      <line num="6" count="7" type="cond" truecount="1" falsecount="1"/>
       <line num="7" count="7" type="cond" truecount="4" falsecount="0"/>
       <line num="8" count="1" type="stmt"/>
       <line num="10" count="6" type="stmt"/>
       <line num="11" count="6" type="cond" truecount="2" falsecount="0"/>
-      <line num="12" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="12" count="2" type="cond" truecount="4" falsecount="0"/>
       <line num="13" count="1" type="stmt"/>
       <line num="16" count="1" type="stmt"/>
       <line num="19" count="4" type="cond" truecount="2" falsecount="0"/>
@@ -176,6 +204,21 @@
       <line num="100" count="1" type="stmt"/>
       <line num="102" count="1" type="stmt"/>
       <line num="104" count="1" type="stmt"/>
+    </file>
+    <file name="parseDate.js" path="C:\Users\fusi0\IdeaProjects\codename-arcane-island\components\utils\parseDate.js">
+      <metrics statements="12" coveredstatements="12" conditionals="15" coveredconditionals="15" methods="1" coveredmethods="1"/>
+      <line num="4" count="5" type="cond" truecount="4" falsecount="0"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="7" count="4" type="stmt"/>
+      <line num="8" count="4" type="stmt"/>
+      <line num="9" count="4" type="stmt"/>
+      <line num="10" count="37" type="cond" truecount="4" falsecount="0"/>
+      <line num="11" count="2" type="stmt"/>
+      <line num="13" count="35" type="cond" truecount="5" falsecount="0"/>
+      <line num="14" count="3" type="stmt"/>
+      <line num="16" count="35" type="cond" truecount="2" falsecount="0"/>
+      <line num="17" count="30" type="stmt"/>
+      <line num="20" count="2" type="stmt"/>
     </file>
     <file name="sanitized.js" path="C:\Users\fusi0\IdeaProjects\codename-arcane-island\components\utils\sanitized.js">
       <metrics statements="1" coveredstatements="1" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>

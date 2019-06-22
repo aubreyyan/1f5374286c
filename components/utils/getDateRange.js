@@ -2,8 +2,8 @@ import toDate from "./convertStringToDate";
 import getReadableDate from "./getReadableDate";
 
 function getDateRange(start, end){
-    const startDateObj = toDate(start);
-    const endDateObj = toDate(end);
+    const startDateObj = start instanceof Date ? start : toDate(start);
+    const endDateObj = end instanceof Date ? end : toDate(end);
     if(endDateObj != null && endDateObj < startDateObj){
         return "";
     }

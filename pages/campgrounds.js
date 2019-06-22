@@ -38,6 +38,7 @@ import TrailerIcon from '../components/icons/RvCampgroundWhite22';
 import CampStoreIcon from '../components/icons/StoreWhite22';
 import TrailIcon from '../components/icons/AllTerrainTrailWhite22';
 import fetch from 'isomorphic-unfetch';
+import ContactDialog from "../components/ContactDialog";
 
 const useStyles = makeStyles(theme => ({
     paper:{
@@ -168,7 +169,8 @@ function CenteredGrid({name, state, camps}){
                                         </Typography>
                                         <ButtonDialog buttonName="Regulations" text={campObj.accessibility.firestovepolicy + "\n" + campObj.regulationsoverview} other="Details" otherurl={campObj.regulationsurl}/>
                                         <ButtonDialog buttonName="Weather" text={campObj.weatheroverview}/>
-                                        <ButtonDialog buttonName="Directions" text={campObj.directionsoverview} other="Details" otherurl={campObj.directionsUrl}/>
+                                        <ButtonDialog buttonName="Directions" text={campObj.directionsoverview} addresses={campObj.addresses} other="Details" otherurl={campObj.directionsUrl}/>
+                                        <ContactDialog phoneNumbers={campObj.contacts.phoneNumbers} emails={campObj.contacts.emailAddresses}/>
                                         <ButtonDialog buttonName="Accessibility" text={campObj.accessibility.adainfo}/>
                                         <ButtonDialog buttonName="Recreational Vehicles" text={campObj.accessibility.rvinfo}/>
                                         <ButtonDialog buttonName="Reservations" text={campObj.reservationsdescription} other="Details" otherurl={campObj.reservationsurl}/>
