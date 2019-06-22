@@ -2,6 +2,7 @@ import React from 'react';
 import {withRouter} from 'next/router';
 import ResponsiveDrawer from '../components/ResponsiveDrawer';
 import ButtonDialog from "../components/ButtonDialog";
+import HoursTable from '../components/HoursTable';
 import addSpacing from '../components/utils/addSpacing';
 import NPS_Query from '../components/api/NPS_Query';
 import Google_Query from '../components/api/Google_Query';
@@ -12,6 +13,7 @@ import {
     Divider,
     Grid,
     Hidden,
+    Paper,
     Typography,
     makeStyles} from "@material-ui/core";
 import LaunchIcon from '@material-ui/icons/Launch';
@@ -19,7 +21,7 @@ import '../static/default.css';
 
 const useStyles = makeStyles(theme => ({
     paper:{
-        padding: theme.spacing(2),
+        padding: theme.spacing(1.5),
     },
     toolbar: theme.mixins.toolbar,
     content: {
@@ -54,6 +56,10 @@ const useStyles = makeStyles(theme => ({
     p: {
         fontSize: "large",
     },
+    emphasis: {
+        fontSize: "large",
+        fontWeight: "bold",
+    },
 }));
 
 function CenteredGrid({park}){
@@ -74,37 +80,37 @@ function CenteredGrid({park}){
                     <Divider/>
                 </Typography>
                 <div className="leftcol">
-                    <Typography paragraph style={{fontSize: "x-large"}}>
+                    <Typography paragraph className={classes.p}>
                         {park.description}
                     </Typography>
-                    {(park.weatherInfo.length > 0) ?
-                    <div>
-                        <Typography variant="h4" color="textPrimary" style={{fontWeight: 'bold'}}>
-                            Weather
-                            <Divider/>
-                        </Typography>
-                        <Typography paragraph className={classes.p}>
-                            {park.weatherInfo}
-                        </Typography>
-                    </div> : <span/>}
-                    <Hidden smUp>
-                        <ButtonDialog buttonName="Directions" text={park.directionsInfo} other="Details" otherurl={park.directionsUrl}/>
-                    </Hidden>
-                    <Hidden xsDown>
-                        <Typography variant="h4" color="textPrimary" style={{fontWeight: 'bold'}}>
-                            Directions
-                            <Divider/>
-                        </Typography>
-                        <Typography paragraph className={classes.p}>
-                            {park.directionsInfo}
-                        </Typography>
-                        {(park.directionsUrl.length > 0) ?
-                            <Button href={park.directionsUrl} variant="contained" color="inherit" className={classes.button}>
-                                Directions
-                                <LaunchIcon className={classes.rightIcon}/>
-                            </Button> : <span/>}
-                    </Hidden>
+                    {(park.operatingHours != null && park.operatingHours.length > 0) ?
+                        ((Array.isArray(park.operatingHours.standardHours) ?
+                        (park.operatingHours[0].standardHours.map((hours) => (
+                            <span>
+                                <Typography variant="h4">
+                                    Standard Hours
+                                    <Divider/>
+                                </Typography>
+                                <HoursTable hoursList={hours}/>
+                            </span>
+                            ))) :
+                            ([park.operatingHours[0].standardHours].map((hours) => (
+                                <span>
+                                <Typography variant="h4">
+                                    Standard Hours
+                                    <Divider/>
+                                </Typography>
+                                <HoursTable hoursList={hours}/>
+                            </span>
+                            ))))) : <span/> }
+                    <ButtonDialog buttonName="Full Hours" hours={park.operatingHours}/>
+                    <ButtonDialog buttonName="Directions" text={park.directionsInfo} addresses={park.addresses} other="Details" otherurl={park.directionsUrl}/>
+                    <ButtonDialog buttonName="Payment" fees={park.entranceFees} passes={park.entrancePasses}/>
+                    <ButtonDialog buttonName="Contact Info" phones={park.contacts.phoneNumbers} emails={park.contacts.emailAddresses}/>
+                    <ButtonDialog buttonName="Weather" text={park.weatherInfo}/>
+                    <ButtonDialog buttonName="Pictures" images={park.images}/>
                 </div>
+                <br/>
                 <div style={{flexBasis: "2.5%"}}/>
                 <div className="rightcol">
                     <img className={classes.image} src={Google_Query(park.latLong, "", park.fullName, park.states, 1300, 500, 12)}/>
@@ -127,7 +133,7 @@ const Details = withRouter( props => (
 
 Details.getInitialProps = async function(context) {
     const {objectId} = context.query;
-    const res = await fetch(NPS_Query("parks", objectId, ["addresses", "contacts", "entranceFees", "entrancePasses", "images"]));
+    const res = await fetch(NPS_Query("parks", objectId, ["addresses", "contacts", "entranceFees", "entrancePasses", "images", "operatingHours"]));
     const parks = await res.json();
 
     console.log(`Fetched ${parks.data[0].fullName}`);
