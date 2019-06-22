@@ -110,15 +110,15 @@ function CenteredGrid({plans}){
                                                     </Typography>
                                                 ))}
                                             </div> : <span/>}
-                                        {(planObj.url.length > 0) ?
-                                            <Button href={planObj.url} className={classes.button} variant="outlined" color="inherit">
-                                                Details
-                                                <LaunchIcon className={classes.rightIcon}/>
-                                            </Button> : <span/>}
                                         <ButtonDialog buttonName="Math Standards" multitext={planObj.commoncore.mathstandards}/>
                                         <ButtonDialog buttonName="English & L.A. Standards" multitext={planObj.commoncore.elastandards}/>
                                         {(planObj.commoncore.statestandards.length > 0 || planObj.commoncore.additionalstandards.length > 0) ?
                                             <LessonDialog state={planObj.commoncore.statestandards} other={planObj.commoncore.additionalstandards}/> : <span/>}
+                                        {(planObj.url.length > 0) ?
+                                            <Button href={planObj.url} className={classes.button} color="primary">
+                                                Details
+                                                <LaunchIcon className={classes.rightIcon}/>
+                                            </Button> : <span/>}
                                     </div>
                                 </ExpansionPanelDetails>
                             </ExpansionPanel>

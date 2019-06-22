@@ -2,33 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0b2b08d-61f1-4530-92c6-7edc1b7de1b9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/components/HoursTable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/utils/JSONtoArray.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/utils/JSONtoArray.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/utils/JSONtoString.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/utils/JSONtoString.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/utils/StringToJSON.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/utils/StringToJSON.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/utils/parseDate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/utils/parseDate.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/.next/build-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/server/pages-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/pages-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/details.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/details.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/static/development/pages/details.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/static/development/pages/index.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/static/chunks/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/chunks/styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/static/chunks/styles.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/chunks/styles.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/development/pages/details.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/static/development/pages/details.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/development/pages/details.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/development/pages/index.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/static/runtime/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/runtime/webpack.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/static/runtime/webpack.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/runtime/webpack.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/static/webpack/d94edfe1436270edb4a2.hot-update.json" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/webpack/d94edfe1436270edb4a2.hot-update.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/api/NPS_Query.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/api/NPS_Query.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ButtonDialog.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/ButtonDialog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ContactDialog.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/ContactDialog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/utils/convertStringToDate.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/utils/convertStringToDate.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/utils/getDateRange.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/utils/getDateRange.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/alerts.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/alerts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/articles.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/articles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/clover.xml" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/clover.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/coverage-final.json" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/coverage-final.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov-report/addSpacing.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/addSpacing.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov-report/capitalize.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/capitalize.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov-report/convertStringToDate.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/convertStringToDate.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov-report/getDateRange.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/getDateRange.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov-report/getList.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/getList.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov-report/getReadableDate.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/getReadableDate.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov-report/getReadablePhone.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/getReadablePhone.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov-report/getTimeRange.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/getTimeRange.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov-report/getTimeZone.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/getTimeZone.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov-report/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov-report/sanitized.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/sanitized.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov.info" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/campgrounds.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/campgrounds.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/details.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/details.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/events.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/lessonplans.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/lessonplans.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/newsreleases.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/newsreleases.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/people.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/people.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/places.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/places.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/visitorcenters.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/visitorcenters.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.MD" beforeDir="false" afterPath="$PROJECT_DIR$/readme.MD" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,23 +57,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/components/utils/getDateRange.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/details.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+            <state relative-caret-position="538">
+              <caret line="104" column="45" selection-start-line="85" selection-start-column="20" selection-end-line="104" selection-end-column="45" />
               <folding>
-                <element signature="e#0#43#0" expanded="true" />
+                <element signature="e#0#26#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/lessonplans.js">
+        <entry file="file://$PROJECT_DIR$/pages/articles.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="156" column="66" selection-start-line="156" selection-start-column="66" selection-end-line="156" selection-end-column="66" />
+            <state relative-caret-position="-1655">
+              <caret column="26" selection-start-column="26" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/ButtonDialog.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="300" column="46" selection-start-line="300" selection-start-column="46" selection-end-line="300" selection-end-column="46" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/alerts.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-261">
+              <caret line="69" column="69" selection-start-line="69" selection-start-column="69" selection-end-line="69" selection-end-column="69" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -69,7 +105,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/newsreleases.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
+            <state relative-caret-position="402">
               <caret line="128" column="67" selection-start-line="128" selection-start-column="67" selection-end-line="128" selection-end-column="67" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -81,7 +117,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/people.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
+            <state relative-caret-position="374">
               <caret line="121" column="59" selection-start-line="121" selection-start-column="59" selection-end-line="121" selection-end-column="59" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -91,10 +127,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/articles.js">
+        <entry file="file://$PROJECT_DIR$/pages/places.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="118" column="59" selection-start-line="118" selection-start-column="59" selection-end-line="118" selection-end-column="59" />
+            <state relative-caret-position="425">
+              <caret line="124" column="61" selection-start-line="124" selection-start-column="61" selection-end-line="124" selection-end-column="61" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -102,11 +138,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/details.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pages/visitorcenters.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="132" column="51" selection-start-line="132" selection-start-column="51" selection-end-line="132" selection-end-column="51" />
+            <state relative-caret-position="147">
+              <caret line="80" column="45" lean-forward="true" selection-start-line="80" selection-start-column="45" selection-end-line="80" selection-end-column="45" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -117,7 +153,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/events.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1404">
+            <state relative-caret-position="351">
               <caret line="177" column="59" selection-start-line="177" selection-start-column="59" selection-end-line="177" selection-end-column="59" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -129,32 +165,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/campgrounds.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="210" column="59" selection-start-line="210" selection-start-column="59" selection-end-line="210" selection-end-column="59" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/places.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="124" column="61" selection-start-line="124" selection-start-column="61" selection-end-line="124" selection-end-column="61" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/visitorcenters.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="133" column="108" selection-start-line="133" selection-start-column="108" selection-end-line="133" selection-end-column="108" />
+            <state relative-caret-position="1218">
+              <caret line="218" column="53" selection-start-line="218" selection-start-column="53" selection-end-line="218" selection-end-column="53" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -174,8 +186,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>algolia</find>
-      <find>searchclient</find>
       <find>maintitl</find>
       <find>chi</find>
       <find>p</find>
@@ -204,6 +214,8 @@
       <find>disabled</find>
       <find>.tolowercase</find>
       <find>'bold</find>
+      <find>style={{width: &quot;100%&quot;, height: &quot;100%&quot;}}</find>
+      <find>inherit</find>
     </findStrings>
     <replaceStrings>
       <replace>limit=100&amp;</replace>
@@ -218,17 +230,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pages/index.js" />
-        <option value="$PROJECT_DIR$/components/InfiniteHits.js" />
-        <option value="$PROJECT_DIR$/components/ButtonDialog.js" />
-        <option value="$PROJECT_DIR$/components/LessonDialog.js" />
-        <option value="$PROJECT_DIR$/static/default.css" />
-        <option value="$PROJECT_DIR$/components/Hit.js" />
-        <option value="$PROJECT_DIR$/next.config.js" />
-        <option value="$PROJECT_DIR$/components/ResponsiveDrawer.js" />
-        <option value="$PROJECT_DIR$/components/api/SearchClient.js" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/babel.config.js" />
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/components/CustomButton.js" />
         <option value="$PROJECT_DIR$/.babelrc" />
@@ -240,10 +241,8 @@
         <option value="$PROJECT_DIR$/components/utils/capitalize.test.js" />
         <option value="$PROJECT_DIR$/getDateRange.test.js" />
         <option value="$PROJECT_DIR$/components/utils/convertStringToDate.test.js" />
-        <option value="$PROJECT_DIR$/components/utils/convertStringToDate.js" />
         <option value="$PROJECT_DIR$/components/utils/getReadableDate.js" />
         <option value="$PROJECT_DIR$/components/utils/getDateRange.test.js" />
-        <option value="$PROJECT_DIR$/components/api/Google_Query.js" />
         <option value="$PROJECT_DIR$/components/utils/getList.test.js" />
         <option value="$PROJECT_DIR$/components/utils/getReadableDate.test.js" />
         <option value="$PROJECT_DIR$/components/utils/getReadablePhone.js" />
@@ -259,16 +258,29 @@
         <option value="$PROJECT_DIR$/readme.MD" />
         <option value="$PROJECT_DIR$/components/api/NPS_Query.js" />
         <option value="$PROJECT_DIR$/pages/events.js" />
-        <option value="$PROJECT_DIR$/pages/campgrounds.js" />
         <option value="$PROJECT_DIR$/pages/articles.js" />
         <option value="$PROJECT_DIR$/pages/alerts.js" />
-        <option value="$PROJECT_DIR$/pages/lessonplans.js" />
         <option value="$PROJECT_DIR$/pages/newsreleases.js" />
         <option value="$PROJECT_DIR$/pages/people.js" />
         <option value="$PROJECT_DIR$/pages/places.js" />
-        <option value="$PROJECT_DIR$/pages/visitorcenters.js" />
-        <option value="$PROJECT_DIR$/pages/details.js" />
+        <option value="$PROJECT_DIR$/components/utils/JSONtoArray.js" />
+        <option value="$PROJECT_DIR$/components/utils/JSONtoArray.test.js" />
+        <option value="$PROJECT_DIR$/components/utils/JSONtoString.js" />
+        <option value="$PROJECT_DIR$/components/utils/JSONtoString.test.js" />
+        <option value="$PROJECT_DIR$/components/utils/StringToJSON.test.js" />
+        <option value="$PROJECT_DIR$/components/utils/StringToJSON.js" />
+        <option value="$PROJECT_DIR$/components/HoursTable.js" />
+        <option value="$PROJECT_DIR$/components/utils/convertStringToDate.js" />
+        <option value="$PROJECT_DIR$/components/utils/parseDate.test.js" />
+        <option value="$PROJECT_DIR$/components/utils/parseDate.js" />
         <option value="$PROJECT_DIR$/components/utils/getDateRange.js" />
+        <option value="$PROJECT_DIR$/components/api/Google_Query.js" />
+        <option value="$PROJECT_DIR$/pages/lessonplans.js" />
+        <option value="$PROJECT_DIR$/pages/details.js" />
+        <option value="$PROJECT_DIR$/components/ContactDialog.js" />
+        <option value="$PROJECT_DIR$/components/ButtonDialog.js" />
+        <option value="$PROJECT_DIR$/pages/campgrounds.js" />
+        <option value="$PROJECT_DIR$/pages/visitorcenters.js" />
       </list>
     </option>
   </component>
@@ -279,9 +291,9 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-7" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+    <option name="x" value="715" />
+    <option name="width" value="1215" />
+    <option name="height" value="1027" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -290,7 +302,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -324,6 +335,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -372,67 +384,70 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.sanitized.test.js">
-    <configuration name="all state codes should correspond to respective time zones" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Jest.parseDate.test.js">
+    <configuration name="JSONtoString.test.js" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST_FILE" />
+      <test-file value="$PROJECT_DIR$/components/utils/JSONtoString.test.js" />
+      <method v="2" />
+    </configuration>
+    <configuration name="StringToJSON.test.js" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST_FILE" />
+      <test-file value="$PROJECT_DIR$/components/utils/StringToJSON.test.js" />
+      <method v="2" />
+    </configuration>
+    <configuration name="input of other date formats should return null" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/components/utils/getTimeZone.test.js" />
+      <test-file value="$PROJECT_DIR$/components/utils/parseDate.test.js" />
       <test-names>
-        <test-name value="all state codes should correspond to respective time zones" />
+        <test-name value="input of other date formats should return null" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="getReadableDate.test.js" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="input of standard date YYYY-MM-DD should return valid date" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="TEST_FILE" />
-      <test-file value="$PROJECT_DIR$/components/utils/getReadableDate.test.js" />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/components/utils/parseDate.test.js" />
+      <test-names>
+        <test-name value="input of standard date YYYY-MM-DD should return valid date" />
+      </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="getReadablePhone.test.js" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="parseDate.test.js" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST_FILE" />
-      <test-file value="$PROJECT_DIR$/components/utils/getReadablePhone.test.js" />
-      <method v="2" />
-    </configuration>
-    <configuration name="getTimeRange.test.js" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST_FILE" />
-      <test-file value="$PROJECT_DIR$/components/utils/getTimeRange.test.js" />
-      <method v="2" />
-    </configuration>
-    <configuration name="sanitized.test.js" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST_FILE" />
-      <test-file value="$PROJECT_DIR$/components/utils/sanitized.test.js" />
+      <test-file value="$PROJECT_DIR$/components/utils/parseDate.test.js" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.sanitized.test.js" />
-        <item itemvalue="Jest.all state codes should correspond to respective time zones" />
-        <item itemvalue="Jest.getTimeRange.test.js" />
-        <item itemvalue="Jest.getReadablePhone.test.js" />
-        <item itemvalue="Jest.getReadableDate.test.js" />
+        <item itemvalue="Jest.parseDate.test.js" />
+        <item itemvalue="Jest.input of other date formats should return null" />
+        <item itemvalue="Jest.input of standard date YYYY-MM-DD should return valid date" />
+        <item itemvalue="Jest.StringToJSON.test.js" />
+        <item itemvalue="Jest.JSONtoString.test.js" />
       </list>
     </recent_temporary>
   </component>
@@ -453,48 +468,59 @@
       <workItem from="1559340984153" duration="111609000" />
       <workItem from="1559522923380" duration="13744000" />
       <workItem from="1559609697962" duration="489000" />
+      <workItem from="1561069779811" duration="19912000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="all_state_codes_should_correspond_to_respective_time_zones - 2019.06.05 at 00h 21m 04s.xml">
-      <configuration name="all state codes should correspond to respective time zones" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="parseDate_test_js - 2019.06.21 at 16h 50m 00s.xml">
+      <configuration name="parseDate.test.js" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="all_state_codes_should_correspond_to_respective_time_zones - 2019.06.05 at 00h 21m 29s.xml">
-      <configuration name="all state codes should correspond to respective time zones" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="parseDate_test_js - 2019.06.21 at 16h 50m 28s.xml">
+      <configuration name="parseDate.test.js" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="all_state_codes_should_correspond_to_respective_time_zones - 2019.06.05 at 00h 22m 09s.xml">
-      <configuration name="all state codes should correspond to respective time zones" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="parseDate_test_js - 2019.06.21 at 16h 51m 14s.xml">
+      <configuration name="parseDate.test.js" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="all_state_codes_should_correspond_to_respective_time_zones - 2019.06.05 at 00h 22m 53s.xml">
-      <configuration name="all state codes should correspond to respective time zones" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="parseDate_test_js - 2019.06.21 at 16h 52m 13s.xml">
+      <configuration name="parseDate.test.js" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="all_state_codes_should_correspond_to_respective_time_zones - 2019.06.05 at 00h 23m 48s.xml">
-      <configuration name="all state codes should correspond to respective time zones" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="parseDate_test_js - 2019.06.21 at 16h 53m 02s.xml">
+      <configuration name="parseDate.test.js" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="all_state_codes_should_correspond_to_respective_time_zones - 2019.06.05 at 00h 24m 18s.xml">
-      <configuration name="all state codes should correspond to respective time zones" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="parseDate_test_js - 2019.06.21 at 16h 55m 24s.xml">
+      <configuration name="parseDate.test.js" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="all_state_codes_should_correspond_to_respective_time_zones - 2019.06.05 at 00h 25m 39s.xml">
-      <configuration name="all state codes should correspond to respective time zones" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="parseDate_test_js - 2019.06.21 at 16h 55m 59s.xml">
+      <configuration name="parseDate.test.js" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="all_state_codes_should_correspond_to_respective_time_zones - 2019.06.05 at 00h 26m 36s.xml">
-      <configuration name="all state codes should correspond to respective time zones" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="input_of_other_date_formats_should_return_null - 2019.06.21 at 16h 57m 38s.xml">
+      <configuration name="input of other date formats should return null" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="all_state_codes_should_correspond_to_respective_time_zones - 2019.06.05 at 00h 28m 24s.xml">
-      <configuration name="all state codes should correspond to respective time zones" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="parseDate_test_js - 2019.06.21 at 16h 57m 45s.xml">
+      <configuration name="parseDate.test.js" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="sanitized_test_js - 2019.06.05 at 00h 34m 58s.xml">
-      <configuration name="sanitized.test.js" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="parseDate_test_js - 2019.06.21 at 16h 58m 59s.xml">
+      <configuration name="parseDate.test.js" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="289534000" />
+    <option name="totallyTimeSpent" value="327212000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29371002" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1945629" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -504,16 +530,16 @@
       <window_info id="npm" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32968238" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.44857767" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.44853738" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32932165" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32921347" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="TypeScript" order="10" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.2990249" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.25460455" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.25" />
@@ -566,156 +592,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/components/AppBar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="72" column="33" selection-start-line="72" selection-start-column="27" selection-end-line="72" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/InfiniteHits.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="581">
-          <caret line="44" column="5" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/ButtonDialog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="57" column="35" selection-start-line="57" selection-start-column="35" selection-end-line="57" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/LessonDialog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="75" column="44" selection-start-line="75" selection-start-column="44" selection-end-line="75" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/default.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="142" column="27" selection-start-line="142" selection-start-column="27" selection-end-line="142" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/Hit.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="62" column="62" selection-start-line="62" selection-start-column="62" selection-end-line="62" selection-end-column="62" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/next.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="42" selection-start-column="42" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/ResponsiveDrawer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="808">
-          <caret line="129" column="34" selection-start-line="129" selection-start-column="34" selection-end-line="129" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/babel.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.babelrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="27" selection-start-column="27" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/utils/addSpacing.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/api/SearchClient.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/CustomButton.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/utils/addSpacing.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/utils/capitalize.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jest.config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -736,16 +612,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/utils/convertStringToDate.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="43" column="51" lean-forward="true" selection-start-line="43" selection-start-column="51" selection-end-line="43" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/utils/getList.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -753,13 +619,6 @@
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/utils/getReadableDate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="15" lean-forward="true" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -800,13 +659,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/utils/getTimeRange.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="34" selection-start-column="34" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/utils/getTimeZone.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -824,13 +676,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/utils/convertStringToDate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/utils/capitalize.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
@@ -843,16 +688,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/components/utils/getList.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/utils/sanitized.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/components/utils/sanitized.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -868,13 +703,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/api/Google_Query.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/readme.MD">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -882,23 +710,6 @@
             <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/api/NPS_Query.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="124" selection-start-line="3" selection-start-column="124" selection-end-line="3" selection-end-column="124" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/alerts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="105" column="59" selection-start-line="105" selection-start-column="59" selection-end-line="105" selection-end-column="59" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -912,10 +723,260 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/components/api/NPS_Query.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="61" selection-start-column="21" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/utils/capitalize.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/utils/sanitized.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/_document.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/utils/JSONtoArray.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="20" selection-start-line="20" selection-end-line="31" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/utils/JSONtoString.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="36" selection-end-line="31" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/utils/JSONtoArray.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="3" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/AppBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1224">
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/CustomButton.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="537">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Hit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/LessonDialog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-408">
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/utils/JSONtoString.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="6" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/ResponsiveDrawer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1326">
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/utils/StringToJSON.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="4" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="3" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/utils/convertStringToDate.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="43" column="51" lean-forward="true" selection-start-line="43" selection-start-column="51" selection-end-line="43" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/utils/StringToJSON.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/utils/parseDate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/utils/convertStringToDate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/utils/parseDate.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/utils/getTimeRange.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="34" selection-start-column="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/utils/getReadableDate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="15" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/utils/getDateRange.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/HoursTable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/api/Google_Query.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="294" selection-start-line="3" selection-start-column="294" selection-end-line="3" selection-end-column="294" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pages/lessonplans.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="156" column="66" selection-start-line="156" selection-start-column="66" selection-end-line="156" selection-end-column="66" />
+        <state relative-caret-position="384">
+          <caret line="117" column="112" selection-start-line="117" selection-start-column="112" selection-end-line="117" selection-end-column="112" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/ContactDialog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="111" column="76" selection-start-line="111" selection-start-column="76" selection-end-line="111" selection-end-column="76" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/ButtonDialog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="300" column="46" selection-start-line="300" selection-start-column="46" selection-end-line="300" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/events.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="177" column="59" selection-start-line="177" selection-start-column="59" selection-end-line="177" selection-end-column="59" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/articles.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1655">
+          <caret column="26" selection-start-column="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/alerts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-261">
+          <caret line="69" column="69" selection-start-line="69" selection-start-column="69" selection-end-line="69" selection-end-column="69" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -924,7 +985,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/newsreleases.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
+        <state relative-caret-position="402">
           <caret line="128" column="67" selection-start-line="128" selection-start-column="67" selection-end-line="128" selection-end-column="67" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
@@ -934,28 +995,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/people.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
+        <state relative-caret-position="374">
           <caret line="121" column="59" selection-start-line="121" selection-start-column="59" selection-end-line="121" selection-end-column="59" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/articles.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="118" column="59" selection-start-line="118" selection-start-column="59" selection-end-line="118" selection-end-column="59" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/campgrounds.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="210" column="59" selection-start-line="210" selection-start-column="59" selection-end-line="210" selection-end-column="59" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -964,7 +1005,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/places.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
+        <state relative-caret-position="425">
           <caret line="124" column="61" selection-start-line="124" selection-start-column="61" selection-end-line="124" selection-end-column="61" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
@@ -972,10 +1013,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/visitorcenters.js">
+    <entry file="file://$PROJECT_DIR$/pages/campgrounds.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="133" column="108" selection-start-line="133" selection-start-column="108" selection-end-line="133" selection-end-column="108" />
+        <state relative-caret-position="1218">
+          <caret line="218" column="53" selection-start-line="218" selection-start-column="53" selection-end-line="218" selection-end-column="53" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -984,30 +1025,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/details.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="132" column="51" selection-start-line="132" selection-start-column="51" selection-end-line="132" selection-end-column="51" />
+        <state relative-caret-position="538">
+          <caret line="104" column="45" selection-start-line="85" selection-start-column="20" selection-end-line="104" selection-end-column="45" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/events.js">
+    <entry file="file://$PROJECT_DIR$/pages/visitorcenters.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1404">
-          <caret line="177" column="59" selection-start-line="177" selection-start-column="59" selection-end-line="177" selection-end-column="59" />
+        <state relative-caret-position="147">
+          <caret line="80" column="45" lean-forward="true" selection-start-line="80" selection-start-column="45" selection-end-line="80" selection-end-column="45" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/utils/getDateRange.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
           </folding>
         </state>
       </provider>

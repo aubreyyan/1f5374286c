@@ -15,6 +15,8 @@ import {
 } from '@material-ui/core';
 import LaunchIcon from '@material-ui/icons/Launch';
 import '../static/default.css';
+import ContactDialog from "../components/ContactDialog";
+import HoursTable from "../components/HoursTable";
 
 const useStyles = makeStyles(theme => ({
     content:{
@@ -74,26 +76,30 @@ function CenteredGrid({centers}){
                             <Typography paragraph className={classes.p}>
                                 {centerObj.description}
                             </Typography>
-                            <Hidden smUp>
-                                <ButtonDialog buttonName="Directions" text={centerObj.directionsInfo} other="Details" otherurl={centerObj.directionsUrl}/>
-                            </Hidden>
                             <Hidden xsDown>
-                                {(centerObj.directionsInfo.length > 0) ?
-                                    <span>
-                                        <Typography variant="h5" color="textPrimary" style={{fontWeight: 'bold'}} className={classes.maintitle}>
-                                            Directions
+                                {(centerObj.operatingHours != null && centerObj.operatingHours.length > 0) ?
+                                    ((Array.isArray(centerObj.operatingHours.standardHours) ?
+                                        (centerObj.operatingHours[0].standardHours.map((hours) => (
+                                            <span>
+                                                <Typography variant="h4">
+                                                    Standard Hours
+                                                    <Divider/>
+                                                </Typography>
+                                                <HoursTable hoursList={hours}/>
+                                            </span>
+                                        ))) :
+                                        ([centerObj.operatingHours[0].standardHours].map((hours) => (
+                                            <span>
+                                        <Typography variant="h4">
+                                            Standard Hours
+                                            <Divider/>
                                         </Typography>
-                                        <Typography paragraph className={classes.p}>
-                                            {centerObj.directionsInfo}
-                                        </Typography>
-                                        {(centerObj.directionsUrl.length > 0) ?
-                                            <Button href={centerObj.directionsUrl} color="primary" className={classes.button}>
-                                                Directions
-                                                <LaunchIcon className={classes.rightIcon}/>
-                                            </Button> : <span/>}
-                                    </span>
-                                : <span/>}
+                                        <HoursTable hoursList={hours}/>
+                                    </span> ))))) : <span/> }
                             </Hidden>
+                            <ButtonDialog buttonName="Full Hours" hours={centerObj.operatingHours}/>
+                            <ButtonDialog buttonName="Directions" addresses={centerObj.addresses} text={centerObj.directionsInfo} other="Details" otherurl={centerObj.directionsUrl}/>
+                            <ContactDialog phoneNumbers={centerObj.contacts.phoneNumbers} emails={centerObj.contacts.emailAddresses}/>
                             {(centerObj.url.length > 0) ?
                                 <Button href={centerObj.url} color="primary" className={classes.button}>
                                     More Information
@@ -135,6 +141,7 @@ VisitorCenters.getInitialProps = async function(context) {
     const centers = await res2.json();
 
     console.log(`Fetched ${parks.data[0].fullName}`);
+    console.log(NPS_Query("visitorcenters", objectId, ["contacts", "operatingHours", "addresses"]));
 
     return {parks, centers};
 };
