@@ -8,6 +8,7 @@ A refined search UI that allows any user to query National Park Service database
 
 ## Link me.
 [No problem.](https://national-park-s.herokuapp.com/)
+As a bonus, [here's a short video](https://www.youtube.com/watch?v=0IbrG_dI7dk&feature=youtu.be) of me walking through the application!
 
 ## Quick Links
 - [Okay, so what did you build it with?](#okay-so-what-did-you-build-it-with)
