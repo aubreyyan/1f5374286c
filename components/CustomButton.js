@@ -15,7 +15,7 @@ class ButtonComponent extends React.Component{
         this.state = {
             loading: false,
             parkData: null,
-            counter: 0,
+            counter: -1,
         };
     }
     render(){
@@ -60,6 +60,7 @@ class ButtonComponent extends React.Component{
     };
 
     indexData = () => {
+        this.state.counter = 0;
         const browser = index.browseAll("", {
             attributesToRetrieve:[
                 'latLong',
@@ -92,7 +93,7 @@ class ButtonComponent extends React.Component{
             loading: true,
             counter: this.state.counter + 1,
         }));
-        if(this.state.counter > 0){
+        if(this.state.counter > 1){
             alert("There may have been a problem locating your device. Make sure location services are enabled in system and in browser.")
         }
         if(this.state.userlat == null || this.state.userlong == null){
