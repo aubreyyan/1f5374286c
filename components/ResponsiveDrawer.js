@@ -27,7 +27,6 @@ import CampIcon from './icons/CampgroundBlack30';
 import NewsIcon from './icons/PostOfficeBlack30';
 import HomeIcon from './icons/DirectionsBlack30';
 import DetailsIcon from './icons/BrochureBlack30';
-import Link from 'next/link';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import '../static/default.css';
 
@@ -101,8 +100,8 @@ function ResponsiveDrawer(props){
             <Divider/>
             <List>
                 {['Alerts', 'Articles', 'Events', 'News Releases'].map((text, index) => (
-                    <a id="hitbox" href={`/${text.toLowerCase().replace(" ", "")}?objectId=${props.park}`}>
-                        <ListItem button key={text} onClick={handleSubmit} selected={props.current === text}>
+                    <a key={text} id="hitbox" href={`/${text.toLowerCase().replace(" ", "")}?objectId=${props.park}`}>
+                        <ListItem button onClick={handleSubmit} selected={props.current === text}>
                             <ListItemIcon>
                                 {index === 0 ? <AlertIcon/>: index === 1 ? <ArticlesIcon/>: index === 2 ? <EventsIcon/>: <NewsIcon/>}
                             </ListItemIcon>
@@ -114,8 +113,8 @@ function ResponsiveDrawer(props){
             <Divider/>
             <List>
                 {['Campgrounds', 'Visitor Centers'].map((text, index) => (
-                    <a id="hitbox" href={`/${text.toLowerCase().replace(" ", "")}?objectId=${props.park}`}>
-                        <ListItem button key={text} onClick={handleSubmit} selected={props.current === text}>
+                    <a key={text} id="hitbox" href={`/${text.toLowerCase().replace(" ", "")}?objectId=${props.park}`}>
+                        <ListItem button onClick={handleSubmit} selected={props.current === text}>
                             <ListItemIcon>
                                 {index === 0 ? <CampIcon/>: <VisitorCenterIcon/>}
                             </ListItemIcon>
@@ -127,8 +126,8 @@ function ResponsiveDrawer(props){
             <Divider/>
             <List>
                 {['Lesson Plans', 'People', 'Places'].map((text, index) => (
-                    <a id="hitbox" href={`/${text.toLowerCase().replace(" ", "")}?objectId=${props.park}`}>
-                        <ListItem button key={text} onClick={handleSubmit} selected={props.current === text}>
+                    <a key={text} id="hitbox" href={`/${text.toLowerCase().replace(" ", "")}?objectId=${props.park}`}>
+                        <ListItem button onClick={handleSubmit} selected={props.current === text}>
                             <ListItemIcon>
                                 {index === 0 ? <LessonIcon/>: index === 1 ? <PeopleIcon/>: <PlacesIcon/>}
                             </ListItemIcon>

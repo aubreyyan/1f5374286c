@@ -59,7 +59,7 @@ function ContactDialog(props){
                     <DialogTitle>Contact Information</DialogTitle>
                     <DialogContent dividers={false}>
                         {(props.phoneNumbers.map((phone) => (
-                            <span>
+                            <span key={phone}>
                                 {(phone.type != null && phone.type.length > 0) ?
                                     <span>
                                         <Typography variant="h4">{phone.type}</Typography>
@@ -83,7 +83,7 @@ function ContactDialog(props){
                             </span>
                         )))}
                         {(props.emails.map((email) => (
-                            <span>
+                            <span key={email}>
                                 <Typography variant="h4">Email</Typography>
                                 <Divider/>
                                 {(email.description != null && email.description.length > 0) ?
@@ -102,17 +102,17 @@ function ContactDialog(props){
                     <DialogActions>
                         {(props.phoneNumbers.map((phone) => (
                             (phone.phoneNumber.length > 0) ?
-                                <Button href={"tel:" + phone.phoneNumber.replace(/-/g, "")} className={classes.button}>
+                                <Button key={phone} href={"tel:" + phone.phoneNumber.replace(/-/g, "")} className={classes.button}>
                                     {(phone.type.length > 0) ? phone.type : "Phone"}
                                     <PhoneIcon className={classes.rightIcon}/>
-                                </Button> : <span/>
+                                </Button> : <span key={phone}/>
                         )))}
                         {(props.emails.map((email) => (
                             (email.emailAddress.length > 0) ?
-                                <Button href={"mailto:" + email.emailAddress} className={classes.button}>
+                                <Button key={email} href={"mailto:" + email.emailAddress} className={classes.button}>
                                     Email
                                     <ComposeIcon className={classes.rightIcon}/>
-                                </Button> : <span/>
+                                </Button> : <span key={email}/>
                         )))}
                         <Button onClick={handleClose} color="primary" className={classes.button}>
                             Close

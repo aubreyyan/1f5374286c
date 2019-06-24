@@ -71,7 +71,7 @@ function CenteredGrid({state, events}){
             <div className={classes.toolbar}/>
             <Grid container spacing={3} className={classes.grid}>
                 {events.map((eventObj) => (
-                    <Grid item xs={12} md={6} lg={6}>
+                    <Grid key={eventObj.title} item xs={12} md={6} lg={6}>
                         <Paper className={classes.p}>
                             <ExpansionPanel>
                                 <ExpansionPanelSummary
@@ -84,7 +84,7 @@ function CenteredGrid({state, events}){
                                         {(eventObj.category.length > 0) ?
                                             <Chip label={eventObj.category} className={classes.chip} style={{backgroundColor: "#29c609"}}/> : <span/>}
                                         {eventObj.types.map((type) => (
-                                            <Chip label={type} className={classes.chip} style={{backgroundColor: "#29c609"}}/>
+                                            <Chip key={type} label={type} className={classes.chip} style={{backgroundColor: "#29c609"}}/>
                                         ))}
                                         {(eventObj.organizationname.length > 0) ?
                                             <Chip label={eventObj.organizationname} className={classes.chip} style={{backgroundColor: "#86fdff"}}/> : <span/> }
@@ -97,7 +97,7 @@ function CenteredGrid({state, events}){
                                         {(eventObj.isrecurring.length > 0 && !eventObj.isrecurring.toLowerCase().includes("false")) ?
                                             <Chip label="Recurring" className={classes.chip} style={{backgroundColor: "#ffc570"}}/> : <span/> }
                                         {eventObj.tags.map((tag) => (
-                                            <Chip label={capitalize(tag)} className={classes.chip} style={{backgroundColor: "#ffc570"}}/>
+                                            <Chip key={tag} label={capitalize(tag)} className={classes.chip} style={{backgroundColor: "#ffc570"}}/>
                                         ))}
                                     </Typography>
                                 </ExpansionPanelSummary>
@@ -111,7 +111,7 @@ function CenteredGrid({state, events}){
                                                 {(eventObj.date.length > 0) ? getDateRange(eventObj.date, eventObj.dateend) : ""}
                                             </Typography>
                                             {eventObj.times.map((timeRange) => (
-                                                <Typography variant="h5" color="textSecondary" style={{fontWeight: 'bold'}}>
+                                                <Typography key={timeRange} variant="h5" color="textSecondary" style={{fontWeight: 'bold'}}>
                                                     {(timeRange.timestart.length > 0 || timeRange.timeend.length > 0) ?
                                                         getTimeRange(timeRange.timestart, timeRange.timeend) + " " + getTimeZone(state):  ""}
                                                 </Typography>
