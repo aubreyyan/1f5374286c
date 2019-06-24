@@ -1,7 +1,11 @@
 import React from 'react';
 import capitalize from '../components/utils/capitalize';
-import {Divider, Grid, makeStyles, Paper, Typography} from "@material-ui/core";
-
+import {
+    Grid,
+    makeStyles,
+    Paper,
+    Typography
+} from "@material-ui/core";
 const useStyles = makeStyles(theme => ({
     paper:{
         padding: theme.spacing(1.5),
@@ -27,7 +31,7 @@ function HoursTable(props){
     return(
         <span>
             {days.map((day) => (
-                <Grid container spacing={1}>
+                <Grid key={day} container spacing={1}>
                     <Grid item xs={4} md={4} lg={4}>
                         <Paper className={classes.paper}>
                             <Typography className={classes.emphasis} align="center">

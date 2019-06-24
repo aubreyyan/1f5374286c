@@ -80,7 +80,7 @@ function ButtonDialog(props){
                         <DialogContent dividers={false}>
                             <DialogContentText>
                                 {(props.hours.map((hour) => (
-                                <span>
+                                <span key={hour}>
                                     <Typography variant="h4" className={classes.text}>
                                         {hour.name}
                                         <Divider/>
@@ -97,7 +97,7 @@ function ButtonDialog(props){
                                                 <Divider/>
                                             </Typography>
                                             {(hour.exceptions.map((exception) => (
-                                                <span>
+                                                <span key={exception}>
                                                     {console.log(exception)}
                                                     <Typography variant="h5" className={classes.text}>
                                                         {exception.name}
@@ -118,6 +118,12 @@ function ButtonDialog(props){
                                 )))}
                             </DialogContentText>
                         </DialogContent>
+                        <DialogActions>
+                            <Button onClick={handleClose} className={classes.button}>
+                                Close
+                                <FlipBackIcon className={classes.rightIcon}/>
+                            </Button>
+                        </DialogActions>
                     </Dialog>
                 </div>
             )
@@ -142,7 +148,7 @@ function ButtonDialog(props){
                     <DialogContent dividers={false}>
                         <DialogContentText>
                             {props.fees.map((fee) => (
-                                <span>
+                                <span key={fee}>
                                     <Typography variant="h4" className={classes.text}>
                                         {fee.title}
                                     </Typography>
@@ -155,7 +161,7 @@ function ButtonDialog(props){
                                 </span>
                             ))}
                             {props.passes.map((pass) => (
-                                <span>
+                                <span key={pass}>
                                     <Typography variant="h4" className={classes.text}>
                                         {pass.title}
                                     </Typography>
@@ -195,14 +201,14 @@ function ButtonDialog(props){
                     <DialogContent dividers={false}>
                         <DialogContentText>
                             {props.images.map((image) => (
-                                <span>
+                                <span key={image}>
                                     <Typography variant="h4" className={classes.text}>
                                         {image.title}
                                     </Typography>
                                     {(image.url.length > 0) ?
                                         <img className={classes.image} src={image.url}/> : <span/>}
                                     <Typography paragraph className={classes.text}>
-                                        {image.caption + " @" + image.credit}
+                                        {(image.caption != null) ? image.caption + " @" + image.credit : ""}
                                     </Typography>
                                 </span>
                             ))}
@@ -234,7 +240,7 @@ function ButtonDialog(props){
                     <DialogContent dividers={false}>
                         <DialogContentText>
                             {props.phones.map((phone) => (
-                                <span>
+                                <span key={phone}>
                                     <Typography variant="h4" className={classes.text}>
                                         {phone.type}
                                     </Typography>
@@ -256,7 +262,7 @@ function ButtonDialog(props){
                                         Emails
                                     </Typography>
                                     {props.emails.map((email) => (
-                                        <span>
+                                        <span key={email}>
                                             <Typography paragraph className={classes.text}>
                                                 {email.emailAddress}
                                             </Typography>
@@ -294,7 +300,7 @@ function ButtonDialog(props){
                     <DialogContent dividers={false}>
                         <DialogContentText>
                             {props.addresses.map((address) => (
-                                <span>
+                                <span key={address}>
                                     <Typography variant="h4" className={classes.text}>
                                         {address.type + " Address"}
                                     </Typography>
@@ -352,7 +358,7 @@ function ButtonDialog(props){
                         <DialogContent dividers={false}>
                             <DialogContentText>
                                 {props.multitext.map((subj) => (
-                                    <Typography paragraph className={classes.text}>
+                                    <Typography key={subj} paragraph className={classes.text}>
                                         {subj}
                                     </Typography>
                                 ))}

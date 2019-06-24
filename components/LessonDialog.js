@@ -60,7 +60,7 @@ function LessonDialog({state, other}){
                             </Typography>
                             <Divider/>
                             {getList(state, "ccss").map((std) => (
-                                <Typography paragraph>
+                                <Typography key={std} paragraph>
                                     {std}
                                 </Typography>
                             ))}
@@ -73,7 +73,7 @@ function LessonDialog({state, other}){
                             </Typography>
                             <Divider/>
                             {getList(other, "ccss").map((std) => (
-                                <Typography color="textSecondary">
+                                <Typography key={std} color="textSecondary">
                                     {std}
                                 </Typography>
                             ))}

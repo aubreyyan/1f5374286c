@@ -11,6 +11,7 @@ import {
     ExpansionPanelDetails,
     ExpansionPanelSummary,
     Grid,
+    Hidden,
     Paper,
     Typography,
     makeStyles} from "@material-ui/core";
@@ -50,8 +51,13 @@ const useStyles = makeStyles(theme => ({
         padding: theme.spacing(3),
     },
     leftcolumn: {
-        flexBasis: "55%",
-        position: "relative",
+        [theme.breakpoints.up('xs')]: {
+            flexBasis: "100%",
+        },
+        [theme.breakpoints.up('sm')]: {
+            flexBasis: "55%",
+            position: "relative",
+        },
     },
     rightcolumn: {
         flexBasis: "42.5%",
@@ -89,9 +95,9 @@ function CenteredGrid({name, state, camps}){
             <div className={classes.toolbar}/>
             <Grid container spacing={3} className={classes.grid}>
                 {camps.map((campObj) => (
-                    <Grid item xs={12} md={12} lg={12}>
+                    <Grid key={campObj.name} item xs={12} md={12} lg={12}>
                         <Paper className={classes.p}>
-                            <ExpansionPanel >
+                            <ExpansionPanel>
                             <ExpansionPanelSummary
                                 expandIcon={<ExpandMoreIcon/>}
                                 aria-controls="panel1c-content"
@@ -100,12 +106,14 @@ function CenteredGrid({name, state, camps}){
                                 <Typography color="textPrimary" variant="h3" style={{fontWeight: 'bold'}}>
                                     {campObj.name + " "}
                                     {campObj.accessibility.classifications.map((classification) => (
-                                        <Chip label={classification} className={classes.chip} color="primary"/>
+                                        <Chip key={classification} label={classification} className={classes.chip} color="primary"/>
                                     ))}
                                     {(campObj.campsites.totalsites.length > 0 && parseInt(campObj.campsites.totalsites) > 0) ?
                                         <Chip label={campObj.campsites.totalsites + " Total Campsites"} className={classes.chip} style={{backgroundColor: "#29c609"}}/> : <span/>}
                                     {(campObj.accessibility.accessroads.length > 0 && !campObj.accessibility.accessroads[0].toLowerCase().includes("no")) ?
-                                        <Chip avatar={<Avatar style={{backgroundColor: '#c7c837'}}><TrailIcon/></Avatar>} label={campObj.accessibility.accessroads[0]} className={classes.chip} style={{backgroundColor: "#feff47"}}/> : <span/>}
+                                        <Chip avatar={<Avatar style={{backgroundColor: '#c7c837'}}><TrailIcon/></Avatar>} label={
+                                            (campObj.accessibility.accessroads[0].length <= 30) ? campObj.accessibility.accessroads[0] : campObj.accessibility.accessroads[0].slice(0, 31) + "..."}
+                                              className={classes.chip} style={{backgroundColor: "#feff47"}}/> : <span/>}
                                     {(campObj.amenities.internetconnectivity.length > 0 && !campObj.amenities.internetconnectivity.toLowerCase().includes("no")) ?
                                         <Chip avatar={<Avatar style={{backgroundColor: '#66c6c8'}}><WifiIcon/></Avatar>} label="Internet Available" className={classes.chip} style={{backgroundColor: "#86fdff"}}/> : <span/>}
                                     {(campObj.amenities.cellphonereception.length > 0 && !campObj.amenities.cellphonereception.toLowerCase().includes("no")) ?
@@ -167,6 +175,12 @@ function CenteredGrid({name, state, camps}){
                                         <Typography paragraph>
                                             {campObj.accessibility.additionalinfo}
                                         </Typography>
+                                        <Hidden smUp>
+                                            <ButtonDialog buttonName="Map" images={[{
+                                                title: campObj.name,
+                                                url: Google_Query(campObj.latLong, campObj.name, name, state, 1000, 350, 15)
+                                            }]}/>
+                                        </Hidden>
                                         <ButtonDialog buttonName="Regulations" text={campObj.accessibility.firestovepolicy + "\n" + campObj.regulationsoverview} other="Details" otherurl={campObj.regulationsurl}/>
                                         <ButtonDialog buttonName="Weather" text={campObj.weatheroverview}/>
                                         <ButtonDialog buttonName="Directions" text={campObj.directionsoverview} addresses={campObj.addresses} other="Details" otherurl={campObj.directionsUrl}/>
@@ -176,9 +190,11 @@ function CenteredGrid({name, state, camps}){
                                         <ButtonDialog buttonName="Reservations" text={campObj.reservationsdescription} other="Details" otherurl={campObj.reservationsurl}/>
                                     </div>
                                     <div style={{flexBasis: "2.5%"}}/>
-                                    <div className={classes.rightcolumn}>
-                                        <img className={classes.image} src={Google_Query(campObj.latLong, campObj.name, name, state, 1000, 350, 15)}/>
-                                    </div>
+                                    <Hidden xsDown>
+                                        <div className={classes.rightcolumn}>
+                                            <img className={classes.image} src={Google_Query(campObj.latLong, campObj.name, name, state, 1000, 350, 15)}/>
+                                        </div>
+                                    </Hidden>
                                 </ExpansionPanelDetails>
                             </ExpansionPanel>
                         </Paper>

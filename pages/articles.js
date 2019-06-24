@@ -68,7 +68,7 @@ function CenteredGrid({articles}){
             <div className={classes.toolbar}/>
             <Grid container spacing={3} className={classes.grid}>
                 {articles.map((articleObj) => (
-                    <Grid item xs={12} md={6}>
+                    <Grid key={articleObj.title} item xs={12} md={6}>
                         <Paper className={classes.paper}>
                             <Typography color="textPrimary" variant="h3" style={{fontWeight: 'bold'}} className={classes.maintitle}>
                                 {articleObj.title}

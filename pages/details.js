@@ -8,15 +8,11 @@ import NPS_Query from '../components/api/NPS_Query';
 import Google_Query from '../components/api/Google_Query';
 import fetch from 'isomorphic-unfetch';
 import {
-    Button,
     Chip,
     Divider,
     Grid,
-    Hidden,
-    Paper,
     Typography,
     makeStyles} from "@material-ui/core";
-import LaunchIcon from '@material-ui/icons/Launch';
 import '../static/default.css';
 
 const useStyles = makeStyles(theme => ({
@@ -86,7 +82,7 @@ function CenteredGrid({park}){
                     {(park.operatingHours != null && park.operatingHours.length > 0) ?
                         ((Array.isArray(park.operatingHours.standardHours) ?
                         (park.operatingHours[0].standardHours.map((hours) => (
-                            <span>
+                            <span key={hours}>
                                 <Typography variant="h4">
                                     Standard Hours
                                     <Divider/>
@@ -94,15 +90,15 @@ function CenteredGrid({park}){
                                 <HoursTable hoursList={hours}/>
                             </span>
                             ))) :
-                            ([park.operatingHours[0].standardHours].map((hours) => (
-                                <span>
+                        ([park.operatingHours[0].standardHours].map((hours) => (
+                            <span key={hours}>
                                 <Typography variant="h4">
                                     Standard Hours
                                     <Divider/>
                                 </Typography>
                                 <HoursTable hoursList={hours}/>
                             </span>
-                            ))))) : <span/> }
+                        ))))) : <span/> }
                     <ButtonDialog buttonName="Full Hours" hours={park.operatingHours}/>
                     <ButtonDialog buttonName="Directions" text={park.directionsInfo} addresses={park.addresses} other="Details" otherurl={park.directionsUrl}/>
                     <ButtonDialog buttonName="Payment" fees={park.entranceFees} passes={park.entrancePasses}/>
