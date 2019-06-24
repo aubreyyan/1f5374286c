@@ -7,7 +7,7 @@
     "dev": "node server.js",
     "start": "node server.js",
     "build": "next build",
-    "svgr": "svgr -d components/ static/",
+    "svgr": "svgr -d components/icons/ static/",
     "test": "jest"
   },
   "keywords": [],
