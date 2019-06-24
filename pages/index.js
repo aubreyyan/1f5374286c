@@ -45,7 +45,6 @@ const theme = createMuiTheme({
 class Index extends React.Component{
     componentDidMount() {
         document.title = "National Park Search";
-
     }
 
     render(){

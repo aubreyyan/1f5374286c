@@ -67,7 +67,7 @@ function CenteredGrid({centers}){
             <div className={classes.toolbar}/>
             <Grid container spacing={3} className={classes.grid}>
                 {centers.map((centerObj) => (
-                    <Grid item xs={12} md={6} lg={6}>
+                    <Grid key={centerObj.title} item xs={12} md={6} lg={6}>
                         <Paper className={classes.paper}>
                             <Typography variant="h4" color="textPrimary" style={{fontWeight: 'bold'}} className={classes.maintitle}>
                                 {centerObj.name}
@@ -79,8 +79,8 @@ function CenteredGrid({centers}){
                             <Hidden xsDown>
                                 {(centerObj.operatingHours != null && centerObj.operatingHours.length > 0) ?
                                     ((Array.isArray(centerObj.operatingHours.standardHours) ?
-                                        (centerObj.operatingHours[0].standardHours.map((hours) => (
-                                            <span>
+                                        (centerObj.operatingHours[0].standardHours.map((hours, index) => (
+                                            <span key={index}>
                                                 <Typography variant="h4">
                                                     Standard Hours
                                                     <Divider/>
@@ -88,14 +88,14 @@ function CenteredGrid({centers}){
                                                 <HoursTable hoursList={hours}/>
                                             </span>
                                         ))) :
-                                        ([centerObj.operatingHours[0].standardHours].map((hours) => (
-                                            <span>
-                                        <Typography variant="h4">
-                                            Standard Hours
-                                            <Divider/>
-                                        </Typography>
-                                        <HoursTable hoursList={hours}/>
-                                    </span> ))))) : <span/> }
+                                        ([centerObj.operatingHours[0].standardHours].map((hours, index) => (
+                                            <span key={index}>
+                                                <Typography variant="h4">
+                                                    Standard Hours
+                                                    <Divider/>
+                                                </Typography>
+                                                <HoursTable hoursList={hours}/>
+                                            </span> ))))) : <span/> }
                             </Hidden>
                             <ButtonDialog buttonName="Full Hours" hours={centerObj.operatingHours}/>
                             <ButtonDialog buttonName="Directions" addresses={centerObj.addresses} text={centerObj.directionsInfo} other="Details" otherurl={centerObj.directionsUrl}/>
@@ -141,7 +141,6 @@ VisitorCenters.getInitialProps = async function(context) {
     const centers = await res2.json();
 
     console.log(`Fetched ${parks.data[0].fullName}`);
-    console.log(NPS_Query("visitorcenters", objectId, ["contacts", "operatingHours", "addresses"]));
 
     return {parks, centers};
 };

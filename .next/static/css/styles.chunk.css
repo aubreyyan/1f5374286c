@@ -87,6 +87,12 @@ body {
     .search-p {
         font-size: large;
     }
+    .events-left {
+        flex-basis: 100%;
+    }
+    .events-middle {
+        flex-basis: 0%;
+    }
 }
 
 @media (min-width: 961px){

@@ -73,7 +73,7 @@ function CenteredGrid({plans}){
             <div className={classes.toolbar}/>
             <Grid container spacing={3} className={classes.grid}>
                 {plans.map((planObj) => (
-                    <Grid item xs={12} md={6} lg={6}>
+                    <Grid key={planObj.title} item xs={12} md={6} lg={6}>
                         <Paper>
                             <ExpansionPanel>
                                 <ExpansionPanelSummary
@@ -105,7 +105,7 @@ function CenteredGrid({plans}){
                                                     Lesson Objectives
                                                 </Typography>
                                                 {getList(planObj.questionobjective, "number").map((objective) => (
-                                                    <Typography paragraph>
+                                                    <Typography key={objective} paragraph>
                                                         {objective}
                                                     </Typography>
                                                 ))}

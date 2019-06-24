@@ -56,7 +56,7 @@ function CenteredGrid({alerts}){
             <div className={classes.toolbar}/>
             <Grid container spacing={3} className={classes.grid}>
                 {alerts.map((alertObj) => (
-                    <Grid item xs={12} md={6} lg={4}>
+                    <Grid key={alertObj.title} item xs={12} md={6} lg={4}>
                         <Paper className={classes.paper}>
                             <Chip label={(alertObj.category.length > 0) ? alertObj.category : "General"} className={classes.chip} color="secondary"/>
                             <Typography color="textPrimary" variant="h4">
