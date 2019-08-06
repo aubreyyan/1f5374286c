@@ -4,7 +4,7 @@
 [![Known Vulnerabilities](https://snyk.io/test/github/joshua-yan/National-Park-Search-Interface/badge.svg?targetFile=package.json)](https://snyk.io/test/github/joshua-yan/National-Park-Search-Interface?targetFile=package.json)
 
 A refined search UI that allows any user to query National Park Service databases for information.
-
+```
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
@@ -19,7 +19,7 @@ YAML                             1              1              0              8
 -------------------------------------------------------------------------------
 SUM:                           174           6928           6285          44773
 -------------------------------------------------------------------------------
-
+```
 ## Link me.
 [No problem.](https://national-park-s.herokuapp.com/)
 
