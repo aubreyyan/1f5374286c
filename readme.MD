@@ -3,8 +3,22 @@
 [![Coverage Status](https://coveralls.io/repos/github/joshua-yan/National-Park-Search-Interface/badge.svg?branch=master)](https://coveralls.io/github/joshua-yan/National-Park-Search-Interface?branch=master)
 [![Known Vulnerabilities](https://snyk.io/test/github/joshua-yan/National-Park-Search-Interface/badge.svg?targetFile=package.json)](https://snyk.io/test/github/joshua-yan/National-Park-Search-Interface?targetFile=package.json)
 
-
 A refined search UI that allows any user to query National Park Service databases for information.
+
+-------------------------------------------------------------------------------
+Language                     files          blank        comment           code
+-------------------------------------------------------------------------------
+JavaScript                     105           6792           6223          27560
+JSON                             8              0              0          12424
+HTML                            15             14              0           2325
+XML                              6              0              0           1316
+CSS                              4             78             28            666
+SVG                             34              0             34            387
+Markdown                         1             43              0             87
+YAML                             1              1              0              8
+-------------------------------------------------------------------------------
+SUM:                           174           6928           6285          44773
+-------------------------------------------------------------------------------
 
 ## Link me.
 [No problem.](https://national-park-s.herokuapp.com/)
