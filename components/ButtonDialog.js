@@ -3,6 +3,7 @@ import getReadablePhone from '../components/utils/getReadablePhone';
 import parseDate from '../components/utils/parseDate';
 import getDateRange from '../components/utils/getDateRange';
 import HoursTable from '../components/HoursTable';
+import sanitized from "./utils/sanitized";
 import {
     Button,
     Dialog,
@@ -153,7 +154,7 @@ function ButtonDialog(props){
                                         {fee.title}
                                     </Typography>
                                     <Typography paragraph className={classes.text}>
-                                        {fee.description}
+                                        {sanitized(fee.description)}
                                     </Typography>
                                     <Typography paragraph color="textPrimary" className={classes.emphasis}>
                                         {"$" + parseFloat(fee.cost).toFixed(2) + " USD"}
@@ -166,7 +167,7 @@ function ButtonDialog(props){
                                         {pass.title}
                                     </Typography>
                                     <Typography paragraph className={classes.text}>
-                                        {pass.description}
+                                        {sanitized(pass.description)}
                                     </Typography>
                                     <Typography paragraph color="textPrimary" className={classes.emphasis}>
                                         {"$" + parseFloat(pass.cost).toFixed(2) + " USD"}
